@@ -35,13 +35,11 @@ if(checkoutBtn) checkoutBtn.addEventListener('click', () => {
         alert("කරුණාකර පළමුව භාණ්ඩ තෝරාගන්න!");
     }
 });
-
 if(checkoutClose) checkoutClose.addEventListener('click', () => checkoutModal.classList.remove('show-checkout'));
 
 /*=============== ABOUT US READ MORE ===============*/
 const readMoreBtn = document.getElementById('read-more-btn');
 const aboutMoreContent = document.getElementById('about-more');
-
 if(readMoreBtn && aboutMoreContent) {
     readMoreBtn.addEventListener('click', () => {
         if(aboutMoreContent.style.display === 'none') {
@@ -59,7 +57,6 @@ window.toggleAreaSelection = function() {
     const deliveryType = document.getElementById('delivery-type').value;
     const areaSelection = document.getElementById('area-selection');
     const areaInput = document.getElementById('delivery-area');
-    
     if(deliveryType === 'Delivery') {
         areaSelection.style.display = 'block';
         areaInput.required = true;
@@ -77,6 +74,7 @@ const cartCount = document.querySelector('.cart__count');
 const cartTotal = document.querySelector('.cart__prices-total');
 const cartTotalItems = document.querySelector('.cart__prices-item');
 
+// බර වෙනස් කරද්දී මිල වෙනස් වීම (Discount පරණ මිලත් එක්කම)
 window.updateCardPrice = function(selectElement) {
     const card = selectElement.closest('.product-card');
     const priceElement = card.querySelector('.product-price');
@@ -84,11 +82,19 @@ window.updateCardPrice = function(selectElement) {
     
     let basePrice = parseFloat(addToCartBtn.getAttribute('data-baseprice'));
     if (!basePrice) basePrice = parseFloat(addToCartBtn.getAttribute('data-price')); 
+    
+    // පරණ මිලක් තියෙනවද කියලා බලනවා
+    let oldBasePrice = parseFloat(addToCartBtn.getAttribute('data-oldprice'));
 
     const multiplier = parseFloat(selectElement.value);
     const newPrice = basePrice * multiplier;
     
-    priceElement.textContent = `රු. ${newPrice.toFixed(2)}`;
+    if (oldBasePrice && oldBasePrice > basePrice) {
+        const newOldPrice = oldBasePrice * multiplier;
+        priceElement.innerHTML = `රු. ${newPrice.toFixed(2)} <small style="text-decoration: line-through; color: #94a3b8; font-size: 0.8rem; margin-left: 5px;">රු. ${newOldPrice.toFixed(2)}</small>`;
+    } else {
+        priceElement.textContent = `රු. ${newPrice.toFixed(2)}`;
+    }
 };
 
 document.addEventListener('click', function(e) {
@@ -108,7 +114,6 @@ document.addEventListener('click', function(e) {
         if(weightSelector) {
             const multiplier = parseFloat(weightSelector.value);
             const weightLabel = weightSelector.options[weightSelector.selectedIndex].getAttribute('data-label');
-            
             price = basePrice * multiplier; 
             name = `${name} (${weightLabel})`; 
             id = `${baseId}_${weightLabel}`; 
@@ -128,7 +133,6 @@ document.addEventListener('click', function(e) {
 
 function updateCart() {
     const totalItemsCount = cartItems.reduce((total, item) => total + item.quantity, 0);
-    
     if(cartCount) cartCount.textContent = totalItemsCount;
     if(cartTotalItems) cartTotalItems.textContent = `${totalItemsCount} items`;
     
@@ -164,7 +168,6 @@ function updateCart() {
 
     const deliveryOption = document.getElementById('delivery-option');
     const deliveryTypeSelect = document.getElementById('delivery-type');
-    
     if(deliveryOption && deliveryTypeSelect) {
         if(total >= 3000) {
             deliveryOption.disabled = false;
@@ -183,7 +186,6 @@ function updateCart() {
 document.addEventListener('click', function(e) {
     const button = e.target.closest('span') || e.target.closest('i');
     if(!button || !button.hasAttribute('data-index')) return;
-
     const index = button.getAttribute('data-index');
 
     if(button.classList.contains('plus')) {
@@ -204,7 +206,6 @@ document.addEventListener('click', function(e) {
 /*=============== WHATSAPP CHECKOUT ===============*/
 document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    
     const name = document.getElementById('cust-name').value;
     const address = document.getElementById('cust-address').value;
     const deliveryType = document.getElementById('delivery-type').value;
@@ -216,11 +217,9 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
     message += `👤 *නම:* ${name}\n`;
     message += `🏠 *ලිපිනය:* ${address}\n`;
     message += `🚚 *ක්‍රමය:* ${deliveryType === 'Delivery' ? 'නිවසට ගෙනවිත් දීම' : 'කඩෙන් ලබා ගැනීම'}\n`;
-    
     if(deliveryType === 'Delivery' && deliveryArea) {
         message += `📍 *ප්‍රදේශය:* ${deliveryArea}\n`;
     }
-    
     message += `⏱️ *අවශ්‍ය කාලය:* ${deliveryTime}\n\n`;
     message += `📦 *භාණ්ඩ ලැයිස්තුව:*\n`;
     
@@ -231,10 +230,7 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
     const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     message += `\n💰 *මුළු මුදල:* රු. ${total.toFixed(2)}\n`;
     
-    const whatsappNumber = "94781608352"; 
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-    
+    const whatsappURL = `https://wa.me/94781608352?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
     
     cartItems = [];
@@ -245,10 +241,9 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
 });
 
 
-/*=============== FETCH DATA & RENDER (JSON) WITH CACHE BUSTING ===============*/
+/*=============== FETCH DATA & RENDER (JSON) ===============*/
 async function loadData() {
     try {
-        // ?v=... කෑල්ලෙන් හැමවෙලේම පරණ Cache එක මඟහරිනවා!
         const cacheBuster = '?v=' + new Date().getTime();
         
         // Fetch Products
@@ -269,15 +264,32 @@ async function loadData() {
                     <option value="2" data-label="2kg">2kg</option>
                 </select>`;
             }
+
+            // DISCOUNT LOGIC: පරණ මිලක් තියෙනවා නම් සහ ඒක අලුත් මිලට වඩා වැඩිනම්
+            let priceDisplay = `රු. ${p.price.toFixed(2)}`;
+            let discountBadge = '';
+            let oldPriceData = '';
+
+            if (p.oldPrice && p.oldPrice > p.price) {
+                // ප්‍රතිශතය ගණනය කිරීම
+                let discountPercentage = Math.round(((p.oldPrice - p.price) / p.oldPrice) * 100);
+                priceDisplay = `රු. ${p.price.toFixed(2)} <small style="text-decoration: line-through; color: #94a3b8; font-size: 0.8rem; margin-left: 5px;">රු. ${p.oldPrice.toFixed(2)}</small>`;
+                
+                // වම් පැත්තෙන් තැඹිලි පාට (Daraz වගේ) Badge එකක්
+                discountBadge = `<div class="discount-tag" style="background-color: #f97316; left: 10px; right: auto;">-${discountPercentage}%</div>`;
+                oldPriceData = `data-oldprice="${p.oldPrice}"`;
+            }
+
             productsHTML += `
-            <div class="glass-card product-card" data-category="${p.category}">
+            <div class="glass-card product-card" data-category="${p.category}" style="position: relative;">
+                ${discountBadge}
                 <img src="${p.image}" alt="${p.name}" class="product-img">
                 <h3 class="product-title">${p.name}</h3> 
                 <p class="product-desc">${p.desc}</p>
                 ${weightHTML}
                 <div class="product-bottom">
-                    <span class="product-price">රු. ${p.price.toFixed(2)}</span>
-                    <button class="glass-btn-small add-to-cart" data-id="${p.id}" data-name="${p.name}" data-baseprice="${p.price}">
+                    <span class="product-price">${priceDisplay}</span>
+                    <button class="glass-btn-small add-to-cart" data-id="${p.id}" data-name="${p.name}" data-baseprice="${p.price}" ${oldPriceData}>
                         <i class='bx bx-cart-add'></i>
                     </button>
                 </div>
@@ -309,11 +321,9 @@ async function loadData() {
         });
         pkgList.innerHTML = pkgsHTML;
 
-        // Initialize Swipers
         new Swiper(".home-swiper", { spaceBetween: 30, loop: true, autoplay: { delay: 4000, disableOnInteraction: false }, pagination: { el: ".swiper-pagination", clickable: true } });
         new Swiper(".packages-swiper", { spaceBetween: 30, loop: true, slidesPerView: 1, breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 2 } }, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }, pagination: { el: ".swiper-pagination", clickable: true } });
 
-        // දත්ත Load වුණාට පස්සෙම තමයි Filter එක වැඩ කරන්න හදලා තියෙන්නේ
         setupSearchAndFilter();
 
     } catch (e) {
@@ -321,10 +331,8 @@ async function loadData() {
     }
 }
 
-// දත්ත Fetch කිරීම ආරම්භ කිරීම
 loadData();
 
-/*=============== SEARCH & CATEGORY FILTER LOGIC ===============*/
 function setupSearchAndFilter() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
@@ -360,9 +368,7 @@ function setupSearchAndFilter() {
         }
     }
 
-    if (searchBox) {
-        searchBox.addEventListener('input', filterProducts);
-    }
+    if (searchBox) searchBox.addEventListener('input', filterProducts);
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
