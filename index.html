@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Chaminda Store's | සිරිපුර - නැවුම් සිල්ලර බඩු සහ එළවළු</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <meta name="title" content="Chaminda Store's | සිරිපුර - නැවුම් සිල්ලර බඩු සහ එළවළු">
+    <meta name="description" content="සිරිපුර සහ අවට ගම්මාන සඳහා අන්තර්ජාලය හරහා නැවුම් එළවළු සහ දෛනික සිල්ලර භාණ්ඩ ගෙන්වා ගත හැකි විශ්වාසවන්තම වෙළඳසැල.">
+    <meta name="keywords" content="Chaminda Store's, Siripura grocery, online grocery delivery Sri Lanka, fresh vegetables, daily essentials, Polonnaruwa stores, සිරිපුර, සිල්ලර බඩු, siripura, mudunkadawala, ">
+    <meta name="author" content="Oshadha Aravinda">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chamindastores.netlify.app/">
+    <meta property="og:title" content="Chaminda Store's | සිරිපුර">
+    <meta property="og:description" content="සිරිපුර අපේ දේ, ගුණාත්මකව සහ විශ්වාසවන්තව. දැන්ම අන්තර්ජාලයෙන් ඇණවුම් කරන්න.">
+    <meta property="og:image" content="assets/img/preview.jpg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header class="header glass-header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo logo">
+                <div class="logo-icon"><i class='bx bx-store-alt'></i></div>
+                <div class="logo-text">
+                    <h1>Chaminda</h1>
+                    <span>Store's</span>
+                </div>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">මුල් පිටුව</a></li>
+                    <li class="nav__item"><a href="#shop" class="nav__link">භාණ්ඩ</a></li>
+                    <li class="nav__item"><a href="#packages" class="nav__link">පැකේජ</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">අපි ගැන</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav__btns">
+                <div class="nav__shop glass-cart" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                    <span class="cart__count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mobile-bottom-nav">
+        <a href="#home" class="bottom-nav__link active-link">
+            <i class='bx bx-home-alt'></i>
+            <span>මුල් පිටුව</span>
+        </a>
+        <a href="#shop" class="bottom-nav__link">
+            <i class='bx bx-grid-alt'></i>
+            <span>භාණ්ඩ</span>
+        </a>
+        <a href="#packages" class="bottom-nav__link">
+            <i class='bx bx-gift'></i>
+            <span>පැකේජ</span>
+        </a>
+        <a href="#about" class="bottom-nav__link">
+            <i class='bx bx-info-circle'></i>
+            <span>අපි ගැන</span>
+        </a>
+    </nav>
+
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+        <h2 class="cart__title-center">ඔබේ ඇණවුම</h2>
+        <div class="cart__container" id="cart-container">
+            <div class="cart__empty">
+                <i class="bx bx-cart-download"></i>
+                <p>ඔබ තවමත් භාණ්ඩ තෝරාගෙන නැත</p>
+            </div>
+        </div>
+        <div class="cart__prices">
+            <span class="cart__prices-item">0 items</span>
+            <span class="cart__prices-total">රු. 0.00</span>
+        </div>
+        <div class="cart__buttons">
+            <a href="#" class="button" id="checkout">මිලදී ගන්න (WhatsApp)</a>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="home container" id="home" style="padding-top: 120px;">
+            <div class="swiper home-swiper glass-card" style="padding: 20px; border-radius: 30px;">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?q=80&w=800&auto=format&fit=crop" alt="Fresh Vegetables" class="home__img" style="border-radius: 20px; object-fit: cover;">
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#1 නැවුම් සහ ගුණදායක</h3>
+                                <h1 class="home__title">අද දවසේ <br>නැවුම් එළවළු</h1>
+                                <p class="home__description">ගමේ ගොවිපොළෙන් නෙලාගත් නැවුම් එළවළු කිසිදු රස්තියාදුවකින් තොරව ඔබේ නිවසටම ගෙන්වා ගන්න.</p>
+                                <div class="home__buttons">
+                                    <a href="#shop" class="button">මිලදී ගන්න</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="https://www.wishque.com/data/images/products/6494/47887793_617386249618_0.55779300-1672042928.jpg" alt="Essential Groceries" class="home__img" style="border-radius: 20px; object-fit: cover;">
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#2 පවුලටම සෑහෙන්න</h3>
+                                <h1 class="home__title">අත්‍යවශ්‍ය<br>සිල්ලර බඩු</h1>
+                                <p class="home__description">මාසෙකට සෑහෙන කීරි සම්බා, පරිප්පු, සීනි ඇතුළු සියලුම මූලික කළමනා දැන් විශේෂ මිලකට අපෙන්.</p>
+                                <div class="home__buttons">
+                                    <a href="#shop" class="button">මිලදී ගන්න</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="section container" id="shop" style="margin-top: 50px;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 20px; color: #fff; font-size: 2rem;">අපේ භාණ්ඩ</h2>
+            
+            <div class="search-container glass-card">
+                <i class='bx bx-search search-icon'></i>
+                <input type="text" id="search-box" placeholder="භාණ්ඩ සොයන්න (උදා: සීනි, පරිප්පු)...">
+            </div>
+            
+            <div class="category-filter-wrapper">
+                <div class="category-filter">
+                    <button class="filter-btn active-filter" data-filter="all">සියල්ල</button>
+                    <button class="filter-btn" data-filter="essentials">අත්‍යවශ්‍ය</button>
+                    <button class="filter-btn" data-filter="vegetables">එළවළු</button>
+                    <button class="filter-btn" data-filter="spices">කුළු බඩු</button>
+                    <button class="filter-btn" data-filter="driedfish">කරවල වර්ග</button>
+                    <button class="filter-btn" data-filter="frozen">ශීතකළ / බීම</button>
+                    <button class="filter-btn" data-filter="bakery">බේකරි ආහාර</button>
+                    <button class="filter-btn" data-filter="snacks">රසකැවිලි</button>
+                    <button class="filter-btn" data-filter="cleaning">පිරිසිදුකාරක</button>
+                    <button class="filter-btn" data-filter="books">පාසල් උපකරණ</button>
+                    <button class="filter-btn" data-filter="others">වෙනත්</button>
+                </div>
+            </div>
+
+            <div class="shop__container" id="product-list">
+                
+                <div id="no-results" style="display: none; width: 100%; text-align: center; color: #94a3b8; padding: 40px 0; grid-column: 1 / -1;">
+                    <i class='bx bx-search-alt' style="font-size: 3rem; margin-bottom: 10px;"></i>
+                    <h3>සමාවෙන්න, ගැලපෙන භාණ්ඩයක් හමුවුණේ නැත!</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section container" id="packages">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">විශේෂ සුපිරි පැකේජ <span>(Super Saver Bundles)</span></h2>
+            
+            <div class="packages-swiper-container" style="position: relative;">
+                <div class="swiper packages-swiper glass-card">
+                    <div class="swiper-wrapper" id="packages-list">
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-prev custom-arrow"></div>
+                <div class="swiper-button-next custom-arrow"></div>
+            </div>
+        </section>
+
+        <section class="section container" id="about">
+            <div class="about__container grid">
+                <div class="about__data">
+                    <h2 class="section-title">අපි ගැන <span>(About Us)</span></h2>
+                    <p class="about__description">
+                        දශකයකට වැඩි කාලයක් <b>සිරිපුර</b> සහ අවට ගම්මාන වල ජනතාවගේ විශ්වාසය දිනාගත් <b>චමින්ද ස්ටෝර්ස්</b>, දැන් ඩිජිටල් තාක්ෂණය ඔස්සේ ඔබ වෙත සමීප වේ. 
+                        අපගේ අරමුණ වන්නේ නැවුම් එළවළු, අත්‍යවශ්‍ය සිල්ලර ද්‍රව්‍ය සහ පිරිසිදුකාරක කිසිදු රස්තියාදුවකින් තොරව සාධාරණ මිලකට ඔබේ නිවසටම ලබා දීමයි.
+                    </p>
+                    
+                    <div class="about__more-content" id="about-more" style="display: none;">
+                        <p class="about__description" style="margin-top: 10px;">
+                            අපගේ නවතම අන්තර්ජාල ඇණවුම් පද්ධතිය හරහා දැන් ඔබට නිවසේ සිටම පහසුවෙන් භාණ්ඩ වෙන්කරවා ගත හැක. විශේෂයෙන් රු. 3000 ට වැඩි ඇණවුම් සඳහා අපගේ කඩිනම් බෙදාහැරීමේ සේවාවද (Delivery) ක්‍රියාත්මක වේ. පාරිභෝගික තෘප්තිය සහ උසස් තත්ත්වයේ නිෂ්පාදන අපගේ ප්‍රධානතම වගකීමයි.
+                        </p>
+                    </div>
+                    
+                    <button class="button--link button--flex" id="read-more-btn" style="color: #10b981; margin-bottom: 1.5rem; cursor: pointer; background:none; border:none; font-size:1rem; font-family:'Poppins', sans-serif;">
+                        තවත් කියවන්න (Read More) <i class="bx bx-down-arrow-alt button__icon"></i>
+                    </button>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class='bx bxs-check-checkbox'></i> 100% විශ්වාසනීය සේවාව<br>
+                            <i class='bx bxs-check-checkbox'></i> වේගවත් බෙදාහැරීම (Delivery)<br>
+                            <i class='bx bxs-check-checkbox'></i> ගමේ නැවුම් බව සුරැකි නිෂ්පාදන
+                        </p>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1534723452862-4c874018d66d?q=80&w=600&auto=format&fit=crop" alt="Chaminda Store's" class="about__img glass-card">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <div class="logo-icon"><i class='bx bx-store-alt'></i></div>
+                    <div class="logo-text">
+                        <h1>Chaminda</h1>
+                        <span>Store's</span>
+                    </div>
+                </a>
+                <p class="footer__description">සිරිපුර අපේ දේ, <br> ගුණාත්මකව සහ විශ්වාසවන්තව.</p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">සේවාවන්</h3>
+                <ul class="footer__links">
+                    <li><a href="#home" class="footer__link">මුල් පිටුව</a></li>
+                    <li><a href="#shop" class="footer__link">භාණ්ඩ</a></li>
+                    <li><a href="#packages" class="footer__link">පැකේජ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">සම්බන්ධ වන්න</h3>
+                <ul class="footer__links">
+                    <li class="footer__information">සිරිපුර, පොළොන්නරුව</li>
+                    <li class="footer__information">+94 78 160 8352</li>
+                    <li class="footer__information">WhatsApp: 078 160 8352</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">අපව අනුගමනය කරන්න</h3>
+                <div class="footer__social">
+                    <a href="https://wa.me/94781608352" class="footer__social-link"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#" class="footer__social-link"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copy">© 2026 Chaminda Store's. All rights reserved. <br> Created by <a href="https://oshadha-aravinda.netlify.app/" target="_blank" style="color: #10b981; font-weight: 600;">Oshadha Aravinda</a></p>
+    </footer>
+
+    <div class="checkout" id="checkout-modal">
+        <div class="checkout__container glass-card" style="width: 90%; max-width: 500px; padding: 30px; position: relative; max-height: 90vh; overflow-y: auto;">
+            <i class="bx bx-x checkout__close" id="checkout-close" style="font-size: 28px; cursor: pointer; position: absolute; right: 20px; top: 20px; color: #fff;"></i>
+            <h2 class="checkout__title" style="margin-bottom: 20px; text-align: center;">විස්තර ඇතුළත් කරන්න</h2>
+            <form class="checkout__form" id="whatsapp-form">
+                <input type="text" id="cust-name" placeholder="ඔබගේ නම" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: none; font-family: 'Poppins', sans-serif;">
+                <textarea id="cust-address" placeholder="ලිපිනය" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: none; height: 80px; font-family: 'Poppins', sans-serif;"></textarea>
+                
+                <select id="delivery-type" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: none; font-family: 'Poppins', sans-serif;" onchange="window.toggleAreaSelection()">
+                    <option value="Pickup">කඩෙන් ලබා ගන්නවා (Pickup)</option>
+                    <option value="Delivery" id="delivery-option" disabled>නිවසටම ගෙනවිත් දෙන්න (Delivery) - රු. 3000ට වැඩි ඇණවුම් සඳහා පමණි</option>
+                </select>
+
+                <div id="area-selection" style="display: none;">
+                    <select id="delivery-area" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: none; font-family: 'Poppins', sans-serif;">
+                        <option value="" disabled selected>ඔබේ ප්‍රදේශය තෝරන්න...</option>
+                        <option value="මුදුන්කඩවල">මුදුන්කඩවල</option>
+                        <option value="පරගස්වැව">පරගස්වැව</option>
+                        <option value="සැලසුම්ගම">සැලසුම්ගම</option>
+                        <option value="රත්මලකදුර">රත්මලකදුර</option>
+                        <option value="සිරිපුර">සිරිපුර</option>
+                        <option value="නාමල්ගම">නාමල්ගම</option>
+                        <option value="හුන්ගමාලගම">හුන්ගමාලගම</option>
+                        <option value="මුදුන්ගම">මුදුන්ගම</option>
+                        <option value="පලුදෙණිය">පලුදෙණිය</option>
+                    </select>
+                </div>
+
+                <select id="delivery-time" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: none; font-family: 'Poppins', sans-serif;">
+                    <option value="හැකි ඉක්මනින්">හැකි ඉක්මනින්</option>
+                    <option value="පැය 1කින් පමණ">පැය 1කින් පමණ</option>
+                    <option value="පැය 2කින් පමණ">පැය 2කින් පමණ</option>
+                    <option value="පැය 3කින් පමණ">පැය 3කින් පමණ</option>
+                    <option value="පැය 4කින් පමණ">පැය 4කින් පමණ</option>
+                    <option value="පැය 5කින් පමණ">පැය 5කින් පමණ</option>
+                    <option value="පැය 6කින් පමණ">පැය 6කින් පමණ</option>
+                </select>
+
+                <p style="font-size: 0.8rem; color: #cbd5e1; text-align: center; margin-bottom: 20px;">* Delivery ගාස්තුව ඔබේ ප්‍රදේශය අනුව සාධාරණ ගණනක් එකතු වේ. එම මුදල ඔබට හැකි ඉක්මනින් දැනුම් දෙනු ලැබේ.</p>
+
+                <button type="submit" class="button" style="width: 100%; border-radius: 8px;"><i class='bx bxl-whatsapp' style="font-size: 1.2rem;"></i> WhatsApp හරහා යවන්න</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

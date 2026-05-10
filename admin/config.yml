@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "store_data"
+    label: "කඩේ දත්ත (Store Data)"
+    files:
+      - label: "භාණ්ඩ ලැයිස්තුව (Products)"
+        name: "products"
+        file: "data/products.json"
+        fields:
+          - name: "products"
+            label: "Products"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Category", name: "category", widget: "select", options: ["essentials", "vegetables", "spices", "driedfish", "frozen", "bakery", "snacks", "cleaning", "books", "others"]}
+              - {label: "Image URL", name: "image", widget: "string"}
+              - {label: "Description", name: "desc", widget: "string"}
+              - {label: "Base Price", name: "price", widget: "number"}
+              - {label: "Is Weighable?", name: "isWeighable", widget: "boolean", default: false}
+
+      - label: "පැකේජ ලැයිස්තුව (Packages)"
+        name: "packages"
+        file: "data/packages.json"
+        fields:
+          - name: "packages"
+            label: "Packages"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Discount Tag", name: "discount", widget: "string"}
+              - {label: "Image URL", name: "image", widget: "string"}
+              - {label: "Items", name: "items", widget: "list", field: {label: "Item", name: "item", widget: "string"}}
+              - {label: "New Price", name: "price", widget: "number"}
+              - {label: "Old Price", name: "oldPrice", widget: "number"}

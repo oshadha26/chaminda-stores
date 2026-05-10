@@ -1,0 +1,22 @@
+{
+  "packages": [
+    {
+      "id": "pkg_family",
+      "name": "පවුලේ අත්‍යවශ්‍ය පැකේජය",
+      "discount": "15% OFF",
+      "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=400&auto=format&fit=crop",
+      "items": ["සීනි 2kg", "පරිප්පු 1kg", "සහල් 5kg"],
+      "price": 2150,
+      "oldPrice": 2450
+    },
+    {
+      "id": "pkg_tea",
+      "name": "තේ පැන් විරාම පැකේජය",
+      "discount": "10% OFF",
+      "image": "https://images.unsplash.com/photo-1544787210-282744863035?q=80&w=400&auto=format&fit=crop",
+      "items": ["තේ කොළ 250g", "සීනි 1kg", "බිස්කට් 2"],
+      "price": 720,
+      "oldPrice": 800
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "item_sugar",
+      "name": "සුදු සීනි",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLgvoe_X6etXfuLERuCl6Nd5NEPUTW5yzYNw&s",
+      "desc": "පිරිසිදු සුදු සීනි",
+      "price": 280,
+      "isWeighable": true
+    },
+    {
+      "id": "item_dhal",
+      "name": "මයිසූර් පරිප්පු",
+      "category": "essentials",
+      "image": "https://arrowheadmills.com/wp-content/uploads/2022/10/red-lentils-1-1024x684.jpg",
+      "desc": "උසස් තත්ත්වයේ පරිප්පු",
+      "price": 320,
+      "isWeighable": true
+    },
+    {
+      "id": "item_vegmix",
+      "name": "නැවුම් එළවළු පැක්",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1515589654513-3ce06f654b1f?q=80&w=400&auto=format&fit=crop",
+      "desc": "කැරට්, බෝංචි, ගෝවා මිශ්‍රිත",
+      "price": 450,
+      "isWeighable": false
+    },
+    {
+      "id": "item_milo",
+      "name": "මයිලෝ (Milo)",
+      "category": "frozen",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/115798--01--1644507260.jpeg",
+      "desc": "සිසිල් කළ පානය",
+      "price": 140,
+      "isWeighable": false
+    }
+  ]
+}
