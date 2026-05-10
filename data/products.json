@@ -1,23 +1,450 @@
 {
   "products": [
     {
-      "id": "item_sugar",
+      "id": "item_sugar_white",
       "name": "සුදු සීනි",
       "category": "essentials",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLgvoe_X6etXfuLERuCl6Nd5NEPUTW5yzYNw&s",
       "desc": "පිරිසිදු සුදු සීනි",
       "price": 220,
-      "isWeighable": true,
-      "oldPrice": 230
+      "oldPrice": 240,
+      "isWeighable": true
     },
     {
-      "id": "item_dhal",
-      "name": "පරිප්පු",
+      "id": "item_wheat_flour",
+      "name": "තිරිඟු පිටි",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6P47_RHicW_aEyDr-5jJxkd3IRTRVzb0Tqg&s",
+      "desc": "ප්‍රීමා තිරිඟු පිටි",
+      "price": 170,
+      "isWeighable": true
+    },
+    {
+      "id": "item_brown_sugar",
+      "name": "දුඹුරු සීනි",
+      "category": "essentials",
+      "image": "https://balijiwa.com/wp-content/uploads/2021/12/Brown-Sugar.jpg",
+      "desc": "පිරිසිදු දුඹුරු සීනි",
+      "price": 280,
+      "oldPrice": 310,
+      "isWeighable": true
+    },
+    {
+      "id": "item_string_hopper_flour",
+      "name": "ඉදි ආප්ප පිටි",
+      "category": "essentials",
+      "image": "https://www.hungrylankan.com/wp-content/uploads/2024/12/string-hoppers-blogg-6.jpg",
+      "desc": "රයිගම් ඉදි ආප්ප පිටි",
+      "price": 300,
+      "isWeighable": true
+    },
+    {
+      "id": "item_soya_meat",
+      "name": "සෝයා මීට්",
+      "category": "essentials",
+      "image": "https://bobs-redmill.transforms.svdcdn.com/production/blog/uploads/2021/07/Textured-soy-protein-2.jpg?w=767&h=350&auto=compress%2Cformat&fit=min&dm=1719331886&s=6177e56c46467beb760188c6d8dca76e",
+      "desc": "රයිගම් සෝයා මීට්",
+      "price": 600,
+      "isWeighable": true
+    },
+    {
+      "id": "item_chilli_powder",
+      "name": "මිරිස් කුඩු",
+      "category": "spices",
+      "image": "https://yanc.lk/files/productimages/photo/b944f9df-e6c6-4db7-9ab9-e807a780cbfc/large_Chilli%20Powder.jpg",
+      "desc": "පිරිසිදු මිරිස් කුඩු",
+      "price": 1000,
+      "isWeighable": true
+    },
+    {
+      "id": "item_chilli_flakes",
+      "name": "කෑලි මිරිස්",
+      "category": "spices",
+      "image": "https://www.spiceneasy.co.nz/images/524068/pid2631314/chili_flakes.jpeg",
+      "desc": "වියළි කෑලි මිරිස්",
+      "price": 900,
+      "isWeighable": true
+    },
+    {
+      "id": "item_curry_powder",
+      "name": "තුනපහ කුඩු",
+      "category": "spices",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4n-qzUP1-buplaDOrz63av60ti5SfNhDpAA&s",
+      "desc": "බැදපු තුනපහ කුඩු",
+      "price": 900,
+      "isWeighable": true
+    },
+    {
+      "id": "item_turmeric",
+      "name": "කහ කුඩු",
+      "category": "spices",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3JSvH9Sni3nCBMZtYfGED8Dnv_vOc17qTVg&s",
+      "desc": "පිරිසිදු කහ කුඩු",
+      "price": 2400,
+      "oldPrice": 2600,
+      "isWeighable": true
+    },
+    {
+      "id": "item_pepper",
+      "name": "ගම්මිරිස්",
+      "category": "spices",
+      "image": "https://cdn1.healthians.com/blog/wp-content/uploads/2026/02/Black-pepper-benefits.webp",
+      "desc": "ගම්මිරිස් ඇට",
+      "price": 2000,
+      "isWeighable": true
+    },
+    {
+      "id": "item_coriander",
+      "name": "කොත්තමල්ලි",
+      "category": "spices",
+      "image": "https://cdn.i-scmp.com/sites/default/files/d8/images/canvas/2025/07/08/4c5b8a67-41d5-4198-a254-51f4d001007d_ecb1c0c1.jpg",
+      "desc": "කොත්තමල්ලි ඇට",
+      "price": 600,
+      "isWeighable": true
+    },
+    {
+      "id": "item_cumin",
+      "name": "සූදුරු",
+      "category": "spices",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJLXZLHRgmcgQm8N-d-CozYk7AJ4ZKnywZbg&s",
+      "desc": "නැවුම් සූදුරු",
+      "price": 900,
+      "isWeighable": true
+    },
+    {
+      "id": "item_fennel",
+      "name": "මහදුරු",
+      "category": "spices",
+      "image": "https://lakpura.com/cdn/shop/collections/dfddd.jpg?v=1654576573",
+      "desc": "නැවුම් මහදුරු",
+      "price": 1600,
+      "isWeighable": true
+    },
+    {
+      "id": "item_fenugreek",
+      "name": "උලුහාල්",
+      "category": "spices",
+      "image": "https://smartlady.lk/wp-content/uploads/2021/09/LK94009335-06-E.jpg",
+      "desc": "පිරිසිදු උලුහාල්",
+      "price": 800,
+      "isWeighable": true
+    },
+    {
+      "id": "item_mustard",
+      "name": "අබ",
+      "category": "spices",
+      "image": "https://doa.gov.lk/wp-content/uploads/elementor/thumbs/6666-opscec66zppzaujflto9l13xd17y3cd5lfehy1dhnk.jpg",
+      "desc": "අබ ඇට",
+      "price": 600,
+      "isWeighable": true
+    },
+    {
+      "id": "item_potato",
+      "name": "රට අල",
+      "category": "vegetables",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNtl-X292A72ITzsED05vQuq709VTvgXD4BQ&s",
+      "desc": "නැවුම් අල",
+      "price": 160,
+      "isWeighable": true
+    },
+    {
+      "id": "item_onion",
+      "name": "බී ළූණු",
+      "category": "vegetables",
+      "image": "https://straitsmarket.com/wp-content/uploads/2021/11/40023472_6-fresho-onion-organically-grown.webp",
+      "desc": "නැවුම් බී ළූණු",
+      "price": 180,
+      "oldPrice": 220,
+      "isWeighable": true
+    },
+    {
+      "id": "item_garlic",
+      "name": "සුදු ළූණු",
+      "category": "vegetables",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/310129--01--1555692321.jpeg",
+      "desc": "උසස් තත්ත්වයේ සුදු ළූණු",
+      "price": 500,
+      "isWeighable": true
+    },
+    {
+      "id": "item_vegpack",
+      "name": "නැවුම් එළවළු පැක් (1kg)",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1515589654513-3ce06f654b1f?q=80&w=400&auto=format&fit=crop",
+      "desc": "කැරට්, බෝංචි, ගෝවා මිශ්‍රිත",
+      "price": 450,
+      "isWeighable": false
+    },
+    {
+      "id": "item_sprats",
+      "name": "හාල්මැස්සෝ",
+      "category": "driedfish",
+      "image": "https://mydailyshop.jp/image/cache/catalog/ib-759x800.jpg",
+      "desc": "පිරිසිදු හාල්මැස්සෝ",
+      "price": 1400,
+      "isWeighable": true
+    },
+    {
+      "id": "item_bala",
+      "name": "බල කරවල",
+      "category": "driedfish",
+      "image": "https://ceylolion.com/wp-content/uploads/2025/04/bala-karawala.jpg",
+      "desc": "උසස් තත්ත්වයේ බල",
+      "price": 1800,
+      "isWeighable": true
+    },
+    {
+      "id": "item_salmon_bolla",
+      "name": "සැමන් බෝල්ලා",
+      "category": "driedfish",
+      "image": "https://lakpura.com/cdn/shop/files/LS50005E16-01-E_49e688c6-ec82-4d86-b16e-ff63d1d778f6.jpg?v=1740852325&width=1445",
+      "desc": "සැමන් බෝල්ලා කරවල",
+      "price": 1200,
+      "isWeighable": true
+    },
+    {
+      "id": "item_hurulla",
+      "name": "හුරුල්ලා",
+      "category": "driedfish",
+      "image": "https://i.ebayimg.com/images/g/XNsAAOSwOhdi-59c/s-l400.jpg",
+      "desc": "හුරුල්ලා කරවල",
+      "price": 1400,
+      "isWeighable": true
+    },
+    {
+      "id": "item_sea_chicken",
+      "name": "මුහුදු කුකුළා",
+      "category": "driedfish",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mCkoX62RIipIvgCYIvEDSbH4VZ4pxXCWzg&s",
+      "desc": "මුහුදු කුකුළා කරවල",
+      "price": 1700,
+      "isWeighable": true
+    },
+    {
+      "id": "item_umbalakada",
+      "name": "උම්බලකඩ",
+      "category": "driedfish",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbszek-V0nKBofbnhuM_s-GB3pKNDMcjsk0Q&s",
+      "desc": "උම්බලකඩ කෑලි",
+      "price": 2800,
+      "isWeighable": true
+    },
+    {
+      "id": "item_dhal_mysore",
+      "name": "මයිසූර් පරිප්පු",
       "category": "essentials",
       "image": "https://arrowheadmills.com/wp-content/uploads/2022/10/red-lentils-1-1024x684.jpg",
       "desc": "උසස් තත්ත්වයේ පරිප්පු",
       "price": 320,
       "isWeighable": true
+    },
+    {
+      "id": "item_dhal_big",
+      "name": "ලොකු පරිප්පු",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFTKGc9wglsAnxnJhTEZ7NfPwuKueU7Wqskw&s",
+      "desc": "ලොකු පරිප්පු ඇට",
+      "price": 320,
+      "isWeighable": true
+    },
+    {
+      "id": "item_sago",
+      "name": "සව් ඇට",
+      "category": "essentials",
+      "image": "https://img.drz.lazcdn.com/static/lk/p/76a38e70330664c1b47e0b52e1138138.jpg_720x720q80.jpg",
+      "desc": "පිරිසිදු සව් ඇට",
+      "price": 600,
+      "isWeighable": true
+    },
+    {
+      "id": "item_noodles",
+      "name": "නූඩ්ලස්",
+      "category": "essentials",
+      "image": "https://www.colombo20.com/wp-content/uploads/2022/02/Noodles-e1660798156285.png",
+      "desc": "රසවත් නූඩ්ලස්",
+      "price": 300,
+      "isWeighable": true
+    },
+    {
+      "id": "item_papadum",
+      "name": "පපඩම්",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTvKucW7a8bO_tMpyebEKDO-r1_DX-Uk8Qw&s",
+      "desc": "පපඩම් පැකට්ටුව",
+      "price": 700,
+      "isWeighable": true
+    },
+    {
+      "id": "item_salt_crystal",
+      "name": "ලුණු කැට (1kg)",
+      "category": "essentials",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/114571--01--1555689813.jpeg",
+      "desc": "අයඩීන් මිශ්‍රිත",
+      "price": 150,
+      "isWeighable": false
+    },
+    {
+      "id": "item_salt_powder",
+      "name": "ලුණු කුඩු (1kg)",
+      "category": "essentials",
+      "image": "https://4.imimg.com/data4/VP/KM/MY-27173382/common-salt-powder-500x500.jpg",
+      "desc": "අයඩීන් මිශ්‍රිත",
+      "price": 150,
+      "isWeighable": false
+    },
+    {
+      "id": "item_salt_powder_small",
+      "name": "ලුණු කුඩු (500g)",
+      "category": "essentials",
+      "image": "https://4.imimg.com/data4/VP/KM/MY-27173382/common-salt-powder-500x500.jpg",
+      "desc": "අයඩීන් මිශ්‍රිත",
+      "price": 90,
+      "isWeighable": false
+    },
+    {
+      "id": "item_tea_loose",
+      "name": "තේ කොළ",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkTGwiPrhxAXkjXpn-ozlGRuU47Du2Y49CCg&s",
+      "desc": "කිරලා ගන්න තේ කොළ",
+      "price": 1600,
+      "isWeighable": true
+    },
+    {
+      "id": "item_tea_packet",
+      "name": "තේ කොළ (250g)",
+      "category": "essentials",
+      "image": "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?q=80&w=400&auto=format&fit=crop",
+      "desc": "නැවුම් කඳුකර තේ",
+      "price": 350,
+      "isWeighable": false
+    },
+    {
+      "id": "item_egg",
+      "name": "බිත්තර",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6O5tLTnP9gyRs0ihFalmmO1M9JXVOjE6W5A&s",
+      "desc": "නැවුම් බිත්තර",
+      "price": 30,
+      "isWeighable": false
+    },
+    {
+      "id": "item_bread",
+      "name": "පාන්",
+      "category": "bakery",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvSMx5azVyK1Av5jK0JMtBEuGkgtQUNHU0zg&s",
+      "desc": "නැවුම් පාන් ගෙඩිය",
+      "price": 75,
+      "isWeighable": false
+    },
+    {
+      "id": "item_mixer_bite",
+      "name": "මික්සර් බයිට්",
+      "category": "snacks",
+      "image": "https://i.pinimg.com/736x/5f/38/55/5f385525a3271d16f6ba19a28d1ea89c.jpg",
+      "desc": "රසවත් මික්සර්",
+      "price": 900,
+      "isWeighable": true
+    },
+    {
+      "id": "item_garlic_bite",
+      "name": "සුදුළුණු බයිට්",
+      "category": "snacks",
+      "image": "https://helloladies.lk/blog/wp-content/uploads/2021/05/muruk.jpg",
+      "desc": "රසවත් බයිට්",
+      "price": 900,
+      "isWeighable": true
+    },
+    {
+      "id": "item_peanuts",
+      "name": "බැදපු රටකජු",
+      "category": "snacks",
+      "image": "https://dhuniyasweets.lk/wp-content/uploads/2025/03/Fried-Peanut-1.png",
+      "desc": "රසවත් බයිට්",
+      "price": 1500,
+      "isWeighable": true
+    },
+    {
+      "id": "item_raisins",
+      "name": "වියළි මිදි",
+      "category": "snacks",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6lPtz4QGJOs3peIeSEIAAjQV1fpH1_5quo_EZyrEk9kGtNPHdRLqt7Sm8p8J4GcVZ4AZAIpTDhwAwIutEMaOy0Af3BqswMfdxuGbF75cfPF1DZD3z6bIJ6kfVsscow8nTChX8sIdv0GY/s1600/FB_IMG_1546155951286.jpg",
+      "desc": "වියළි මිදි",
+      "price": 1800,
+      "isWeighable": true
+    },
+    {
+      "id": "item_dates",
+      "name": "රට ඉඳි",
+      "category": "snacks",
+      "image": "https://i0.wp.com/romaniapunchikade.com/wp-content/uploads/2025/07/img_6834.jpeg",
+      "desc": "උසස් තත්ත්වයේ රට ඉඳි",
+      "price": 900,
+      "oldPrice": 1000,
+      "isWeighable": true
+    },
+    {
+      "id": "item_choco_biscuit",
+      "name": "චොකලට් බිස්කට්",
+      "category": "snacks",
+      "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=400&auto=format&fit=crop",
+      "desc": "ළමයින්ගේ ප්‍රියතම",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_yoghurt",
+      "name": "යෝගට්",
+      "category": "frozen",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSiYNzocK5y8vTOng8rJyYZYSIbQoyNaNppg&s",
+      "desc": "අඹේවෙල යෝගට්",
+      "price": 70,
+      "isWeighable": false
+    },
+    {
+      "id": "item_yoghurt_drink",
+      "name": "යෝගට් පානය",
+      "category": "frozen",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZ_EWEcLPcUOGBL0ATDZewAENWdCsLshCKw&s",
+      "desc": "අඹේවෙල යෝගට් පානය",
+      "price": 170,
+      "isWeighable": false
+    },
+    {
+      "id": "item_vanilla_milk_large",
+      "name": "වැනිලා කිරි පානය (ලොකු)",
+      "category": "frozen",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nEczzVrLYdY9O2gsNHgII1bhO_uZ0upsng&s",
+      "desc": "අඹේවෙල",
+      "price": 140,
+      "isWeighable": false
+    },
+    {
+      "id": "item_vanilla_milk_small",
+      "name": "වැනිලා කිරි පානය (පොඩි)",
+      "category": "frozen",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/2022/03/4792116602136-1.jpg",
+      "desc": "අඹේවෙල",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_choco_milk_large",
+      "name": "චොක්ලට් පානය (ලොකු)",
+      "category": "frozen",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREbGNHt6ZtbGDUjdVQvLLN1i7KDidvBGVAXQ&s",
+      "desc": "අඹේවෙල",
+      "price": 140,
+      "isWeighable": false
+    },
+    {
+      "id": "item_choco_milk_small",
+      "name": "චොක්ලට් පානය (පොඩි)",
+      "category": "frozen",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/2022/03/4792116602129-1.jpg",
+      "desc": "අඹේවෙල",
+      "price": 100,
+      "isWeighable": false
     },
     {
       "id": "item_milo",
@@ -29,32 +456,41 @@
       "isWeighable": false
     },
     {
-      "isWeighable": false,
-      "id": "item_bread",
-      "name": "පාන් ",
-      "category": "bakery",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvSMx5azVyK1Av5jK0JMtBEuGkgtQUNHU0zg&s",
-      "price": 75,
-      "desc": "දවසේ පාන් "
+      "id": "item_laundry_soap",
+      "name": "රෙදි සෝදන සබන්",
+      "category": "cleaning",
+      "image": "https://images.unsplash.com/photo-1606168094336-48f58be7203d?q=80&w=400&auto=format&fit=crop",
+      "desc": "කැට 2ක පැකට්ටුව",
+      "price": 150,
+      "isWeighable": false
     },
     {
-      "isWeighable": true,
-      "id": "item_bread flour",
-      "name": "පාන් පිටි ",
-      "category": "essentials",
-      "image": "https://adaderanaenglish.s3.amazonaws.com/1739788292-flour-6.jpg",
-      "desc": "ප්‍රීමා පාන් පිටි ",
-      "price": 170
+      "id": "item_washing_powder",
+      "name": "සේදුම් කුඩු (1kg)",
+      "category": "cleaning",
+      "image": "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=400&auto=format&fit=crop",
+      "desc": "පැල්ලම් ඉවත් කිරීමට",
+      "price": 320,
+      "oldPrice": 350,
+      "isWeighable": false
     },
     {
-      "isWeighable": true,
-      "id": "item_brown sugar",
-      "name": "දුබුරු සීනි ",
-      "category": "essentials",
-      "image": "https://balijiwa.com/wp-content/uploads/2021/12/Brown-Sugar.jpg",
-      "desc": "පිරිසිදු දුබුරු සීනි ",
-      "price": 260,
-      "oldPrice": 270
+      "id": "item_exercise_book",
+      "name": "අභ්‍යාස පොත් (CR 120)",
+      "category": "books",
+      "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=400&auto=format&fit=crop",
+      "desc": "උසස් තත්ත්වයේ කඩදාසි",
+      "price": 200,
+      "isWeighable": false
+    },
+    {
+      "id": "item_newspaper",
+      "name": "පත්තර",
+      "category": "books",
+      "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=400",
+      "desc": "දවසේ පුවත්පත්",
+      "price": 300,
+      "isWeighable": false
     }
   ]
 }
