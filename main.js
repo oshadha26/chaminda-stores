@@ -41,6 +41,7 @@ if(checkoutClose) checkoutClose.addEventListener('click', () => checkoutModal.cl
 /*=============== ABOUT US READ MORE ===============*/
 const readMoreBtn = document.getElementById('read-more-btn');
 const aboutMoreContent = document.getElementById('about-more');
+
 if(readMoreBtn && aboutMoreContent) {
     readMoreBtn.addEventListener('click', () => {
         if(aboutMoreContent.style.display === 'none') {
@@ -53,10 +54,12 @@ if(readMoreBtn && aboutMoreContent) {
     });
 }
 
+/*=============== DELIVERY AREA TOGGLE ===============*/
 window.toggleAreaSelection = function() {
     const deliveryType = document.getElementById('delivery-type').value;
     const areaSelection = document.getElementById('area-selection');
     const areaInput = document.getElementById('delivery-area');
+    
     if(deliveryType === 'Delivery') {
         areaSelection.style.display = 'block';
         areaInput.required = true;
@@ -81,21 +84,22 @@ window.updateCardPrice = function(selectElement) {
     
     let basePrice = parseFloat(addToCartBtn.getAttribute('data-baseprice'));
     if (!basePrice) basePrice = parseFloat(addToCartBtn.getAttribute('data-price')); 
-    
+
     const multiplier = parseFloat(selectElement.value);
     const newPrice = basePrice * multiplier;
+    
     priceElement.textContent = `රු. ${newPrice.toFixed(2)}`;
 };
 
-// Event Delegation (Dynamically load වන බොත්තම් සඳහා)
 document.addEventListener('click', function(e) {
     const addBtn = e.target.closest('.add-to-cart');
     if(addBtn) {
         const card = addBtn.closest('.product-card') || addBtn.closest('.package__card');
         const baseId = addBtn.getAttribute('data-id');
         let name = addBtn.getAttribute('data-name');
+        
         let basePrice = parseFloat(addBtn.getAttribute('data-baseprice'));
-        if (!basePrice) basePrice = parseFloat(addBtn.getAttribute('data-price'));
+        if(!basePrice) basePrice = parseFloat(addBtn.getAttribute('data-price'));
         
         let price = basePrice;
         let id = baseId;
@@ -104,6 +108,7 @@ document.addEventListener('click', function(e) {
         if(weightSelector) {
             const multiplier = parseFloat(weightSelector.value);
             const weightLabel = weightSelector.options[weightSelector.selectedIndex].getAttribute('data-label');
+            
             price = basePrice * multiplier; 
             name = `${name} (${weightLabel})`; 
             id = `${baseId}_${weightLabel}`; 
@@ -123,6 +128,7 @@ document.addEventListener('click', function(e) {
 
 function updateCart() {
     const totalItemsCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+    
     if(cartCount) cartCount.textContent = totalItemsCount;
     if(cartTotalItems) cartTotalItems.textContent = `${totalItemsCount} items`;
     
@@ -158,6 +164,7 @@ function updateCart() {
 
     const deliveryOption = document.getElementById('delivery-option');
     const deliveryTypeSelect = document.getElementById('delivery-type');
+    
     if(deliveryOption && deliveryTypeSelect) {
         if(total >= 3000) {
             deliveryOption.disabled = false;
@@ -167,28 +174,28 @@ function updateCart() {
             deliveryOption.textContent = "නිවසටම ගෙනවිත් දෙන්න (Delivery) - රු. 3000ට වැඩි ඇණවුම් සඳහා පමණි";
             if(deliveryTypeSelect.value === 'Delivery') {
                 deliveryTypeSelect.value = 'Pickup';
-                window.toggleAreaSelection();
+                if(window.toggleAreaSelection) window.toggleAreaSelection();
             }
         }
     }
 }
 
-// Plus, Minus, Remove Logic in Cart
 document.addEventListener('click', function(e) {
-    const btn = e.target.closest('span') || e.target.closest('i');
-    if(!btn || !btn.hasAttribute('data-index')) return;
-    const index = btn.getAttribute('data-index');
+    const button = e.target.closest('span') || e.target.closest('i');
+    if(!button || !button.hasAttribute('data-index')) return;
 
-    if(btn.classList.contains('plus')) {
+    const index = button.getAttribute('data-index');
+
+    if(button.classList.contains('plus')) {
         cartItems[index].quantity += 1;
         updateCart();
     }
-    if(btn.classList.contains('minus')) {
+    if(button.classList.contains('minus')) {
         cartItems[index].quantity -= 1;
         if(cartItems[index].quantity <= 0) cartItems.splice(index, 1);
         updateCart();
     }
-    if(btn.classList.contains('remove')) {
+    if(button.classList.contains('remove')) {
         cartItems.splice(index, 1);
         updateCart();
     }
@@ -197,6 +204,7 @@ document.addEventListener('click', function(e) {
 /*=============== WHATSAPP CHECKOUT ===============*/
 document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
     e.preventDefault();
+    
     const name = document.getElementById('cust-name').value;
     const address = document.getElementById('cust-address').value;
     const deliveryType = document.getElementById('delivery-type').value;
@@ -204,29 +212,47 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
     const deliveryAreaElement = document.getElementById('delivery-area');
     const deliveryArea = deliveryAreaElement ? deliveryAreaElement.value : '';
     
-    let message = `🛒 *නව ඇණවුමක් - Chaminda Store's*\n\n👤 *නම:* ${name}\n🏠 *ලිපිනය:* ${address}\n🚚 *ක්‍රමය:* ${deliveryType === 'Delivery' ? 'නිවසට ගෙනවිත් දීම' : 'කඩෙන් ලබා ගැනීම'}\n`;
-    if(deliveryType === 'Delivery' && deliveryArea) message += `📍 *ප්‍රදේශය:* ${deliveryArea}\n`;
-    message += `⏱️ *අවශ්‍ය කාලය:* ${deliveryTime}\n\n📦 *භාණ්ඩ ලැයිස්තුව:*\n`;
+    let message = `🛒 *නව ඇණවුමක් - Chaminda Store's*\n\n`;
+    message += `👤 *නම:* ${name}\n`;
+    message += `🏠 *ලිපිනය:* ${address}\n`;
+    message += `🚚 *ක්‍රමය:* ${deliveryType === 'Delivery' ? 'නිවසට ගෙනවිත් දීම' : 'කඩෙන් ලබා ගැනීම'}\n`;
     
-    cartItems.forEach(item => { message += `▪️ ${item.name} - රු. ${item.price} x ${item.quantity}\n`; });
+    if(deliveryType === 'Delivery' && deliveryArea) {
+        message += `📍 *ප්‍රදේශය:* ${deliveryArea}\n`;
+    }
+    
+    message += `⏱️ *අවශ්‍ය කාලය:* ${deliveryTime}\n\n`;
+    message += `📦 *භාණ්ඩ ලැයිස්තුව:*\n`;
+    
+    cartItems.forEach(item => {
+        message += `▪️ ${item.name} - රු. ${item.price} x ${item.quantity}\n`;
+    });
+    
     const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     message += `\n💰 *මුළු මුදල:* රු. ${total.toFixed(2)}\n`;
     
-    const whatsappURL = `https://wa.me/94781608352?text=${encodeURIComponent(message)}`;
+    const whatsappNumber = "94781608352"; 
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
     window.open(whatsappURL, '_blank');
     
-    cartItems = []; updateCart();
+    cartItems = [];
+    updateCart();
     document.getElementById('whatsapp-form').reset();
-    window.toggleAreaSelection(); 
+    if(window.toggleAreaSelection) window.toggleAreaSelection();
     document.getElementById('checkout-modal').classList.remove('show-checkout');
 });
 
 
-/*=============== FETCH DATA & RENDER (JSON) ===============*/
+/*=============== FETCH DATA & RENDER (JSON) WITH CACHE BUSTING ===============*/
 async function loadData() {
     try {
+        // ?v=... කෑල්ලෙන් හැමවෙලේම පරණ Cache එක මඟහරිනවා!
+        const cacheBuster = '?v=' + new Date().getTime();
+        
         // Fetch Products
-        const prodRes = await fetch('data/products.json');
+        const prodRes = await fetch('data/products.json' + cacheBuster);
         const prodData = await prodRes.json();
         const productList = document.getElementById('product-list');
         const noResultsMsg = document.getElementById('no-results').outerHTML;
@@ -260,7 +286,7 @@ async function loadData() {
         productList.innerHTML = productsHTML + noResultsMsg;
 
         // Fetch Packages
-        const pkgRes = await fetch('data/packages.json');
+        const pkgRes = await fetch('data/packages.json' + cacheBuster);
         const pkgData = await pkgRes.json();
         const pkgList = document.getElementById('packages-list');
         
@@ -283,22 +309,22 @@ async function loadData() {
         });
         pkgList.innerHTML = pkgsHTML;
 
-        // Initialize Swipers AFTER DOM is populated
+        // Initialize Swipers
         new Swiper(".home-swiper", { spaceBetween: 30, loop: true, autoplay: { delay: 4000, disableOnInteraction: false }, pagination: { el: ".swiper-pagination", clickable: true } });
         new Swiper(".packages-swiper", { spaceBetween: 30, loop: true, slidesPerView: 1, breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 2 } }, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }, pagination: { el: ".swiper-pagination", clickable: true } });
 
+        // දත්ත Load වුණාට පස්සෙම තමයි Filter එක වැඩ කරන්න හදලා තියෙන්නේ
         setupSearchAndFilter();
 
     } catch (e) {
         console.error("Error loading data:", e);
-        // Fallback for Home Swiper if fetch fails (e.g. running directly from file://)
-        new Swiper(".home-swiper", { spaceBetween: 30, loop: true, autoplay: { delay: 4000, disableOnInteraction: false }, pagination: { el: ".swiper-pagination", clickable: true } });
     }
 }
 
-// Data Fetching ආරම්භ කිරීම
+// දත්ත Fetch කිරීම ආරම්භ කිරීම
 loadData();
 
+/*=============== SEARCH & CATEGORY FILTER LOGIC ===============*/
 function setupSearchAndFilter() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
@@ -307,13 +333,16 @@ function setupSearchAndFilter() {
     let currentCategory = 'all';
 
     function filterProducts() {
-        const searchValue = searchBox.value.toLowerCase();
+        const searchValue = searchBox ? searchBox.value.toLowerCase() : '';
         let visibleCount = 0;
+
         productCards.forEach(card => {
             const title = card.querySelector('.product-title').innerText.toLowerCase();
             const category = card.getAttribute('data-category');
+
             const matchesSearch = title.includes(searchValue);
             const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+
             if (matchesSearch && matchesCategory) {
                 card.style.display = 'flex';
                 visibleCount++;
@@ -321,11 +350,19 @@ function setupSearchAndFilter() {
                 card.style.display = 'none';
             }
         });
-        if (visibleCount === 0) noResultsMsg.style.display = 'block';
-        else noResultsMsg.style.display = 'none';
+
+        if (noResultsMsg) {
+            if (visibleCount === 0) {
+                noResultsMsg.style.display = 'block';
+            } else {
+                noResultsMsg.style.display = 'none';
+            }
+        }
     }
 
-    if(searchBox) searchBox.addEventListener('input', filterProducts);
+    if (searchBox) {
+        searchBox.addEventListener('input', filterProducts);
+    }
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
