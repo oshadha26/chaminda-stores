@@ -35,6 +35,15 @@
       "desc": "සිසිල් කළ පානය",
       "price": 140,
       "isWeighable": false
+    },
+    {
+      "isWeighable": false,
+      "id": "item_bread",
+      "name": "පාන් ",
+      "category": "bakery",
+      "image": "https://www.foodandwine.com/recipes/perfect-sandwich-bread",
+      "price": 75,
+      "desc": "දවසේ පාන් "
     }
   ]
 }
