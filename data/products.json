@@ -6,8 +6,9 @@
       "category": "essentials",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLgvoe_X6etXfuLERuCl6Nd5NEPUTW5yzYNw&s",
       "desc": "පිරිසිදු සුදු සීනි",
-      "price": 280,
-      "isWeighable": true
+      "price": 220,
+      "isWeighable": true,
+      "oldPrice": 230
     },
     {
       "id": "item_dhal",
@@ -53,6 +54,16 @@
       "image": "https://adaderanaenglish.s3.amazonaws.com/1739788292-flour-6.jpg",
       "desc": "ප්‍රීමා පාන් පිටි ",
       "price": 170
+    },
+    {
+      "isWeighable": true,
+      "id": "item_brown sugar",
+      "name": "දුබුරු සීනි ",
+      "category": "essentials",
+      "image": "https://balijiwa.com/wp-content/uploads/2021/12/Brown-Sugar.jpg",
+      "desc": "පිරිසිදු දුබුරු සීනි ",
+      "price": 260,
+      "oldPrice": 270
     }
   ]
 }
