@@ -52,7 +52,7 @@ if(checkoutBtn) checkoutBtn.addEventListener('click', () => {
     if(cartItems.length > 0) {
         cart.classList.remove('show-cart');
         
-        // AUTO FILL LOGIC (පාරිභෝගිකයා ලොග් වී ඇත්නම් ඔටෝ ෆිල් කිරීම)
+        // AUTO FILL LOGIC 
         if(loggedInUser) {
             document.getElementById('cust-name').value = loggedInUser.name || "";
             document.getElementById('cust-address').value = loggedInUser.address || "";
@@ -158,7 +158,6 @@ document.addEventListener('click', function(e) {
         if(existingItem) {
             existingItem.quantity += 1;
         } else {
-            // Cart එකට දාද්දි oldPrice එකත් සේව් කරගන්නවා ඉතිරිය හදන්න
             cartItems.push({ id, name, price, oldPrice, quantity: 1 });
         }
         
@@ -249,7 +248,6 @@ document.getElementById('whatsapp-form').addEventListener('submit', async functi
     const deliveryAreaElement = document.getElementById('delivery-area');
     const deliveryArea = deliveryAreaElement ? deliveryAreaElement.value : '';
     
-    // මේ ඇණවුමට අදාළ මුදල සහ ඉතිරිය සෙවීම
     let totalPaid = 0;
     let totalOriginal = 0;
     
@@ -266,7 +264,6 @@ document.getElementById('whatsapp-form').addEventListener('submit', async functi
     let savedAmountForOrder = totalOriginal - totalPaid;
     message += `\n💰 *මුළු මුදල:* රු. ${totalPaid.toFixed(2)}\n`;
     
-    // ලොග් වී ඇත්නම් Firebase එකේ ගණන් අප්ඩේට් කිරීම
     if(loggedInUser) {
         const newTotalPaid = (loggedInUser.totalPaid || 0) + totalPaid;
         const newTotalSaved = (loggedInUser.totalSaved || 0) + savedAmountForOrder;
@@ -279,7 +276,6 @@ document.getElementById('whatsapp-form').addEventListener('submit', async functi
             loggedInUser.totalPaid = newTotalPaid;
             loggedInUser.totalSaved = newTotalSaved;
             
-            // Dashboard එක ඇරලා තියෙනවා නම් Chart එකත් අප්ඩේට් කරනවා
             if(document.getElementById('dashboard-section').style.display !== 'none') {
                 initChart(); 
             }
@@ -376,7 +372,6 @@ async function loadData() {
 
     } catch (e) {
         console.error("Error loading data:", e);
-        new Swiper(".home-swiper", { spaceBetween: 30, loop: true, autoplay: { delay: 4000, disableOnInteraction: false }, pagination: { el: ".swiper-pagination", clickable: true } });
     }
 }
 
@@ -434,7 +429,17 @@ const tabLogin = document.getElementById('tab-login'),
       formRegister = document.getElementById('form-register'),
       authTitle = document.getElementById('auth-title');
 
-if(userBtn) userBtn.addEventListener('click', () => authModal.classList.add('show-checkout'));
+// අලුත් කේතය: ලොග් වෙලා නම් Dashboard එකට යන්න, නැත්නම් Modal එක අරින්න
+if(userBtn) {
+    userBtn.addEventListener('click', () => {
+        if(loggedInUser) {
+            document.getElementById('dashboard-section').scrollIntoView({ behavior: 'smooth' });
+        } else {
+            authModal.classList.add('show-checkout');
+        }
+    });
+}
+
 if(authClose) authClose.addEventListener('click', () => authModal.classList.remove('show-checkout'));
 
 tabLogin.addEventListener('click', () => {
@@ -488,11 +493,9 @@ document.getElementById('dummy-register-btn').addEventListener('click', async ()
 
     try {
         btn.innerText = "ලියාපදිංචි වෙමින්...";
-        // 1. ගිණුම සෑදීම
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
 
-        // 2. අදාළ විස්තර දත්ත සමුදායේ සේව් කිරීම (ආරම්භක ඉතිරිය 0 යි)
         await setDoc(doc(db, "users", user.uid), {
             name: name,
             phone: phone,
@@ -515,19 +518,32 @@ document.getElementById('dummy-register-btn').addEventListener('click', async ()
 
 // Firebase - ලොග් වී සිටිනවාදැයි නිරීක්ෂණය කිරීම (Observer)
 onAuthStateChanged(auth, async (user) => {
+    const userIcon = document.querySelector('#user-btn i');
+    
     if (user) {
-        // ලොග් වී ඇත්නම්, Database එකෙන් විස්තර ලබාගැනීම
         const docRef = doc(db, "users", user.uid);
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
             loggedInUser = { uid: user.uid, ...docSnap.data() };
+            
+            // ලොග් වුණාම User Icon එක කොළ පාට Fill එකක් කිරීම
+            if(userIcon) {
+                userIcon.className = 'bx bxs-user-circle';
+                userIcon.style.color = 'var(--first-color)';
+            }
+            
             showDashboard();
         }
     } else {
-        // ලොග් වී නැත්නම්
         loggedInUser = null;
         document.getElementById('dashboard-section').style.display = 'none';
+        
+        // ලොග් අවුට් වුණාම User Icon එක ආයෙත් පරණ විදිහටම සුදු පාට කිරීම
+        if(userIcon) {
+            userIcon.className = 'bx bx-user';
+            userIcon.style.color = '#fff';
+        }
     }
 });
 
@@ -566,11 +582,9 @@ function initChart() {
         savingsChartInstance.destroy();
     }
     
-    // Firebase එකෙන් සැබෑ දත්ත ගැනීම
     let savedAmount = loggedInUser.totalSaved || 0; 
     let paidAmount = loggedInUser.totalPaid || 0; 
     
-    // අලුත් කෙනෙක් නම් (මිලදී ගැනීම් නැතිනම්) Chart එක හිස්ව පෙන්වීමට කුඩා අගයක් දීම
     let chartPaid = paidAmount === 0 && savedAmount === 0 ? 1 : paidAmount;
     
     document.getElementById('chart-center-text').style.opacity = '0';
