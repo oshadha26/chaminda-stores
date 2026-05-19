@@ -16,7 +16,6 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-// ලොග් වී සිටින පාරිභෝගිකයාගේ දත්ත මෙහි තබා ගනී
 let loggedInUser = null;
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
@@ -52,7 +51,6 @@ if(checkoutBtn) checkoutBtn.addEventListener('click', () => {
     if(cartItems.length > 0) {
         cart.classList.remove('show-cart');
         
-        // AUTO FILL LOGIC 
         if(loggedInUser) {
             document.getElementById('cust-name').value = loggedInUser.name || "";
             document.getElementById('cust-address').value = loggedInUser.address || "";
@@ -293,40 +291,89 @@ document.getElementById('whatsapp-form').addEventListener('submit', async functi
     document.getElementById('checkout-modal').classList.remove('show-checkout');
 });
 
-/*=============== FETCH DATA & RENDER (JSON) ===============*/
+/*=============== STAGGERED ANIMATION GENERATOR ENGINE ===============*/
+function applyStaggeredAnimation(containerSelector) {
+    const cards = document.querySelectorAll(`${containerSelector} .product-card`);
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('animate-show');
+        }, index * 80); 
+    });
+}
+
+/*=============== FETCH DATA & RENDER ===============*/
 async function loadData() {
     try {
         const prodRes = await fetch('data/products.json');
         const prodData = await prodRes.json();
+        
+        const hotDealsContainer = document.getElementById('discount-suggestions-list');
+        let hotDealsProducts = prodData.products
+            .filter(p => p.oldPrice && p.oldPrice > p.price)
+            .sort((a, b) => (b.oldPrice - b.price) - (a.oldPrice - a.price))
+            .slice(0, 12); 
+
+        const generateWeightHTML = (isWeighable) => {
+            return isWeighable ? `
+                <select class="weight-selector" onchange="window.updateCardPrice(this)">
+                    <option value="1" data-label="1kg">1kg</option>
+                    <option value="0.05" data-label="50g">50g</option>
+                    <option value="0.1" data-label="100g">100g</option>
+                    <option value="0.25" data-label="250g">250g</option>
+                    <option value="0.5" data-label="500g">500g</option>
+                    <option value="2" data-label="2kg">2kg</option>
+                    <option value="3" data-label="3kg">3kg</option>
+                    <option value="5" data-label="5kg">5kg</option>
+                </select>` : '';
+        };
+
+        if(hotDealsProducts.length > 0) {
+            document.getElementById('hot-deals-section').style.display = 'block';
+            let hotDealsHTML = '';
+            hotDealsProducts.forEach(p => {
+                let discountPercentage = Math.round(((p.oldPrice - p.price) / p.oldPrice) * 100);
+                let weightHTML = generateWeightHTML(p.isWeighable);
+                
+                hotDealsHTML += `
+                <div class="glass-card product-card" data-category="${p.category}">
+                    <div class="discount-tag">-${discountPercentage}%</div>
+                    <img src="${p.image}" alt="${p.name}" class="product-img">
+                    <h3 class="product-title">${p.name}</h3> 
+                    <p class="product-desc">${p.desc}</p>
+                    ${weightHTML}
+                    <div class="product-bottom">
+                        <span class="product-price">රු. ${p.price.toFixed(2)} <small style="text-decoration: line-through; color: #94a3b8; font-size: 0.75rem; margin-left: 3px;">රු. ${p.oldPrice.toFixed(2)}</small></span>
+                        <button class="glass-btn-small add-to-cart" data-id="${p.id}" data-name="${p.name}" data-baseprice="${p.price}" data-oldprice="${p.oldPrice}">
+                            <i class='bx bx-cart-add'></i>
+                        </button>
+                    </div>
+                </div>`;
+            });
+            hotDealsContainer.innerHTML = hotDealsHTML;
+            applyStaggeredAnimation('#discount-suggestions-list');
+        } else {
+            document.getElementById('hot-deals-section').style.display = 'none';
+        }
+
         const productList = document.getElementById('product-list');
         const noResultsMsg = document.getElementById('no-results').outerHTML;
         
         let productsHTML = '';
         prodData.products.forEach(p => {
-            let weightHTML = '';
-            if(p.isWeighable) {
-                weightHTML = `
-                <select class="weight-selector" onchange="window.updateCardPrice(this)">
-                    <option value="1" data-label="1kg">1kg</option>
-                    <option value="0.5" data-label="500g">500g</option>
-                    <option value="0.25" data-label="250g">250g</option>
-                    <option value="2" data-label="2kg">2kg</option>
-                </select>`;
-            }
-
+            let weightHTML = generateWeightHTML(p.isWeighable);
             let priceDisplay = `රු. ${p.price.toFixed(2)}`;
             let discountBadge = '';
             let oldPriceData = '';
 
             if (p.oldPrice && p.oldPrice > p.price) {
                 let discountPercentage = Math.round(((p.oldPrice - p.price) / p.oldPrice) * 100);
-                priceDisplay = `රු. ${p.price.toFixed(2)} <small style="text-decoration: line-through; color: #94a3b8; font-size: 0.8rem; margin-left: 5px;">රු. ${p.oldPrice.toFixed(2)}</small>`;
-                discountBadge = `<div class="discount-tag" style="background-color: #f97316; left: 10px; right: auto;">-${discountPercentage}%</div>`;
+                priceDisplay = `රු. ${p.price.toFixed(2)} <small style="text-decoration: line-through; color: #94a3b8; font-size: 0.75rem; margin-left: 3px;">රු. ${p.oldPrice.toFixed(2)}</small>`;
+                discountBadge = `<div class="discount-tag">-${discountPercentage}%</div>`;
                 oldPriceData = `data-oldprice="${p.oldPrice}"`;
             }
 
             productsHTML += `
-            <div class="glass-card product-card" data-category="${p.category}" style="position: relative;">
+            <div class="glass-card product-card" data-category="${p.category}">
                 ${discountBadge}
                 <img src="${p.image}" alt="${p.name}" class="product-img">
                 <h3 class="product-title">${p.name}</h3> 
@@ -341,6 +388,7 @@ async function loadData() {
             </div>`;
         });
         productList.innerHTML = productsHTML + noResultsMsg;
+        applyStaggeredAnimation('#product-list');
 
         const pkgRes = await fetch('data/packages.json');
         const pkgData = await pkgRes.json();
@@ -377,21 +425,54 @@ async function loadData() {
 
 loadData();
 
+/*=============== SMART SEARCH & FILTER (FUZZY SEARCH) ===============*/
 function setupSearchAndFilter() {
     const filterButtons = document.querySelectorAll('.filter-btn');
+    // දැන් සර්ච් වෙන්නේ ලැයිස්තු දෙකේම (Hot Deals සහ All Products)
     const productCards = document.querySelectorAll('.product-card');
     const searchBox = document.getElementById('search-box');
     const noResultsMsg = document.getElementById('no-results');
     let currentCategory = 'all';
 
+    // සිංහල අකුරු වල පිල්ලම් සහ සමාන ශබ්ද ඇති අකුරු එකම හැඩයකට ගෙන ඒම සඳහා (Smart Search)
+    function normalizeSinhala(text) {
+        if(!text) return "";
+        return text.toLowerCase()
+            .replace(/[\u200B-\u200D\uFEFF]/g, '') // හිස් අකුරු (Zero-width characters) ඉවත් කිරීම
+            .replace(/ී/g, 'ි') // දිගු 'ඊ' -> කෙටි 'ඉ'
+            .replace(/ූ/g, 'ු') // දිගු 'ඌ' -> කෙටි 'උ'
+            .replace(/ෝ/g, 'ො') // දිගු 'ඕ' -> කෙටි 'ඔ'
+            .replace(/ේ/g, 'ෙ') // දිගු 'ඒ' -> කෙටි 'එ'
+            .replace(/ෲ/g, 'ෘ') 
+            .replace(/ෑ/g, 'ැ') 
+            .replace(/ණ/g, 'න') // ණ සහ න සමාන කිරීම
+            .replace(/ළ/g, 'ල') // ළ සහ ල සමාන කිරීම
+            .replace(/ෂ/g, 'ස') // ෂ සහ ස සමාන කිරීම
+            .replace(/ශ/g, 'ස') // ශ සහ ස සමාන කිරීම
+            .trim();
+    }
+
     function filterProducts() {
-        const searchValue = searchBox.value.toLowerCase();
+        const rawSearchValue = searchBox.value;
+        // ඇතුලත් කල වචන එකින් එක වෙන් කර ගැනීම (Spaces වලින්)
+        const searchTerms = normalizeSinhala(rawSearchValue).split(' ').filter(term => term !== '');
         let visibleCount = 0;
+        
         productCards.forEach(card => {
-            const title = card.querySelector('.product-title').innerText.toLowerCase();
+            const title = card.querySelector('.product-title').innerText;
+            const desc = card.querySelector('.product-desc').innerText;
             const category = card.getAttribute('data-category');
-            const matchesSearch = title.includes(searchValue);
+            
+            const normalizedTitle = normalizeSinhala(title);
+            const normalizedDesc = normalizeSinhala(desc);
+            
+            // ඇතුළත් කළ සෑම වචනයක්ම නමේ හෝ විස්තරයේ තියෙනවාදැයි පරීක්ෂා කිරීම (වචන පිළිවෙල අදාල නොවේ)
+            const matchesSearch = searchTerms.length === 0 || searchTerms.every(term => 
+                normalizedTitle.includes(term) || normalizedDesc.includes(term)
+            );
+            
             const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+            
             if (matchesSearch && matchesCategory) {
                 card.style.display = 'flex';
                 visibleCount++;
@@ -399,6 +480,7 @@ function setupSearchAndFilter() {
                 card.style.display = 'none';
             }
         });
+        
         if (visibleCount === 0) noResultsMsg.style.display = 'block';
         else noResultsMsg.style.display = 'none';
     }
@@ -415,9 +497,6 @@ function setupSearchAndFilter() {
     });
 }
 
-/*=============== AOS ANIMATION INIT ===============*/
-AOS.init({ duration: 800, offset: 100, once: true });
-
 /*=============== FIREBASE AUTH & DASHBOARD LOGIC ===============*/
 const authModal = document.getElementById('auth-modal'),
       userBtn = document.getElementById('user-btn'),
@@ -429,7 +508,6 @@ const tabLogin = document.getElementById('tab-login'),
       formRegister = document.getElementById('form-register'),
       authTitle = document.getElementById('auth-title');
 
-// අලුත් කේතය: ලොග් වෙලා නම් Dashboard එකට යන්න, නැත්නම් Modal එක අරින්න
 if(userBtn) {
     userBtn.addEventListener('click', () => {
         if(loggedInUser) {
@@ -457,7 +535,6 @@ tabRegister.addEventListener('click', () => {
     authTitle.innerText = "නව ගිණුමක් සාදන්න";
 });
 
-// Firebase - ලොගින් වීම
 document.getElementById('dummy-login-btn').addEventListener('click', async () => {
     const email = document.querySelector('#form-login input[type="email"]').value;
     const password = document.querySelector('#form-login input[type="password"]').value;
@@ -477,7 +554,6 @@ document.getElementById('dummy-login-btn').addEventListener('click', async () =>
     }
 });
 
-// Firebase - අලුතින් ලියාපදිංචි වීම
 document.getElementById('dummy-register-btn').addEventListener('click', async () => {
     const name = document.getElementById('reg-name').value;
     const phone = document.getElementById('reg-phone').value;
@@ -516,7 +592,6 @@ document.getElementById('dummy-register-btn').addEventListener('click', async ()
     }
 });
 
-// Firebase - ලොග් වී සිටිනවාදැයි නිරීක්ෂණය කිරීම (Observer)
 onAuthStateChanged(auth, async (user) => {
     const userIcon = document.querySelector('#user-btn i');
     
@@ -526,20 +601,15 @@ onAuthStateChanged(auth, async (user) => {
 
         if (docSnap.exists()) {
             loggedInUser = { uid: user.uid, ...docSnap.data() };
-            
-            // ලොග් වුණාම User Icon එක කොළ පාට Fill එකක් කිරීම
             if(userIcon) {
                 userIcon.className = 'bx bxs-user-circle';
                 userIcon.style.color = 'var(--first-color)';
             }
-            
             showDashboard();
         }
     } else {
         loggedInUser = null;
         document.getElementById('dashboard-section').style.display = 'none';
-        
-        // ලොග් අවුට් වුණාම User Icon එක ආයෙත් පරණ විදිහටම සුදු පාට කිරීම
         if(userIcon) {
             userIcon.className = 'bx bx-user';
             userIcon.style.color = '#fff';
@@ -547,7 +617,6 @@ onAuthStateChanged(auth, async (user) => {
     }
 });
 
-// Dashboard පෙන්වීම
 function showDashboard() {
     const dashSection = document.getElementById('dashboard-section');
     dashSection.style.display = 'block';
@@ -557,11 +626,9 @@ function showDashboard() {
     document.getElementById('dash-area').innerText = loggedInUser.area || "ප්‍රදේශය සපයා නැත";
     document.getElementById('dash-phone').innerText = loggedInUser.phone || "දුරකථනය සපයා නැත";
     
-    dashSection.scrollIntoView({ behavior: 'smooth' });
     initChart();
 }
 
-// Firebase - Logout
 document.getElementById('logout-btn').addEventListener('click', async () => {
     try {
         await signOut(auth);
@@ -571,9 +638,8 @@ document.getElementById('logout-btn').addEventListener('click', async () => {
     }
 });
 
-/*=============== CHART.JS (DOUGHNUT CHART WITH REAL DATA) ===============*/
+/*=============== CHART.JS ===============*/
 let savingsChartInstance = null;
-
 function initChart() {
     const ctx = document.getElementById('savingsChart');
     if(!ctx) return;
@@ -584,7 +650,6 @@ function initChart() {
     
     let savedAmount = loggedInUser.totalSaved || 0; 
     let paidAmount = loggedInUser.totalPaid || 0; 
-    
     let chartPaid = paidAmount === 0 && savedAmount === 0 ? 1 : paidAmount;
     
     document.getElementById('chart-center-text').style.opacity = '0';
