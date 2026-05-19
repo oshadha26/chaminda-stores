@@ -138,34 +138,7 @@
             </div>
         </section>
 
-        <section class="section container" id="dashboard-section" style="display: none;">
-            <h2 class="section-title" style="text-align: center; margin-bottom: 30px;">මගේ ගිණුම <span>(Dashboard)</span></h2>
-            
-            <div class="glass-card dashboard__container">
-                <div class="dashboard__user-info">
-                    <i class='bx bx-user-circle' style="font-size: 4rem; color: var(--first-color); margin-bottom: 10px;"></i>
-                    <h3 id="dash-name" style="color: #fff; font-size: 1.5rem; margin-bottom: 15px;">ආයුබෝවන්!</h3>
-                    <div style="text-align: left; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
-                        <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 5px;"><i class='bx bx-map' style="color: var(--first-color);"></i> <span id="dash-address">ලිපිනය</span></p>
-                        <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 5px;"><i class='bx bx-current-location' style="color: var(--first-color);"></i> <span id="dash-area">ප්‍රදේශය</span></p>
-                        <p style="color: #cbd5e1; font-size: 0.9rem;"><i class='bx bx-phone' style="color: var(--first-color);"></i> <span id="dash-phone">දුරකථනය</span></p>
-                    </div>
-                    <button type="button" class="button" id="logout-btn" style="width: 100%; background: #ef4444; margin-top: 20px;"><i class='bx bx-log-out'></i> Log Out</button>
-                </div>
-                
-                <div class="dashboard__chart-area" style="text-align: center;">
-                    <h3 style="margin-bottom: 20px; color: #cbd5e1; font-size: 1.1rem;">ඔබගේ මිලදී ගැනීම් සහ ඉතිරිය</h3>
-                    <div style="position: relative; width: 250px; height: 250px; margin: 0 auto;">
-                        <canvas id="savingsChart"></canvas>
-                        <div id="chart-center-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 1s ease;">
-                            <span style="font-size: 0.85rem; color: #94a3b8;">මුළු ඉතිරිය</span><br>
-                            <strong id="dash-saved-amount" style="font-size: 1.5rem; color: #10b981; text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);">රු. 0</strong>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 15px;">* අපගේ විශේෂ පැකේජ සහ වට්ටම් මිලදී ගැනීමෙන් ඔබ ඉතිරි කරගත් සම්පූර්ණ මුදල ඉහතින් දැක්වේ.</p>
-                </div>
-            </div>
-        </section>
+       
 
         <div class="sticky-controls-wrapper">
             <div class="container">
@@ -224,6 +197,34 @@
                 </div>
                 <div class="swiper-button-prev custom-arrow"></div>
                 <div class="swiper-button-next custom-arrow"></div>
+            </div>
+        </section>
+         <section class="section container" id="dashboard-section" style="display: none;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 30px;">මගේ ගිණුම <span>(Dashboard)</span></h2>
+            
+            <div class="glass-card dashboard__container">
+                <div class="dashboard__user-info">
+                    <i class='bx bx-user-circle' style="font-size: 4rem; color: var(--first-color); margin-bottom: 10px;"></i>
+                    <h3 id="dash-name" style="color: #fff; font-size: 1.5rem; margin-bottom: 15px;">ආයුබෝවන්!</h3>
+                    <div style="text-align: left; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
+                        <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 5px;"><i class='bx bx-map' style="color: var(--first-color);"></i> <span id="dash-address">ලිපිනය</span></p>
+                        <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 5px;"><i class='bx bx-current-location' style="color: var(--first-color);"></i> <span id="dash-area">ප්‍රදේශය</span></p>
+                        <p style="color: #cbd5e1; font-size: 0.9rem;"><i class='bx bx-phone' style="color: var(--first-color);"></i> <span id="dash-phone">දුරකථනය</span></p>
+                    </div>
+                    <button type="button" class="button" id="logout-btn" style="width: 100%; background: #ef4444; margin-top: 20px;"><i class='bx bx-log-out'></i> Log Out</button>
+                </div>
+                
+                <div class="dashboard__chart-area" style="text-align: center;">
+                    <h3 style="margin-bottom: 20px; color: #cbd5e1; font-size: 1.1rem;">ඔබගේ මිලදී ගැනීම් සහ ඉතිරිය</h3>
+                    <div style="position: relative; width: 250px; height: 250px; margin: 0 auto;">
+                        <canvas id="savingsChart"></canvas>
+                        <div id="chart-center-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 1s ease;">
+                            <span style="font-size: 0.85rem; color: #94a3b8;">මුළු ඉතිරිය</span><br>
+                            <strong id="dash-saved-amount" style="font-size: 1.5rem; color: #10b981; text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);">රු. 0</strong>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 15px;">* අපගේ විශේෂ පැකේජ සහ වට්ටම් මිලදී ගැනීමෙන් ඔබ ඉතිරි කරගත් සම්පූර්ණ මුදල ඉහතින් දැක්වේ.</p>
+                </div>
             </div>
         </section>
 
