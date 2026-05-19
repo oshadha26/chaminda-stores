@@ -1,12 +1,32 @@
 {
   "products": [
     {
+      "id": "item_rice",
+      "name": "කීරි සම්බා සහල් ",
+      "category": "essentials",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFRUVGRobGBgYGBkZHxofGxgaGB0YGhoaHSggHR4lHRcaIjEhJSkrLi4uGh8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBQMGAAECB//EADoQAAIBAwMCBQIFAwMEAQUAAAECEQADIQQSMUFRBRMiYXEGgTJCkaGxI8HwFGLRBzNS4fEVJIKi0v/EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAkEQACAgICAQUAAwAAAAAAAAAAAQIRITEDEkETIlFhcQQyQv/aAAwDAQACEQMRAD8A8OrGrZrGoGzmsrYqbS2C7BVEk0AlZrT2GchVEk9K9A+mvp0WR5jiXP7fFF/Tn08tlQ7CWPU0+WwSTBx2rl5OVvCOnj46yznSagLg018ueIMih003XbuHWp206oJBI+elYm6EzXyCQR8GhjrShJn9aD8S8ZO4hBImJoEobgJYmKwkzWMUOr3jtkqDBLewrLf1OVBAttMYpKlwKoAHNH6FBBPJFKxtIahmuAM+SwmO1G2QAnPT+KGsfhGamvodrAclGH/6mleSSkagea7XG9RYk/boP0ihrtkDp+n961Y1GSBUwJrV2jSCvRE4xSTxF4Peaaau7HNB+GaH/U6i3akDcwEn3MVtw/LI5sLAX9KeBXLl63cdG8tTMghTIyPgTGa9x0djeBMKx/EwEEkcRz/goHwDwnybYGOq7IxEwGLHIPXB9qeG0jbQsZIGMgf5HFTObkznS6knh4PqDdOvc56dPtW0TcxJH4fwkEH5ke/SptRb8sfmE9sz7D7VDbsNIZACOqmQYxxBicdutZ3WAWSC4xUgEbQ0/i4+ZyBSpiz7do3QSoxJBkbdvtnnpTzXFSbaMMBpJxjkDd7mYihrVpbLlALjNcO5fT6Fjop/salr5BPAddTaEkjnkjAxn5qKzqxdYbGTyxO7ocHkCO8114grFdqgu7H1SRER06A8VF4YnkkLABckncwO0xwoJk57VT2C0c6uxccsA+230O7kx+GSQYoZLBgFiSwzMkhgORPbBovWak4Z1R8/0+W+SRx/NJnu6i+7oAFIJXduMRtElRABEN0FDaspJ0D6jxNBcm0loi5MtPpEdCFXnOD3ovW6Ryikqu4eoux3HnrORg4AxRF5WKrsaApAZnWQYA/LiR7zUSaoMSzbmPEpBDDuFMkDr3qV9jf0SnSpyG2qo9RJy5HAOOB9uaVugadpZmf0IdremJBKqMwO5/XNbTVL5h/q7VPA2TnoCeuOworWaQttKggHHmgkEdgJjBIyaHTWBpVszy106eZu3MBsVRgeojHz3J7UNf1A8sswCcmCIB7mKy15rXja3Zw/qboDB2fz96n8RsM24kdpAE4HM0fgqyULxq61xrttV3ptJIjAIyGk80j+mdSSgBzBq7a92G8W0WCRJESUgkos9QR3rz7w+6EvugwJwD09j71SVwaOiDpotlRFzXaMI/k1Kw7QfmudOjpo8irKytivcPnibS6Rn4q6fSfgjKQ0AmlngWgJ2jgnmvSfDItqFAmOw/msJTt0dEIJK/Jq3YdsEU30OjwJx80RpAz/AJf7Ua+nmAcVmomjkRJpimZj+Kp/1RrzcPl22xMMf7U9+pNTcS3stkSeTzAqvaPSoMqd3Ez3rHkfgqN7F2m0wUCMx1qO8kn0mJwaP1qSCAQGXp3oWzpmaJUlpk+1c50J4NLpoAO07xxU2lskP2Bpj5J6yKlTQEA5metArBNOj79oIPMGmdwsituGVViD8KTNC6fT7BPJBmufG75uJ5QwPznv/t4/Wi0slQh3lRWU8PsrbBD7nwcfhnqB1oLUMB1orU29kwPilOtuU4+9nV1UFgE1ryQBnt969f8A+l3gq29KtyE81mIcm3sdYJBTeSSwHQiAaov0F4B/qL4e4PSoDoCYD+oiJB/28SDXt/h+mVFCpgKNoETEflJ/vXVaiup53LPsyHV2SpA2g7pMTMn2OM1IhiGA2dwWwcdQeKK1CM8BuOhA4gYn396Way+oaDAfaYPMDuRHYc1jLGSFkLuNuKzk5AE4JPTmCYmh7rXUuLc9KWgsMp5kk+okdO0VB4deL3QJJ8tSTuAOTEQwPMTyKP1F9XUztZRIbBGPY/2pXeRtUxX406wt3ebgIgjbyOkYGaK0moVl2yzIV5yWEYMyZP70L4ndUvbUkvbcHaoIDAqAVBMgxjj3FdeCac3kDtKurEEDEEN1MSekd6LuQdaRNcQC3+Y7fz5G6Txj9KjtpBA2oIAORCg9pOWI78ZovVvcLOLZIcmcEcRGVbEe+K71FtVtNujA2gDkn2HT+1JBYPetG4nKi3bM4BiRz1EATx1rnw/TbLzgEFGt7kYGYP5s8RUF5rZsovqYNnbkqDPUDnPzmotVowoHmblRRJCttPIn8JFO3YGtFqUYsYCKuMyxaTjJGBM8czUWrS4DutIh3dAsRmMkHmpHC2QSbjOMtsbriAu7oAI61H/qWLA2rLLugn+piO/z7Uu3yWl8A93w7bN0CGJkGRyPygcimNxj5NtmC+YBAUE8MwmD3AqHV6sBdrKd6MCk53A4MEGcT17VHauuEwRKgmOTtHPJNNNJ4E7ezi49sXdzKZUHadxJMgDrzUN9w39MBjgmewOOv8UEGfcSSNzcAZx0AnOe1F20dYZozyvXPee1TZaRHp9GoQqRujBPBE5BHvXlf1FpBa1JdQZJlwDMT3jIPtXqd++dreWNxJgTxOe9Vj6r0Df6fznZvMtRIxBBwSYE4Ga045U6HQDoLkrNTbz3A+aQ/TGuldh5H7irBE5rn5I9ZNHdB9opnlLCivDNNvcDpyaGmrR9LaGV3nqYr2JuongwjbLR9OeFFiCcD4r0Tw+wqADy/vSHwazcMBMDvV30GgYAbmn2rKMTSUsndi2DGIpP9V6nykxycU/1F9bayYiqL4vc8295h6YAJx+lRyzUVSKhFtizTJvUyNpPJmay7ZULtEAAiSKYWlIBJiD0AoP/AE5cjadgM4nmuNnRXwKPF7TM4YcSADR1xHthSudxgjrReg8ODAh8EHvzmmd3TIXUAZ5+KKHYtCNwwMxNS6HSsdp/KTHfHvTlriepZgjmfbtUGhBgBcjntHzQ1QJkes03lISo3SJz3mKTPbVF3Nlv+fnr71cbFhHTawEcZ/mvNvGrzLcuIgJVGIEkZAOJrLkUsUdH8ecU8i3xe+BS3wTTW9RqBbub9kNJSARAkTIOPYZph5enlTeN27MFlUC2AY/DJMtB6/pVg+jdHo3uWmm3ZZg6Gz5hLtcJGyF52wD84rq4YKK+yf5HM3haPQ/B/BxaXKQ75Zu3aMQMUx1I9W0QT1WYP+CjFKupUGSuCOxgGMfIqA2lDB2AmIAgYjn5pyRxbZG+oYA7ApgRLEj4mARUev0StG5QWxkiYxnI/SPei2dVlSeQSMHIHPTtUHnRCWwTwZ5EdpJqXof4c6dyVG7bAMGDuiOnA/QjFAaQg+YptbEltxY5MiIAGOOoNMW0m3e+AWEHaIM556H5ri1pQB/U9REruieeDHsBFTTwFiLSaT+qdi8rO5ySwWfw7szxwO1MrOsCKPL9YE+YxmZBmAQBJjAx2qQT5kBVcMo2GTAAGS0D9xXFzTIrKb2wy0KQGww4gE4+fahKtDk72SLcVySpHqCliQVYjiM4wDxj+9c4/wC3btgiZDg5Y8e0HoaYnSIrH0y7YDkTyDJ9sD96hvhbW4lFY8KSen/PJNVRNi/R3mU5UiBEo2MdDKjr2qHxPVS+0gMq5cKCJAyROTHx8UTY0iXHRt7NBLRO1cjAKxEZ4M1vWaizaJb0lmM+gZjiBnqfsanwPyKtdo91tphAwDLJjaJBC8Ek+1ZeuWrdvzmy5lEaNxziYkADntxUXiFktsb0m5+YFsKI6np04Gc0Za1d1mDejZsggDlgcbTyRHtSSVmj0Q+GKrDd5GVxuxJnrHP+e1H2dO0FSpRc7TAx7Ax96D1aMr3BLZCmVAXB4QA9ufvUOn0qqtpJAIJI3bpBmTAnBg88U7oVECo27coLEloRsEAE5JJgd65FgKrFgWaYCrmPjimFxGVj6gZiPb/k/tQTABmBQjqGEjd84mfiiikyG5bOxUS2wJJnIJjkkwZ+9Ifqdbi2W2DBjzJn8JBkxmcwPirJqLjBtp9KwCGUjPcTMz7RSX6qUPaNsF45MRntI5imqTGsnli30t3gUPpxMcfarXb1uBGap/jNu2r/ANMMF4huZHJPaeYoVPEXAieK25OD1EmjSHOuN0wK3bLMAOpgfevV/pfwxUVQ0QB2mvP/AKW0m+8D0X+a9g8B0yASTBrpnl0edBUrH3hjjCqrfpFMd9wfhkUPY1KIYDB6Kv8AiQCSY4609InbK741fcsQTMUDpNMxLH9Kn1OqDsT0PNdeHSGwfSf2rzeSScrO+CqJMq7VKwYIye1QWLIVPwQAZEnn3ps1whTIxwff3rnydwbcAN0AQZxTwSKrtvzARgBe1EaT07z0IxW7zAEIDg88TA96gv3CAVVSZ68xU9ho7j0zz7midAh2FsDdxS/SWnYMF4kTJ/em2lTaFttPtR9hKkSadz5ZxDZ6fxVH+oNJsd8RvhhjnEfyKtutvRMtEGBHvxikv1Wh3WpIaEknvmnIfG2mUXVjqBmrH/0tSy993dov282kJgFYhmXuwk9cDNJ76c4oXQa06XULeCbtk+ncUBkEQSOntBBquKSNeSLaPf8ASevdxAg+4I4n7da7eQh4/wBp79uBz0pV4J4kmot23XbuuKrHBgA8qZzg4qwA7fxGftx2wPetKOB4BGwFJVsyYPSRBEVnl7AvXaOvb5+KIuXGiQJnuIx1ofU3mKBlEr+UDkzGR26461NDUgS46PhWO248EqSZ9MbQRkcD9+9Kde5u3hp1ZgyqGJKtgDE9ATyPvTC3pmG3fuUm5KhmA9/y/p0ovTuW8y4bZDAwMRu9gTGODUV22aJqOgQsLItKCTnbnaCZMhZx6R19orq5PnkghlEKQ0BS3QA/fNC+MWy9otErvGV42zG4zxB7dqMFtPRAaLbJLuDLA9QP70LYOkjnVXro/qOrb52+UrSMHBEDJxPFE6qHAQj1lZAIBMYkFjx+1atOWLtcLIDlBgGPbrJxzQuo0QuvvCKHAgzyFPAYzRlaIwEWNLsNwlQAYhhHbgnMgfFKLjW3DjcqNxvCEkgcEiYbijDprovKHAWzB/NAOMCDB3YHSB70F4rbtLqLZtlU2rEqsxBkEjtM0N4KisgrDazXfxKcsYMj/dtJxxx0om1rLdwK6mSQDuKlTB4ORRmr0ykLc2FyYAIEHPXaxED7Uq1LXrl5EI2qAchY2g9T36cYoyjRe5A+ouI1x7b3GJcRuBkCcBTHGOtS29N5dwAMfUNoJcgYzHP880XZ04tzL736bgDtHMYjk571xe1SwrD8cHAjOMxOKK+R/hp1tBpubg7GAZbnsp4g/NRpZIcsN3tu+Ok1u0T5bFnUAgbQ8SZ5GOT7Vwl4CFBGOuQvwJNJEg+obc0HdJkgGD8ye+aE8VICMd8EA4IH9hJGKKtaaGMOHzjaBMzmTMVU/rHXKoYHcwBwysMGOCAapFxKL49qyTIVV3DMD9ppRa0rOJArrVX2f4mn/htiLYHlj712N+nFGSj6k2NPojw07AeN2TXpmi0WIMxVW8AvBAvpwAB71Y28fUcAU0/JlrA0TwsEECVml/iHhjAH1mPmsHjnx+tdLrt/Oe3/ALotUSlTsW6DTkmIwpz/AM0y0rhSWgRxjpS234l6nBWFJwf2o9B5dqUGSZI7zXBKrOyOgnW5H+0j96WveM+nBUd8GmJ1I2QQJ4k8falGqsspAUzun3qWETsQV8w8xAPei9EEEZJciJPSaE8LUuu3GJxFGaVPxE8oSP34pFMnZwFKhQD34BrjW6xgv4lxG0/2oLxXUOCASNhOCP4NBeIpvVRugBgCemabZKiE6/Xm4rbR6gM9/mg9YAVWD+EfrP8Awa5s6V/Xxjj3ojT6RoKuAZXFLZcXRWtTZYE4570n1qntVy1WlPz/AG+f0/ekGs02Tx354np+9KLOrraG/wD0lZrd685F02yqqCANhMklWZvSMGcHrXrD2mVhtkCcH8Xv9h9qo3/TK1dt6d2PqR7jlE24CqNrNPPqYce3vXoGluDy0nYGESoMATMCupqzzOZ1JmLc3GWI9IOASR8xHPNCNrkDqu8FpwsQAOIGOY6c1D4pd8wMnrtsCMjHvhxxXFuySs3VBmAN43SOJYe/es228IlRxknv3Cou3CzBSwMRuIEASBk85gULY8RY3Vthd6sHYPuI4GYn3xUt3VhGAkKGER0xGB71z4lrbdlSzgwo9LCD+LgD/OKH+lLGCXTXiQrMvIWUUzAJjIjgTNMtRj1BZzBH6xGD1+BSy0k6cuwKs6KIBggHO0EcH+9N7ZJWcjHXp9jTiyJECahdp8zbu2+pV9UZ4/cVwIFwtJ3beAJAjiek5rjxO8bYEDcGU7YHBiZPzQeu1flm3beNtyJPB3HptIj9T9qTlWGCWDr/AFFwxuXc0HbxuCk5J24yBihLF+2z+plFxZhMlVX8uYHqIz+1N20u4RuaBgk4LAdCR3nigfCbm13tsoWWJAxAXhcYM4kjpS85KWsHVkObbesFpBUmCI7Af2pPqNSdxFpN0fibdEScwOpx3FONUTJhrZU4wBj5EyaTa1WEm3G+VJIWRER9jj3pyLh8si1IZYKjcCIOeRPv1ial1KLugKGxggTt7ZAPHagr2oD3NglB6ZJyCckBMxM4mKZrdc+ojd7cQB0gLzUqmy3aBdbfVEExO5VLdpPJH681y+pVmi2quARMQDBx8UNrWDFbjMhUEAbJJBmDMgfh+4ovUNtUsFLADnaQYPQHEmnkGA6+2FDi1cIaGChjIxmIrxvxW+GPYDpivTfG/GDY05KCJMAEgNmcic15Nbtm6facn/Ota8a/0PNUiC1YLFdils5Aqy2blwADZ+pFdaa2qrAxHasJbof2/wCKnk5e+jbj4emy3eF28DvRt0DggGluktMwhZjtFWPwv6YcwzYHuc1vB2jilSZDpNED0H2qXxXUCzaJAgnAp/a0SWxzMVU/qTVLdKhASFMn98UcjUYkwVsr9m9cZsiR1j55q2aPU7kG2AR3quW023AR+EjCn+/tTfRaoEMdoVQYPTP3rhOsZNdlSYJjoKBvaiCAuZA6SRXd1xtLEEqQesUC9s4adpCj7iiwDrF0LuYc+3WixeGzcBDSJHehf9MSq5jcZx/nWh7w2A7y2DOOh700BHdvhmeUPMwe/tUtsgwFyCZYH+aVPqfM59UHMU5toAFaIP3z81KBnT6ZkOFYg80c2mGIjjvRNgsw7jBx09qhtyeQBBNXRFgOp0JOEMEAkycfGM/z8VVNZdXeLblrakw7qCxUdcdTjHzV4W8WX0gTOB2iq14npd9wt8T2/wDX3pNJOzbi5H/UY+HeJaV2XT2tPfItW28m5Ia4IBLEoGGDI7k5kCr74JdZtzMvpJGS+4SBEiRIz0PzPSvJdBfOnv27oH/bMx/5CIYfdSfvFemeDeK2ryG5Y9Q3wytII6gx057cVtGfYx5+HqH+IXbYySAXgDrPT/JrrxUMqLt4UZMjHEYOO/WgtTp3lbxYbAQWUoAd0wIM4E9PYe9E+IuYMEe4IHzSXkyS0VDTm6dQzXwAqopWB2J3CZM9D96Z29UWu2k3AqssQfyn8pmOxNVz6q8b/wBPAvwAx3IQIAyBEfeqWfqv/wC6W4rMUjaxJY+kyICzwJqVGTN1TPbbXi4cvsJhSAGgRJHIzxHem9rWKYgysZx1MRXkH0b9UIytaIhl9QAESFn1EjHbkT81dvp/xd71vfthXwAZyZIJ/QCKdtOmZTgi1uC0EENByOmPvXWotjcp2Serdveghe2QqqNo9zjvz/Jo+/eAWIGcdaaaZg0wW8HQjYm4fmMwTjBEdftQt2zFyWILtwJgqI4JAznuJqUWX3B4JTbEA9uv/wAUv8RdVK7Y3FhI6n71LfyXFAOrt3klSEt2yST6d4M4gNI2jg5WoTpxbG5LjNHI2gA8YIImO0GnV5wybQUH/lEtAPxB6UFsFsyArOZgmYgdMnFKvJongTMy/wDcCAwZUbQCYHGD85o97qAen07pJngdzP8Aeu/EV9QCAEuQP15M/oa3c06HcqxERgweIn70aKBdIgIO2NskmCQSZmd3JH2qHxzWW/K9dwgL/uJEgTtaMxRlmyFtgABZHXn4qlfWGptWBuG/1EMEktadlGAeqEcxgHHNWo3gFsrX1prLt02RtW0lxCQiggkSPUxbOenHBxQOhsKogVP/AFL7teuks7cnt0CgdAB0ozRaIsdqif7e5J4pck79qO3j4VH3MFuJ2oZmI6fxT3xLwp0Tcm1o6CZ+ATSKxbLDduie5ohDGRT5Eng9m+n/AApLKBmHqInPSjdV4iBxn+9BXHuXem1agvKEwea7k6wjyct2yHV63diIpToktkMGBBJMMMimE5zSzw/XS8EKRuOeBHGa5ubWTXjWSUaEICwI3c+zCi00wuCcAHp++altKCSVjGACetEaQen1AS3SubB0LQo1ujcRDSo7fxUbkuwEQeKZ+KKwPp4I4H8UIl+Fl0Kx+bn7Gk1gpBJtQp3EyDIIE/aKg17hg/eB9vePemWiuh5BAzwcVl3TKjSVEH0/+6YnsptoqkgqEPIPE/NWVLe+2hGdpBweaGuaEKSX4Z4BOftTG2xUmfSqcAD9KSJZL4VcMfgIkmJ+eKGvxu3wZJj+1GW74KJyJM8VNprkkgoMfhMyPn5q7JugYPthYEzAIofxHTdUHqiIH5u81PDuA4G7MY61tkAYtkleQ3AntFFAnTsqGqt5IIKnswiPb9668B8OuXbsWrwskQZDGTBEBVUjcJHXGaf6hBdckERkERIEe3FD68tbtm3ZCWxcHrZFCswGNsiIHxWcY9XZ0+t2XUf+CeKjUtdW27i3ZIV2VYLOWJO0GYURnpnHFVr61+rL1q+bdl7RUNOJ3KUldrEHHfitfSuot6S6zssBkK46EeoYGIMRPTFU3V2mMs+WYkk+5MkzWz5E1giPDUnYn+s/HLupZQzOLaDFstIU9WGBzSfRgmn2h8HfUXgioW2gswHYEdfc/wB6s/iGqu27SC4gKtIExwOgY9MdK3ly1FIx69Z4K79P2LoueahAFvmeGB/JHv8A2r1nwfXh1C25hmnODkiYIBE8YrznwvQ3dRchEuNbDKbgtgGFnlt3pJiYBr0vQ+H29K0iyiWQQ63PSvqjO9R17H2rGTvJU1TLUyJi2ZG7EZE9aku3iDB4JAGOppX4f4lbvHzFcbbZIZmhQTHQt2kUy1N1SwRhIKhw24Ac9CMzRXlHO8Omc39VKwJ3qQDEjnv0pNqdMzl2hlKlfxxB6zPUdKzxbxtEJ9QUAwHL7FOJKsSRu+01WvqP63s7Ni3iSY/7Sbx3jc0D9CaTj22XCLWiy67xdLe1d4AeYQFTJ7e1L/8AWkXF3qi2yGO52AYRERyCMjHP8VTtL9T2rjM3mppyAubiAsxz6lIbAAgRM5pjp/FLWpYm0i3msgS0kKAZyEzGR+JRT6yNKSHWv1cNae226HUEENkMQG+CKa3AqvnAI5MAAT1b+3vVTs+LeZuZpU2y25VfzEJAnAjHtxUVz62sMqLvLoZDFQUIB4LAgSMxAz80+jTYt6HviXjVq2Ar3AhMlRIlo6CcdQI6zXnH13q2a/atk+n8UQAQYiGzPHHzWfUN3T3SbtrDlirrBAYdLnAHQSOar2psO7h9xdhAyZwOBNUmjSMWqZcNJpVVFkxNGeYqJ6RtUc/8k9T70jteNWwgLMcD8PJn4+1Kdd4o90xwpOFGZJwPk1zR452dr5ojLxf6glDbtkc5Y8Yzgda60PgepuoH22lngOksfciDHxTn6P8AplQWuagBriZFskQn+545Pt0qxckkXSM9Fx9prfsoqkcE52x7q9QVGOvagHn9ac3vC2yMETM1CPDiTAkkfpXScyqiva/UeXad/wDxUx96Q+BYQYknk8/Jp/8AWfh7WrHGGMfpVZ8DuyAkGZkniMxI71zczfajbiWC0WVRQ0guxMDoIHX5piyiF2kCBJBzjpNB3LKgevliNveBXRtrvTqSIYDtzmsGaoK8QVmSUgdVJx/goHWWZVSGlYE8d84po+m3IBzIgGf0FCtoV8sCAdmCBwKGJHPh9pAxZWOchftGKL1Ntm2nkDleD7UosoEfaueoJx9qeMrb8dEkjvPUfFKxteThdN6vVjaJCtkfM1oWOTMz9xUlm3KD1Hd1mp7mmG1QDBkfarRk9izUIVODjH/EVjyhwDuYHHv3FH6yxscK3qDys9sc1u/plhYGVwCOwoaKvQJoVEiGgbRu5HqI4j271uxtW4yR+P1Tkj3E0ekEA7pwYgdulLtTZLDaueGM4Pt9qLoX6aNtW3cCeoEfc/ehX0XmbcgQCCe5B5B4mmNhfRtzOJgcf8ipX0xYsOIAiMLnmf8AilQrop17SyYEHtBJ+SB0oHWeGEwIKz3BA+84q6ajTAESizxKA+oVyuh8wRnbBInoByQOnNCia+s6yVDS+H/6cciXI3MpBwOg/WuPGrJdgIhQPSPbmfvFWZNGUtlV2u3IxlQRkx1MZof/AOkBrRYN/VTlSfxL3T3Harp1gnjku9sV/TbLZNxwxNw4CDdED8zRg5OJ4z3ofWWyVy59P/kxgTJgScSaL06bXYERugCfY8foah1towYrFyejtXHFytDXS+K6XT6W1F9TLjzwxhxuIBKqDhVIUnBBUGjvEfGlt3Fttc38NZS0RuZGH4iZjy8EfavNvEdM0GDB5ntHWrBrfGtK+q07IbjN5ZR7jIEBJg8QMyORgV0Qpxswnw1JeSLxm29xme4zPkkAklUn8qg8R3qu6hc8Vetfp5XdE+3H8mq1r9DnBrC7Z1dElRXL9r2qI2genH+c0wvaUzGZFc+RHb/PitlKkZSiiDw29csNvtHa3UdD7MOv81LdJZyxAliSYEDOcAGuLjRIke1E6bQXmjbbcjvtIB+5EfvTk20ZJqLI7ie9Du+Ipr/9AvltpAU8kFv/AOZph4T9Li439S7C9Ng5I6bm/wCKSiEuRFX03hty64S2u49fYdyelXrwXwW3pVDiGvt6QxE7Sf8AwHT55PcU68L0dqwGS1gZLTyfmcmoLVxNrXHOEbAECQe/vVSk/BzuVsm1Fq3aVi/4niRMEn4FdaCzKCT+orjXWS225j/8sjPvRVrUqoCgMI5A4B9qlLJDLffuBjsWfep7VxEESAepPPxWMjcjPx/elOr0zTnjmTXYnRjQP9Va4XbTLHpIwYqgeFWER9xksBgTGDV91dkFGA44/aqT4fpbjXICHBz9jWHKuzNuN9RyLkQQpOcknI/WmC6X8wfPYEfqTStbGHluCPSelTi2A+IIwAffqPeuZr5N/A7d9oUKRBbPc1G9iCoXKtMj+JoXUK0iBIHbpAoxA7FCCFA5BHNIVC/WaFndSQCEj09/24qwWAWAIXbiMHpQKiWLEdYWP3J9qPsmD6enI+etCQNkbac7lGRGSRB68Gj7loHB+exPb4qDI5zuwRXdy6VG4ruABmO3sO9UmZkWt0bvt4PYE989K6exA45BU7eh/tRekuAwREjoMQK3YXaSQQQWwKdE29Cz/TemQrbuAB0Mda58hluLPWJAyPimuqBBbdhTxHX70MN4xMAMMHPPelQ+1oguowBOEnmP/dR27bNdR1PoOHEde8THtTDxK5tEEEgggwMjtEVPp0YJbEnAAP6YM0VmhWLtbpmkEdDkADtH6UNctKoJK8CImY78CRPaj715mLqwCgRGcg9c1ObRkECDH5gCBHUwaqgeit21Z32KSmA0kQQP5jNC6u0XkLggxnEdNwMyPiitVqmNz0ySpG9gY6zkEGBHSoW8TW4zAEQNrSp9Q5G3rJ/SlfgqvICUt2wQ9zd1LNIGeg70mugnKEQOjAg/aJn4ovxW9gqCjKOvUN0BH+Gh9fd32gPJhyQA0YBPXmRTaTwVGbjlAdrRrdKguo3iRAOADGZ4PtQ2p8AALDcecEZPuYxFMb1vy9oRykGHlecbt4n5iKldyEbaGBYwJGWnq3t1ppJBLlk9sB0d28JVnlR+Ypk+0TmtQtwBt/UjgT9+gphaEWyQCxGCZyJ5OTxQ2u9NldiQgbJGcYJpdVsfqy1YLf8ACre5FDNubkxM+4Ed+9d3/p22G2F3LHoNi/vtNMPB7i3WZwYaYVTiRHOa3ZYeb6rR3AGDOAOwpIjuyEaJbKA20RWwCw9ZJ77myKPuABRsdmLdW7dYB96Gv6U+kiVjM5I+KIB8lAYnsZzntPSrV+SWEB2JyMKIJIAn3jmazSn0wE2xJA6z3oLVXne4igeWIlmYz1/mudTfW2xCuBgfJ68CjtkAnRDaXZ29PJnme1CK6MW3IrAnAgz+grm7ctIN8vLH0yp59l7VvTubaf1Y3c4MGpZSD9ReQWjadFyMQTjtS3Tam4F9SMTRGq06XLe4hp5kc470Kblx88dIkdKGCZ63aJgEYxz9qU6lRwJJNb+jtb5+jsXJ5QBpzxg/xTO+AfvgfautZMW6YDpdIuC5EngUq152k+Xb2AnJH80zvW4aWjHXt2qbWbWHMTz71TFHJ554jeVbwdpLOuOwjiR1qTSn1qiyWBkn55HsPet+PrtuCMkAwR81ytliAQwDnkxz964Zv3HXx6G168Q0MRDSJAOP8NEaZwjAH1SMz7Ur1KXPSGiQcj82eCKZWrQIthpIZupgyO5qCsDXSuqqzAjr8/EV14dqXZSzJ6iTjjHSuShMqqxnk4+YqewkAzuwYwZo8kPQUYABYAdM8T2oe00BxcwJ5PH2jMV2gJlfxDrJn7VyL4DKI5JgHpHEU7JRJYIBKiJIy3seAPk9K61Ngb7YmFMgjp7ARwfet3iBzk7geDiM/rUrXM8Edp96vwZ7NMfVtafY9McfetbZgsJK9IIEzzUV9mwTErknsP8A4oi1qkug7DMRn+3zSTuwaoi1V7cqn8PtByffrXT6oqBCkMYA7f57VrVrtO8HiJHQzzj+9ceI3RKgqxB5EYB6GeKLewpNUb1N8nbH4pzBEcfmkUNqdzXNof1KASsQDJxJ70YmnXbCjnoZiodRaBJUNAPEf+QFDzkarQk8Z8ObyHA2IXYHcpIO4dG9uc0p0GlZdOWDBTvIJlVC5wd0SZPc1aLWiFxJckx3EHGJJqt3mZbjAguqj1RwpmQCPzRiDSeHZcclcbw5LRPll2Jb1dFkeonPODzRWosAqWQ3QSQPUZxEelRiZzNMPELcp5pUbSAQTyvSCF7VxpNO15UBXcxnc4YqNsGHPbEYqo7E2LUuoFClgXzJbJE8KP4+1SXdSY2EgIoHMEe8nkdKneN4CoHW0oXAnkyT8RFRa2wsP3f8A+FmJIz8VdEtgukspDncZBMzmOk46VJ4baC25dpydogwJxx1mptdogbTRCt5fAmQeTBipbVqBbP4gBDGSBIE4opgcaG5JfcwtR+GVy57DtXPllQC5LHeYBxx1xxSn/WBdUsozCZgeo/E8VYNbqGOVtlRvAPWPbHWkkDwyR7jupAGBkgZHxNC6ttwC7csMyeo4FTqAG8vc0BjieRE1HYsKFuXWbdEQSeM8R3oaYWYnDeaIxwcgAcn9aE1Voki6FIUYXHv+I/xTm1dSCGQtu4JP34j2pdZ1AYFUBK7oJ4H2puIWReKXyNpEnblyAP0/ik3iFm75iH1MzZzhY+aZ+MX2E2Fg3CJniFEZ96kUoFRnZnlANpMDHJpV2YroXpqz5ZBZZWciTOO4qGzpHYAknPUdaH1LiyQEHpI5mZnoPiubZ3AE3WHsDxUS+C0W3/o34tK3NKx/Cd6fB/EP1/mvRdeBA9qysrsj/WzGWxPf1YZlUY7mj9VaPlkwOxrdZSsekUrVWWe8SFJCCMdzU7KGhYgtgmOK1WVhJFqTRpnuLLADmCRkj/1TIXyz2mKzMwFxkVlZWJqnYxsuC7MZG3ETgfaeaLtMGXcME5+fntWVlCG1g70yQqmIIXIHetLbmJB7kfPb4rKyi8GXk3rww2FMbT92npXAU+sOZGDP+dsVusq5KsiWg1SG7EEZ6fAqCzpPTDAA+x69zWVlNRTpkW0SJbgKhyYg9enJNA+MWmYIgyJBb1bZA6E9jWqyolocXkOtasGDKxMYz8AGonRWJiJBH2B5j3NZWU07CqMbTDaqyY5AJ7ZpeyruI5jJERJJwRjv3rKytGkEWJvHLaDOVM8n1Z6g9jSZfME+vZab09Onb3zxHFZWVmtmv0QXtYQPLtAZPLA+oACSR0HvUOs1P4HZQxs/l4UyOMZmsrKak2JpEniN/8AC+xDHMTHbEc1Dr9d5ym0pgQCzDr0wDkGO9ZWVTbRKWSXQ6JLSIwgsqkCMTMTPvXV/wARUhZAtgmVXqTzJPasrKOzoANbjC6X3BgThQOkR39qJ1mvMAKF2YJWPVgzx9qyspgc3dXvuF1ZkVRgBZBn25ofR3WRN110KhiQh5A7kCsrKGwoG8S1wYi5tG4wIIPpBxiaj1mpcwqqGRFCgxnI6VusosKF+j0TC3su3AuyduJInpXNrw4XBv8AMUT3Me3FbrKiWxn/2Q==",
+      "desc": "පිරිසිදු සහල්",
+      "price": 350,
+      "oldPrice": 400,
+      "isWeighable": true
+    },
+    {
+      "id": "item_rice",
+      "name": "නාඩු සහල් ",
+      "category": "essentials",
+      "image": "https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.ada.lk/adaadmin/wp-content/uploads/rice-234692.jpg",
+      "desc": "පිරිසිදු සහල්",
+      "price": 210,
+      "oldPrice": 220,
+      "isWeighable": true
+    },
+    {
       "id": "item_sugar_white",
       "name": "සුදු සීනි",
       "category": "essentials",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLgvoe_X6etXfuLERuCl6Nd5NEPUTW5yzYNw&s",
       "desc": "පිරිසිදු සුදු සීනි",
-      "price": 220,
+      "price": 210,
       "oldPrice": 240,
       "isWeighable": true
     },
@@ -25,7 +45,7 @@
       "category": "essentials",
       "image": "https://balijiwa.com/wp-content/uploads/2021/12/Brown-Sugar.jpg",
       "desc": "පිරිසිදු දුඹුරු සීනි",
-      "price": 280,
+      "price": 260,
       "oldPrice": 310,
       "isWeighable": true
     },
@@ -53,7 +73,7 @@
       "category": "spices",
       "image": "https://yanc.lk/files/productimages/photo/b944f9df-e6c6-4db7-9ab9-e807a780cbfc/large_Chilli%20Powder.jpg",
       "desc": "පිරිසිදු මිරිස් කුඩු",
-      "price": 1000,
+      "price": 950,
       "isWeighable": true
     },
     {
@@ -145,6 +165,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNtl-X292A72ITzsED05vQuq709VTvgXD4BQ&s",
       "desc": "නැවුම් අල",
       "price": 160,
+      "oldPrice": 180,
       "isWeighable": true
     },
     {
@@ -153,8 +174,8 @@
       "category": "vegetables",
       "image": "https://straitsmarket.com/wp-content/uploads/2021/11/40023472_6-fresho-onion-organically-grown.webp",
       "desc": "නැවුම් බී ළූණු",
-      "price": 180,
-      "oldPrice": 220,
+      "price": 240,
+      "oldPrice": 280,
       "isWeighable": true
     },
     {
@@ -163,18 +184,11 @@
       "category": "vegetables",
       "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/310129--01--1555692321.jpeg",
       "desc": "උසස් තත්ත්වයේ සුදු ළූණු",
-      "price": 500,
+      "price": 460,
+      "oldPrice": 500,
       "isWeighable": true
     },
-    {
-      "id": "item_vegpack",
-      "name": "නැවුම් එළවළු පැක් (1kg)",
-      "category": "vegetables",
-      "image": "https://images.unsplash.com/photo-1515589654513-3ce06f654b1f?q=80&w=400&auto=format&fit=crop",
-      "desc": "කැරට්, බෝංචි, ගෝවා මිශ්‍රිත",
-      "price": 450,
-      "isWeighable": false
-    },
+    
     {
       "id": "item_sprats",
       "name": "හාල්මැස්සෝ",
@@ -190,7 +204,7 @@
       "category": "driedfish",
       "image": "https://ceylolion.com/wp-content/uploads/2025/04/bala-karawala.jpg",
       "desc": "උසස් තත්ත්වයේ බල",
-      "price": 1800,
+      "price": 1600,
       "isWeighable": true
     },
     {
@@ -231,11 +245,12 @@
     },
     {
       "id": "item_dhal_mysore",
-      "name": "මයිසූර් පරිප්පු",
+      "name": "පරිප්පු",
       "category": "essentials",
       "image": "https://arrowheadmills.com/wp-content/uploads/2022/10/red-lentils-1-1024x684.jpg",
       "desc": "උසස් තත්ත්වයේ පරිප්පු",
-      "price": 320,
+      "price": 240,
+      "oldPrice": 320,
       "isWeighable": true
     },
     {
@@ -253,7 +268,8 @@
       "category": "essentials",
       "image": "https://img.drz.lazcdn.com/static/lk/p/76a38e70330664c1b47e0b52e1138138.jpg_720x720q80.jpg",
       "desc": "පිරිසිදු සව් ඇට",
-      "price": 600,
+      "price": 500,
+      "oldPrice": 600,
       "isWeighable": true
     },
     {
@@ -262,7 +278,8 @@
       "category": "essentials",
       "image": "https://www.colombo20.com/wp-content/uploads/2022/02/Noodles-e1660798156285.png",
       "desc": "රසවත් නූඩ්ලස්",
-      "price": 300,
+      "price": 270,
+      "oldPrice": 300,
       "isWeighable": true
     },
     {
@@ -271,7 +288,8 @@
       "category": "essentials",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTvKucW7a8bO_tMpyebEKDO-r1_DX-Uk8Qw&s",
       "desc": "පපඩම් පැකට්ටුව",
-      "price": 700,
+      "price": 620,
+      "oldPrice": 700,
       "isWeighable": true
     },
     {
@@ -281,6 +299,7 @@
       "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/114571--01--1555689813.jpeg",
       "desc": "අයඩීන් මිශ්‍රිත",
       "price": 150,
+      "oldPrice": 170,
       "isWeighable": false
     },
     {
@@ -290,6 +309,7 @@
       "image": "https://4.imimg.com/data4/VP/KM/MY-27173382/common-salt-powder-500x500.jpg",
       "desc": "අයඩීන් මිශ්‍රිත",
       "price": 150,
+      "oldPrice": 170,
       "isWeighable": false
     },
     {
@@ -299,6 +319,7 @@
       "image": "https://4.imimg.com/data4/VP/KM/MY-27173382/common-salt-powder-500x500.jpg",
       "desc": "අයඩීන් මිශ්‍රිත",
       "price": 90,
+      "oldPrice": 100,
       "isWeighable": false
     },
     {
@@ -308,32 +329,25 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkTGwiPrhxAXkjXpn-ozlGRuU47Du2Y49CCg&s",
       "desc": "කිරලා ගන්න තේ කොළ",
       "price": 1600,
+      "oldPrice": 1800,
       "isWeighable": true
     },
-    {
-      "id": "item_tea_packet",
-      "name": "තේ කොළ (250g)",
-      "category": "essentials",
-      "image": "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?q=80&w=400&auto=format&fit=crop",
-      "desc": "නැවුම් කඳුකර තේ",
-      "price": 350,
-      "isWeighable": false
-    },
+   
     {
       "id": "item_egg",
       "name": "බිත්තර",
       "category": "essentials",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6O5tLTnP9gyRs0ihFalmmO1M9JXVOjE6W5A&s",
       "desc": "නැවුම් බිත්තර",
-      "price": 30,
+      "price": 33,
       "isWeighable": false
     },
     {
       "id": "item_bread",
-      "name": "පාන්",
+      "name": "භාග පාන්",
       "category": "bakery",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvSMx5azVyK1Av5jK0JMtBEuGkgtQUNHU0zg&s",
-      "desc": "නැවුම් පාන් ගෙඩිය",
+      "desc": "",
       "price": 75,
       "isWeighable": false
     },
@@ -344,6 +358,7 @@
       "image": "https://i.pinimg.com/736x/5f/38/55/5f385525a3271d16f6ba19a28d1ea89c.jpg",
       "desc": "රසවත් මික්සර්",
       "price": 900,
+      "oldPrice": 1000,
       "isWeighable": true
     },
     {
@@ -353,6 +368,7 @@
       "image": "https://helloladies.lk/blog/wp-content/uploads/2021/05/muruk.jpg",
       "desc": "රසවත් බයිට්",
       "price": 900,
+      "oldPrice": 1000,
       "isWeighable": true
     },
     {
@@ -362,6 +378,7 @@
       "image": "https://dhuniyasweets.lk/wp-content/uploads/2025/03/Fried-Peanut-1.png",
       "desc": "රසවත් බයිට්",
       "price": 1500,
+      "oldPrice": 1600,
       "isWeighable": true
     },
     {
@@ -383,15 +400,7 @@
       "oldPrice": 1000,
       "isWeighable": true
     },
-    {
-      "id": "item_choco_biscuit",
-      "name": "චොකලට් බිස්කට්",
-      "category": "snacks",
-      "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=400&auto=format&fit=crop",
-      "desc": "ළමයින්ගේ ප්‍රියතම",
-      "price": 120,
-      "isWeighable": false
-    },
+ 
     {
       "id": "item_yoghurt",
       "name": "යෝගට්",
@@ -399,6 +408,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSiYNzocK5y8vTOng8rJyYZYSIbQoyNaNppg&s",
       "desc": "අඹේවෙල යෝගට්",
       "price": 70,
+      "oldPrice": 80,
       "isWeighable": false
     },
     {
@@ -452,45 +462,2809 @@
       "category": "frozen",
       "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/115798--01--1644507260.jpeg",
       "desc": "සිසිල් කළ පානය",
-      "price": 140,
+      "price": 130,
       "isWeighable": false
     },
-    {
-      "id": "item_laundry_soap",
-      "name": "රෙදි සෝදන සබන්",
-      "category": "cleaning",
-      "image": "https://images.unsplash.com/photo-1606168094336-48f58be7203d?q=80&w=400&auto=format&fit=crop",
-      "desc": "කැට 2ක පැකට්ටුව",
-      "price": 150,
-      "isWeighable": false
-    },
-    {
-      "id": "item_washing_powder",
-      "name": "සේදුම් කුඩු (1kg)",
-      "category": "cleaning",
-      "image": "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=400&auto=format&fit=crop",
-      "desc": "පැල්ලම් ඉවත් කිරීමට",
-      "price": 320,
-      "oldPrice": 350,
-      "isWeighable": false
-    },
+  
     {
       "id": "item_exercise_book",
       "name": "අභ්‍යාස පොත් (CR 120)",
       "category": "books",
-      "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=400&auto=format&fit=crop",
+      "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
       "desc": "උසස් තත්ත්වයේ කඩදාසි",
       "price": 200,
       "isWeighable": false
     },
+     
+  {
+    "id": "book_cr40_square",
+    "name": "CR පොත (40 පිටු) - කොටු",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "කොටු රුල් සහිත CR පොත, පිටු 40",
+    "price": 45,
+    "isWeighable": false
+  },
+  {
+    "id": "book_cr80_square",
+    "name": "CR පොත (80 පිටු) - කොටු",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "කොටු රුල් සහිත CR පොත, පිටු 80",
+    "price": 85,
+    "isWeighable": false
+  },
+  {
+    "id": "book_cr120_square",
+    "name": "CR පොත (120 පිටු) - කොටු",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "කොටු රුල් සහිත CR පොත, පිටු 120",
+    "price": 120,
+    "isWeighable": false
+  },
+  {
+    "id": "book_cr160_square",
+    "name": "CR පොත (160 පිටු) - කොටු",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "කොටු රුල් සහිත CR පොත, පිටු 160",
+    "price": 160,
+    "isWeighable": false
+  },
+  {
+    "id": "book_cr200_square",
+    "name": "CR පොත (200 පිටු) - කොටු",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "කොටු රුල් සහිත CR පොත, පිටු 200",
+    "price": 200,
+    "isWeighable": false
+  },
+
+
+  {
+    "id": "book_cr40_single",
+    "name": "CR පොත (40 පිටු) - තනි රුල්",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "තනි රුල් සහිත CR පොත, පිටු 40",
+    "price": 40,
+    "isWeighable": false
+  },
+  {
+    "id": "book_cr80_single",
+    "name": "CR පොත (80 පිටු) - තනි රුල්",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "තනි රුල් සහිත CR පොත, පිටු 80",
+    "price": 80,
+    "isWeighable": false
+  },
+  {
+    "id": "book_cr120_single",
+    "name": "CR පොත (120 පිටු) - තනි රුල්",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "තනි රුල් සහිත CR පොත, පිටු 120",
+    "price": 110,
+    "isWeighable": false
+  },
+  {
+    "id": "book_cr160_single",
+    "name": "CR පොත (160 පිටු) - තනි රුල්",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "තනි රුල් සහිත CR පොත, පිටු 160",
+    "price": 150,
+    "isWeighable": false
+  },
+  {
+    "id": "book_cr200_single",
+    "name": "CR පොත (200 පිටු) - තනි රුල්",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "තනි රුල් සහිත CR පොත, පිටු 200",
+    "price": 190,
+    "isWeighable": false
+  },
+
+
+  {
+    "id": "book_a4_single_80",
+    "name": "A4 පොත (80 පිටු) - තනි රුල්",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "ලොකු A4 ප්‍රමාණයේ පොත",
+    "price": 150,
+    "isWeighable": false
+  },
+  {
+    "id": "book_pocket_single_40",
+    "name": "සාක්කු පොත (40 පිටු) - තනි රුල්",
+    "category": "books",
+    "image": "https://www.dumindu.lk/Admin_User/projects/CatImg/i_mate_A5-Exercise-Books.jpg",
+    "desc": "කුඩා සාක්කු ප්‍රමාණයේ පොත",
+    "price": 25,
+    "isWeighable": false
+  },
     {
       "id": "item_newspaper",
       "name": "පත්තර",
-      "category": "books",
-      "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=400",
+      "category": "essentials",
+      "image": "https://www.shutterstock.com/image-photo/thailand-mar-30-2021-bundle-260nw-1946878834.jpg",
       "desc": "දවසේ පුවත්පත්",
       "price": 300,
+      "isWeighable": true
+    },
+   {
+      "id": "item_nestomalt_400g",
+      "name": "නෙස්ටමෝල්ට් (400g)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf746H-vcRn73Ug3N9038p1tlsyRouxYJksg&s",
+      "desc": "",
+      "price": 775,
+      "oldPrice": 780,
+      "isWeighable": false
+    },
+    {
+      "id": "item_nestomalt_300g",
+      "name": "නෙස්ටමෝල්ට් (300g)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRSYBD4He4mcqMAYpfRqly2r9voTegdgaC8Q&s",
+      "desc": "",
+      "price": 590,
+      "isWeighable": false
+    },
+    {
+      "id": "item_nestomalt_600g",
+      "name": "නෙස්ටමෝල්ට් (600g)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMRZf_PF6vndw6WF32-mcVTIwiFirlH-tLHA&s",
+      "desc": "",
+      "price": 1120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_nestomalt_packet",
+      "name": "නෙස්ටමෝල්ට් (Packet)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKy-EWuxB3JwQMOYgmmRCiQ1WIfNDv-Jw3eg&s",
+      "desc": "Packet",
+      "price": 60,
+      "isWeighable": false
+    },
+    {
+      "id": "item_raththi_400g",
+      "name": "රත්ති (400g)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbKhTMjFoyc4hbD_B-JvAl4AW3fExCI6rboQ&s",
+      "desc": "",
+      "price": 1150,
+      "isWeighable": false
+    },
+    {
+      "id": "item_raththi_200g",
+      "name": "රත්ති (200g)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaBegcyKSxpIgNFpVC0oDD38ZyckCDKdl66w&s",
+      "desc": "",
+      "price": 600,
+      "isWeighable": false
+    },
+    {
+      "id": "item_raththi_packet",
+      "name": "රත්ති (Packet)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0BLPKlAHZ0LHHCssms7jvA2jeWSpYqxnag&s",
+      "desc": "Packet",
+      "price": 70,
+      "isWeighable": false
+    },
+    {
+      "id": "item_raththi_tea",
+      "name": "රත්ති කිරි තේ",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobSnbeZy6bjo2-mL9C4abOcRr54U5HrE5qg&s",
+      "desc": "Packet",
+      "price": 65,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pure_dale",
+      "name": "Pure dale කිරි තේ",
+      "category": "essentials",
+      "image": "https://static.wixstatic.com/media/ae716a_a5eabb99f5504bc488e2ce5d61a3456e~mv2.jpg/v1/fill/w_480,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae716a_a5eabb99f5504bc488e2ce5d61a3456e~mv2.jpg",
+      "desc": "",
+      "price": 880,
+      "isWeighable": false
+    },
+    {
+      "id": "item_viva",
+      "name": "වීවා",
+      "category": "essentials",
+      "image": "https://ustore.lk/cdn/shop/files/1773892789_5852_1024x1024.png?v=1778281710",
+      "desc": "Packet",
+      "price": 780,
+      "isWeighable": false
+    },
+    {
+      "id": "item_Highland",
+      "name": "Highland",
+      "category": "essentials",
+      "image": "https://ceylonfreshholdings.com/wp-content/uploads/2023/08/New-Project196-1.jpg",
+      "desc": "Full Cream Milk Powder",
+      "price": 1150,
+      "isWeighable": false
+    },
+    {
+      "id": "item_laoji_tea_100g",
+      "name": "ලාඕජි (100g)",
+      "category": "essentials",
+      "image": "https://s-mart.shophere.lk/wp-content/uploads/2020/04/laoji100g.jpg",
+      "desc": "Packet",
+      "price": 295,
+      "isWeighable": false
+    },
+    {
+      "id": "item_laoji_tea_50g",
+      "name": "ලාඕජි (50g)",
+      "category": "essentials",
+      "image": "https://s-mart.shophere.lk/wp-content/uploads/2020/04/laoji100g.jpg",
+      "desc": "Packet",
+      "price": 150,
+      "isWeighable": false
+    },
+    {
+      "id": "item_laoji_tea_25g",
+      "name": "ලාඕජි (25g)",
+      "category": "essentials",
+      "image": "https://s-mart.shophere.lk/wp-content/uploads/2020/04/laoji100g.jpg",
+      "desc": "Packet",
+      "price": 80,
+      "isWeighable": false
+    },
+    {
+      "id": "item_lion_tea_50g",
+      "name": "ලයන් තේ (50g)",
+      "category": "essentials",
+      "image": "https://ceylonfreshholdings.com/wp-content/uploads/2023/04/Untitled-1-3.jpg",
+      "desc": "Packet",
+      "price": 90,
+      "isWeighable": false
+    },
+    {
+      "id": "item_maggi_packet",
+      "name": "මැගී නුල්ඩස් (Packet)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ur_MqXfOeogfCOdGgbIuTDYVq-VqPpuWuA&s",
+      "desc": "Packet",
+      "price": 75,
+      "isWeighable": false
+    },
+    {
+      "id": "item_Kottume",
+      "name": "කොත්තු මි නුල්ඩස්",
+      "category": "essentials",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/115293--01--1555691155.jpeg",
+      "desc": "Packet",
+      "price": 135,
+      "isWeighable": false
+    },
+    {
+      "id": "item_maggi_family",
+      "name": "මැගී නුල්ඩස් (Family Pack)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8OhHr2aC_6JBFg4-96Ye2O23SUdso3g6Fw&s",
+      "desc": "Family Pack",
+      "price": 350,
+      "isWeighable": false
+    },
+   
+    {
+      "id": "item_saman_jack_mackerel",
+      "name": "සැමන් (ජැක් මැකරල්)",
+      "category": "essentials",
+      "image": "https://www.grocerylanka.com/cdn/shop/products/Delmage-Jack-Mackerel-Tin-Chile_700x700.jpg?v=1550924431",
+      "desc": "ජැක් මැකරල්",
+      "price": 450,
+      "oldPrice": 560,
+      "isWeighable": false
+    },
+    {
+      "id": "item_lifebuoy_4pack",
+      "name": "ලයිෆ්බෝයි සබන් (4 in 1 Pack)",
+      "category": "beauti",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/Lifebuoy-Soap-75G-4Pk.webp",
+      "desc": "4 in 1 Pack",
+      "price": 360,
+      "isWeighable": false
+    },
+    {
+      "id": "item_lifebuoy_2pack",
+      "name": "ලයිෆ්බෝයි සබන් (2 in 1 Pack)",
+      "category": "beauti",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/Lifebuoy-Soap-2Pk-200G.webp",
+      "desc": "2 in 1 Pack",
+      "price": 260,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pears_5pack",
+      "name": "පෙයාර්ස් සබන් (5 in 1 Pack)",
+      "category": "beauti",
+      "image": "https://ranjanlanka.lk/src/item/11013281505.png?reload=293",
+      "desc": "5 in 1 Pack",
+      "price": 540,
+      "oldPrice": 680,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pears_2pack",
+      "name": "පෙයාර්ස් සබන් (2 in 1 Pack)",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRvYlihhY9K6TTH7fc_jLADER3Gkp0WMFwxA&s",
+      "desc": "2 in 1 Pack",
+      "price": 255,
+      "oldPrice": 290,
+      "isWeighable": false
+    },
+    {
+      "id": "item_sunlight_4pack",
+      "name": "සන්ලයිට් (4 in 1 Pack)",
+      "category": "cleaning",
+      "image": "https://lk-live-21.slatic.net/kf/Scc2b01eb98ad4d179145068be652cd3d3.jpg",
+      "desc": "4 in 1 Pack",
+      "price": 440,
+      "oldPrice": 600,
+      "isWeighable": false
+    },
+    {
+      "id": "item_sunlight_double",
+      "name": "සන්ලයිට් ඩබල් පැක්",
+      "category": "cleaning",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyLAQNASr_5dduwu6ouwXYBg3Bhw8ajNUcdA&s",
+      "desc": "Pack",
+      "price": 250,
+      "isWeighable": false
+    },
+    {
+      "id": "item_wondalight_double",
+      "name": "වොන්ඩලයිට් ඩබල් පැක්",
+      "category": "cleaning",
+      "image": "https://ranjanlanka.lk/src/item/11032219045.png",
+      "desc": "Pack",
+      "price": 215,
+      "oldPrice": 220,
+      "isWeighable": false
+    },
+    {
+      "id": "item_caline",
+      "name": "කැලීන්",
+      "category": "beauti",
+      "image": "https://colombostoresurrey.com/wp-content/uploads/2025/12/Photoroom_20251220_164105-1-578x578.jpg",
+      "desc": "",
+      "price": 90,
+      "isWeighable": false
+    },
+    {
+      "id": "item_caline",
+      "name": "කැලීන්",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_xBQaCa5YIgB_xTIkhu36CPi9NolyXo95lw&s",
+      "desc": "",
+      "price": 125,
+      "isWeighable": false
+    },
+    {
+      "id": "item_vim_3pack",
+      "name": "Vim (3 in 1 Pack)",
+      "category": "cleaning",
+      "image": "https://ranjanlanka.lk/src/item/10941980291.png",
+      "desc": "3 in 1 Pack",
+      "price": 180,
+      "isWeighable": false
+    },
+    {
+      "id": "item_vim_single",
+      "name": "Vim (Single)",
+      "category": "cleaning",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbd-nUwBbbOfmYTguURaXWQlWbKJZvhXErJg&s",
+      "desc": "",
+      "price": 70,
+      "isWeighable": false
+    },
+    {
+      "id": "item_vim_liquid",
+      "name": "වීම් දියර",
+      "category": "cleaning",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112930--01--1697601625.jpeg",
+      "desc": "bottel",
+      "price": 300,
+      "isWeighable": false
+    },
+     {
+      "id": "item_Soap",
+      "name": "Baby chermy",
+      "category": "beauti",
+      "image": "data:image/jpeg;base64,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",
+      
+      "price": 125,
+      "oldPrice": 145,
+      "isWeighable": false
+    },
+    {
+  "id": "item_lux_soap",
+  "name": "Lux",
+  "category": "beauti",
+  "image": "https://www.ustore.lk/cdn/shop/files/1752560421_4717_250x250.png?v=1776903057",
+  "desc": "",
+  "price": 115,
+  "isWeighable": false
+},
+{
+  "id": "item_lux_soap_100g",
+  "name": "Lux (100g)",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD0qpdM1wdezZyZ5xa33mHvYIR2EMEiRoyoQ&s",
+  "desc": "",
+  "price": 170,
+  "isWeighable": false
+},
+{
+  "id": "item_velvet_soap",
+  "name": "Velvet",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDX1APYmuTkdagk4HjCkN8DtOk8m3jQnqsxw&s",
+  "desc": "",
+  "price": 110,
+  "isWeighable": false
+},
+{
+  "id": "item_kohoba_soap",
+  "name": "කොහොබ සබන්",
+  "category": "beauti",
+  "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/111360--01--1644118365.jpeg",
+  "desc": "",
+  "price": 120,
+  "oldPrice": 125,
+  "isWeighable": false
+},
+{
+  "id": "item_rexona_soap",
+  "name": "Rexona",
+  "category": "beauti",
+  "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/2024/09/4792081036936.jpg",
+  "desc": "",
+  "price": 110,
+  "isWeighable": false
+},
+{
+  "id": "item_rexona_soap",
+  "name": "Rexona සබන් කැට දෙකේ pack ",
+  "category": "beauti",
+  "image": "https://static-01.daraz.lk/p/77b12cbf01191e0d929911309ad7c034.png",
+  "desc": "",
+  "price": 200,
+  "isWeighable": false
+},
+{
+  "id": "item_goya_soap",
+  "name": "Goya",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYvILekwHcoNqMn_0hOILfkFMG1dDwik9KfA&s",
+  "desc": "",
+  "price": 90,
+  "isWeighable": false
+},
+{
+  "id": "item_signal_small",
+  "name": "සිග්නල් (Small)",
+  "category": "beauti",
+  "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112942--01--1697601630.jpeg",
+  "desc": "Tooth paste small",
+  "price": 125,
+  "isWeighable": false
+},
+{
+  "id": "item_signal_medium",
+  "name": "සිග්නල් (Medium)",
+  "category": "beauti",
+  "image": "https://m.media-amazon.com/images/I/61zdogTFDoL._AC_UF1000,1000_QL80_.jpg",
+  "desc": "Tooth paste medium",
+  "price": 200,
+  "isWeighable": false
+},
+{
+  "id": "item_signal_large",
+  "name": "සිග්නල් (Large)",
+  "category": "beauti",
+  "image": "https://assets.unileversolutions.com/v1/128220639.jpg",
+  "desc": "Tooth paste Large",
+  "price": 280,
+  "isWeighable": false
+},
+{
+  "id": "item_signal_extra_large",
+  "name": "සිග්නල් (Extra Large)",
+  "category": "beauti",
+  "image": "https://m.media-amazon.com/images/I/61zdogTFDoL._AC_UF1000,1000_QL80_.jpg",
+  "desc": "Tooth paste Extra Large",
+  "price": 340,
+  "isWeighable": false
+},
+{
+  "id": "item_clogard_small",
+  "name": "ක්ලොගර්ඩ් (Small)",
+  "category": "beauti",
+  "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112557--01--1630434134.jpeg",
+  "desc": "clogurd small",
+  "price": 125,
+  "isWeighable": false
+},
+{
+  "id": "item_clogard_large",
+  "name": "ක්ලොගර්ඩ් (Large)",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfTz9qCoz-ho9CETxchFyTfQYsfRvw1ag47g&s",
+  "desc": "clogurd large",
+  "price": 280,
+  "isWeighable": false
+},
+{
+  "id": "item_lifeboy",
+  "name": "ලයිෆ්බෝයි ෂැම්පු (40ml)",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQO3_Exz9Xzyu283Khh4izmNUHBQS3iEaesA&s",
+  "desc": "",
+  "price": 130,
+  "isWeighable": false
+},
+{
+  "id": "item_lifeboy",
+  "name": "ලයිෆ්බෝයි ෂැම්පු refill packet (100ml)",
+  "category": "beauti",
+  "image": "https://cdn.shopify.com/s/files/1/0560/3154/3495/files/Product_Description_Image_eb10691c-5b7f-4fe6-b462-351ac7ff2b51.jpg?v=1715586675",
+  "desc": "",
+  "price": 290,
+  "isWeighable": false
+},
+{
+  "id": "item_lifeboy",
+  "name": "ලයිෆ්බෝයි ෂැම්පු(175ml) ",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFkcuiOPLdX7_EAQRDP4hvOkp0HLI364tQcw&s",
+  "desc": "strong & long",
+  "price": 520,
+  "isWeighable": false
+},
+{
+  "id": "item_lifeboy",
+  "name": "ලයිෆ්බෝයි ෂැම්පු(175ml) ",
+  "category": "beauti",
+  "image": "https://www.ranjanlanka.lk/src/item/17415033018.png?reload=740",
+  "desc": "Egg protein",
+  "price": 520,
+  "isWeighable": false
+},
+{
+  "id": "item_lifeboy",
+  "name": "ලයිෆ්බෝයි ෂැම්පු(80ml) ",
+  "category": "beauti",
+  "image": "https://www.ranjanlanka.lk/src/item/17415033018.png?reload=740",
+  "desc": "Egg protein",
+  "price": 250,
+  "isWeighable": false
+},
+{
+  "id": "item_lifeboy",
+  "name": "ලයිෆ්බෝයි ෂැම්පු(175ml) ",
+  "category": "beauti",
+  "image": "https://matroholdings.com/wp-content/uploads/2024/02/1DX26492-8x12inch-scaled.jpg",
+  "desc": "Rice water",
+  "price": 520,
+  "isWeighable": false
+},
+{
+  "id": "item_lifeboy",
+  "name": "ලයිෆ්බෝයි ෂැම්පු(175ml) ",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFkcuiOPLdX7_EAQRDP4hvOkp0HLI364tQcw&s",
+  "desc": "strong & long",
+  "price": 520,
+  "isWeighable": false
+},
+{
+  "id": "item_sunslik",
+  "name": "සන්ස්ලික් ෂැම්පු(40ml) ",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRelpAl8xuCrr3AX3k8-bESkNcqeZhAgiTCXw&s",
+  "desc": "soft & smooth",
+  "price": 150,
+  "isWeighable": false
+},
+{
+  "id": "item_sunslik",
+  "name": "සන්ස්ලික් ෂැම්පු(80ml) ",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRelpAl8xuCrr3AX3k8-bESkNcqeZhAgiTCXw&s",
+  "desc": "soft & smooth",
+  "price": 400,
+  "isWeighable": false
+},
+{
+  "id": "item_sunslik",
+  "name": "සන්ස්ලික් ෂැම්පු (80ml)",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHUWZsk1DnJXtsqAi9iGxNS9crVZbrvJjRUA&s",
+  "desc": "black shine",
+  "price": 350,
+  "isWeighable": false
+},
+{
+  "id": "item_sunslik",
+  "name": "සන්ස්ලික් ෂැම්පු (180ml)",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHUWZsk1DnJXtsqAi9iGxNS9crVZbrvJjRUA&s",
+  "desc": "black shine",
+  "price": 625,
+  "isWeighable": false
+},
+{
+  "id": "item_sunslik",
+  "name": "සන්ස්ලික් ෂැම්පු (80ml) ",
+  "category": "beauti",
+  "image": "https://d2t8nl1y0ie1km.cloudfront.net/images/66813571f077212bd74ef8bf_Sunsilk-Damage-Restore-Shampoo-35020ml_1.webp",
+  "desc": "Damage restore shampoo",
+  "price": 385,
+  "isWeighable": false
+},
+{
+  "id": "item_sunslik",
+  "name": "සන්ස්ලික් ෂැම්පු(180ml) ",
+  "category": "beauti",
+  "image": "https://d2t8nl1y0ie1km.cloudfront.net/images/66813571f077212bd74ef8bf_Sunsilk-Damage-Restore-Shampoo-35020ml_1.webp",
+  "desc": "damage restore shampoo",
+  "price": 625,
+  "isWeighable": false
+},
+{
+  "id": "item_sunslik",
+  "name": "සන්ස්ලික් ෂැම්පු (80ml) ",
+  "category": "beauti",
+  "image": "https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:540/1017085/zXZFbcRS9Gu-1017085_1.jpg",
+  "desc": "",
+  "price": 385,
+  "isWeighable": false
+},
+{
+  "id": "item_sunslik",
+  "name": "සන්ස්ලික් ෂැම්පු(180ml) ",
+  "category": "beauti",
+  "image": "https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:540/1017085/zXZFbcRS9Gu-1017085_1.jpg",
+  "desc": "",
+  "price": 625,
+  "isWeighable": false
+},
+
+{
+  "id": "item_clear",
+  "name": "ක්ලියර් ෂැම්පු(80ml) ",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJHt_oevpR7lMuTYeH3dBiQ3c0bDTHGSZQ2w&s",
+  "desc": "",
+  "price": 470,
+  "isWeighable": false
+},
+{
+  "id": "item_clear",
+  "name": "ක්ලියර් ෂැම්පු(80ml) ",
+  "category": "beauti",
+  "image": "https://assets.unileversolutions.com/v1/124856664.png",
+  "desc": "Ice cool menthol",
+  "price": 410,
+  "isWeighable": false
+},
+{
+  "id": "item_clear",
+  "name": "ක්ලියර් ෂැම්පු(80ml) ",
+  "category": "beauti",
+  "image": "https://essstr.blob.core.windows.net/essimg/ItemAsset/Pic101494.jpg",
+  "desc": "Scalp care",
+  "price": 410,
+  "isWeighable": false
+},
+{
+  "id": "item_clear",
+  "name": "ක්ලියර් ෂැම්පු(40ml) ",
+  "category": "beauti",
+  "image": "https://dawi.sa/wp-content/uploads/2023/10/Clear-Shampoo-Cool-Sport-Menthol-200MlBlue-8460.jpg",
+  "desc": "Blue menthol",
+  "price": 250,
+  "isWeighable": false
+},
+{
+  "id": "item_clear",
+  "name": "ක්ලියර් ෂැම්පු(80ml)",
+  "category": "beauti",
+  "image": "https://dawi.sa/wp-content/uploads/2023/10/Clear-Shampoo-Cool-Sport-Menthol-200MlBlue-8460.jpg",
+  "desc": "Blue menthol",
+  "price": 420,
+  "isWeighable": false
+},
+{
+  "id": "item_dettol",
+  "name": "Dettol",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9g8Ck5B3lIMbG-AylW9w-Q5ZbWRJCCfIHA&s",
+  "desc": "",
+  "price": 210,
+  "isWeighable": false
+},
+{
+  "id": "item_dove",
+  "name": "Dove hair fall rescue(80ml)",
+  "category": "beauti",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ6kiH1HasX7fcqXMuee58AXyQa4b3WV9RSw&s",
+  "desc": "",
+  "price": 500,
+  "isWeighable": false
+},
+{
+  "id": "item_dove",
+  "name": "Dove hair intense repair(80ml)",
+  "category": "beauti",
+  "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112141--01--1755069638.jpeg",
+  "desc": "",
+  "price": 500,
+  "isWeighable": false
+},
+ {
+      "id": "item_ayush",
+      "name": "Ayush face wash(50ml)",
+      "category": "beauti",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/124677--01--1743409914.jpeg",
+      "desc": "natural glow & protect",
+      "price": 290,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ponds",
+      "name": "Ponds face wash charcoal(50ml)",
+      "category": "beauti",
+      "image": "https://shopxonline.lk/cdn/shop/files/ponds-bright-miracle-activated-charcoal-face-wash-50ml-299475_medium.jpg?v=1726308485",
+      "desc": "face wash charcoal",
+      "price": 240,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ponds",
+      "name": "Ponds face wash niacinamide(50ml)",
+      "category": "beauti",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/125459--01--1759813061.jpeg",
+      "desc": "face wash niacinamide",
+      "price": 250,
+      "isWeighable": false
+    },
+    {
+      "id": "item_fair & lovely",
+      "name": "Fair & lovely powder finish cream",
+      "category": "beauti",
+      "image": "https://shopxonline.lk/cdn/shop/files/637c-3fce-7120.webp?v=1739872580",
+      "desc": "powder finish cream",
+      "price": 465,
+      "isWeighable": false
+    },
+    {
+      "id": "item_rexona",
+      "name": "Rexona aloe vera(25ml)",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf05PBmFTVBZvNOK-zqyTaXGwaEo4rCy95uA&s",
+      "desc": "",
+      "price": 470,
+      "isWeighable": false
+    },
+     {
+      "id": "item_rexona",
+      "name": "Rexona shower fresh(25ml)",
+      "category": "beauti",
+      "image": "https://static-01.daraz.lk/p/dbee43ff091e28e5177a3168e0a6157e.jpg",
+      "desc": "",
+      "price": 470,
+      "isWeighable": false
+    },
+     {
+      "id": "item_rexona",
+      "name": "Rexona men sport defence(25ml)",
+      "category": "beauti",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/2023/10/4792081032679.jpg",
+      "desc": "",
+      "price": 470,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pears",
+      "name": "Pears baby powder(90g)",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqTbhZfA-22_KSNGT7QEv1bwnp0xKsi6Pt2Q&s",
+      "desc": "",
+      "price": 315,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pears",
+      "name": "Pears herbal baby cologne(50ml)",
+      "category": "beauti",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2017/12/herbal-cologne-300x300.png",
+      "desc": "",
+      "price": 370,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pears",
+      "name": "Pears baby cream(100ml)",
+      "category": "beauti",
+      "image": "https://lakpura.com/cdn/shop/files/LSZ0075288-01-E.jpg?v=1720682548&width=1920",
+      "desc": "Free baby soap",
+      "price": 370,
+      "oldPrice": 500,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pears",
+      "name": "Pears baby bed time cream(50ml)",
+      "category": "beauti",
+      "image": "https://static-01.daraz.lk/p/23ca2812ccd2bbf94f93247ce35bfbfe.jpg",
+      "desc": "",
+      "price": 185,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pears_baby",
+      "name": "Pears baby pure gentle(50ml)",
+      "category": "beauti",
+      "image": "https://matroholdings.com/wp-content/uploads/2024/02/Pears-50ml.jpg",
+      "desc": "ළදරුවන් සඳහා විශේෂිතයි",
+      "price": 185,
+      "isWeighable": false
+    },
+   
+    {
+      "id": "item_vaseline",
+      "name": "වැස්ලීන් ලෝෂන් kiss of petals(100ml)",
+      "category": "beauti",
+      "image": "https://jodiabaazar.com/cdn/shop/files/WhatsAppImage2026-01-13at11.47.06PM9.jpg?v=1768911751",
+      "desc": "kiss of petals",
+      "price": 600,
+      "isWeighable": false
+    },
+     {
+      "id": "item_vaseline",
+      "name": "වැස්ලීන් ලෝෂන් Aloe fresh(100ml)",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR10npg0ZH2gIpMKRUTMgHsxGoiWeU4JWf8NQ&s",
+      "desc": "සම මෘදු කිරීම සඳහා",
+      "price": 425,
+      "isWeighable": false
+    },
+     {
+      "id": "item_vaseline_yellow",
+      "name": "වැස්ලීන් ලෝෂන් Deep restro(100ml)",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ09lyxYkObMNofJL8n2HKrXiJrsy-uxKAxbw&s",
+      "desc": "Deep restro",
+      "price": 425,
+      "isWeighable": false
+    },
+    {
+      "id": "item_vaseline_yellow",
+      "name": "වැස්ලීන් ලෝෂන් Deep restro(40ml)",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ09lyxYkObMNofJL8n2HKrXiJrsy-uxKAxbw&s",
+      "desc": "Deep restro",
+      "price": 180,
+      "isWeighable": false
+    },
+     {
+      "id": "item_vaseline_yellow",
+      "name": "වැස්ලීන් Ice cool(100ml)",
+      "category": "beauti",
+      "image": "https://media.zid.store/0cd60bb9-2c75-403f-b4b2-53e643da1ba9/0ecbbcfa-cebc-4588-9fcf-7ba1100115a0.png",
+      "desc": "සම මෘදු කිරීම සඳහා",
+      "price": 425,
+      "isWeighable": false
+    },
+    {
+      "id": "item_glow_lovely",
+      "name": "Glow & Lovely face ක්‍රීම්",
+      "category": "beauti",
+      "image": "https://www.qbay.lk/cdn/shop/files/41NH33REXgL-1.jpg?v=1738481303&width=500",
+      "desc": "දීප්තිමත් සමක් සඳහා",
+      "price": 220,
+      "isWeighable": false
+    },
+     {
+      "id": "item_glow_lovely",
+      "name": "Glow & Lovely men's face ක්‍රීම්",
+      "category": "beauti",
+      "image": "https://lk-live-21.slatic.net/kf/S0d488873e0a44d8ab4dc1959dc6bdb31f.jpg",
+      "desc": "",
+      "price": 1055,
+      "isWeighable": false
+    },
+    {
+      "id": "item_glow_lovely",
+      "name": "Glow & Lovely face wash",
+      "category": "beauti",
+      "image": "https://lh6.googleusercontent.com/proxy/Gdpj4orcaL8OAGHp0O2PA5HQiE0RiTUtWPrgHRymGIM-yIOg0aVbxcPQQyuQNwnfsZ60tmhMYufliuiL-9MhIKLvnZnAk2KHmJZ4S5bVg9hXXpr2HA",
+      "desc": "",
+      "price": 600,
+      "isWeighable": false
+    },
+    {
+      "id": "item_glow_lovely",
+      "name": "Glow & Lovely men's face ක්‍රීම්",
+      "category": "beauti",
+      "image": "https://lk-live-21.slatic.net/kf/S0d488873e0a44d8ab4dc1959dc6bdb31f.jpg",
+      "desc": "",
+      "price": 1055,
+      "isWeighable": false
+    },
+
+        {
+      "id": "item_glow_lovely",
+      "name": "Glow & Lovely men's face ක්‍රීම්",
+      "category": "beauti",
+      "image": "https://lk-live-21.slatic.net/kf/S0d488873e0a44d8ab4dc1959dc6bdb31f.jpg",
+      "desc": "",
+      "price": 1055,
+      "isWeighable": false
+    },
+        {
+      "id": "item_navaratna",
+      "name": "නවරත්න oil (100ml)",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeodQ2dzSOXfESIolygFwCE1q-YvZrOOpjOg&s",
+      "desc": "",
+      "price": 400,
+      "isWeighable": false
+    },
+
+      {
+      "id": "item_paris_powder",
+      "name": "Paris powder sandalwood palc (80g)",
+      "category": "beauti",
+      "image": "https://www.ranjanlanka.lk/src/item/17286774560.png?reload=631",
+      "desc": "",
+      "price": 200,
+      "isWeighable": false
+    },
+
+      {
+      "id": "item_hair_oil",
+      "name": "නෙලුම් තෙල් (100ml)",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmX06Sv-W_bPXi56BJC2OqrXxYl6e-Po6ECg&s",
+      "desc": "",
+      "price": 400,
+      "isWeighable": false
+    },
+
+     {
+      "id": "item_cheramy",
+      "name": "Baby cheramy powder(100g)",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR40esoZwAwvLlCC9VdGitus6xUN6fDDvW6bg&s",
+      "desc": "",
+      "price": 330,
+      "isWeighable": false
+    },
+    {
+      "id": "item_dandex",
+      "name": "Dandex anti dandruf (40ml)",
+      "category": "beauti",
+      "image": "https://hemasestore.com/wp-content/uploads/2023/05/DXHairfall40ml.png",
+      "desc": "",
+      "price": 150,
+      "isWeighable": false
+    },
+        {
+      "id": "item_dandex",
+      "name": "Dandex anti dandruf (80ml)",
+      "category": "beauti",
+      "image": "https://i.ebayimg.com/images/g/4fgAAOSwjTJg8u3D/s-l1200.jpg",
+      "desc": "",
+      "price": 340,
+      "isWeighable": false
+    },
+     {
+      "id": "item_kumarika",
+      "name": "කෝමාරිකා hair oil (100ml)",
+      "category": "beauti",
+      "image": "https://hemasestore.com/wp-content/uploads/2024/02/Hair-fall-control.png",
+      "desc": "",
+      "price": 315,
+      "isWeighable": false
+    },
+       {
+      "id": "item_kumarika",
+      "name": "කෝමාරිකා hair oil (200ml)",
+      "category": "beauti",
+      "image": "https://hemasestore.com/wp-content/uploads/2024/02/Hair-fall-control.png",
+      "desc": "",
+      "price": 500,
+      "isWeighable": false
+    },
+      {
+      "id": "item_king_cococnat_oil",
+      "name": "තැබිලි තෙල්  (100ml)",
+      "category": "beauti",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2017/12/aad23.jpg",
+      "desc": "",
+      "price": 380,
+      "isWeighable": false
+    },
+      {
+      "id": "item_hair_gel",
+      "name": "Gold hair gel (25g)",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPedf8FuI1fV9bp7sLkDJVEvNgIILz13JVA&s",
+      "desc": "",
+      "price": 100,
+      "isWeighable": false
+    },
+        {
+      "id": "item_valmee_syrup",
+      "name": "වැල්මී සිරප් (100ml)",
+      "category": "ayurveda/medicine",
+      "image": "https://www.dinuro.com/Images/Activity/11465.jpg",
+      "desc": "",
+      "price": 395,
+      "isWeighable": false
+    },
+        {
+      "id": "item_pawatta_thalsookiri_syrup",
+      "name": "පාවට්ටා තල්සුකිරි පැණිය (100ml)",
+      "category": "ayurveda/medicine",
+      "image": "https://www.dinuro.com/Images/Activity/11463.jpg",
+      "desc": "",
+      "price": 395,
+      "isWeighable": false
+    },
+        {
+      "id": "item_gastritict_syrup",
+      "name": "ගස්රයිටිස් පැණිය (100ml)",
+      "category": "ayurveda/medicine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlp5S00v3wMvs7lJmCbGCsXWTzypymLLHaaQ&s",
+      "desc": "",
+      "price": 100,
+      "isWeighable": false
+    },
+    
+
+    
+
+
+    {
+      "id": "item_munchee_chock_shok",
+      "name": "මන්චි චෝක් ෂෝක් ",
+      "category": "biscuits",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2024/06/munchee-choc-shock-30g-16019581906582-600x600.webp",
+      "desc": "",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_milk_short_cake",
+      "name": "මන්චි ලෙමන් වෙෆස් ",
+      "category": "biscuits",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2017/12/Untitled-19.png",
+      "desc": "",
+      "price": 520,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_waffers",
+      "name": "මන්චි වැනිලා වෙෆස් ",
+      "category": "biscuits",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/Munchee-Vanilla-Cream-Wafers-85G.webp",
+      "desc": "",
+      "price": 300,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_waffers",
+      "name": "මන්චි චොක්ලට් වෙෆස්",
+      "category": "biscuits",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2018/02/Untitled-20.png",
+      "desc": "",
+      "price": 300,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_waffers",
+      "name": "මන්චි චොක්ලට් වෙෆස් ",
+      "category": "biscuits",
+      "image": "https://www.ranjanlanka.lk/src/item/10145079696.png?reload=686",
+      "desc": "",
+      "price": 520,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_kome",
+      "name": "මන්චි kome rice cracker",
+      "category": "biscuits",
+      "image": "https://shoppingbasket.lk/wp-content/uploads/2025/11/Munchee-Biscuit-Kome-Cheese-Chilli-90g.jpg",
+      "desc": "",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_mari",
+      "name": "මන්චි මාරි ",
+      "category": "biscuits",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/115462--01--1555691163.jpeg",
+      "desc": "",
+      "price": 50,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_milk_shorties",
+      "name": "මන්චි Milk Shorties",
+      "category": "biscuits",
+      "image": "https://img.drz.lazcdn.com/static/lk/p/6ee11de5005e5f234c30b23c3e031d03.jpg_720x720q80.jpg",
+      "desc": "",
+      "price": 300,
+      "isWeighable": false
+    },
+    {
+      "id": "item_choclate_mari",
+      "name": "චොක්ලට් මාරි",
+      "category": "biscuits",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/114801--01--1623926474.jpeg",
+      "desc": "",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_choclate_mari",
+      "name": "චොක්ලට් මාරි",
+      "category": "biscuits",
+      "image": "https://i.ebayimg.com/images/g/HtgAAOSwKvFjhL9j/s-l400.jpg",
+      "desc": "",
+      "price": 220,
+      "isWeighable": false
+    },
+    {
+      "id": "item_choclate_mari",
+      "name": "චොක්ලට් මාරි",
+      "category": "biscuits",
+      "image": "https://static-01.daraz.lk/p/e69711e02ecff486844bcc887403951e.jpg",
+      "desc": "",
+      "price": 400,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_nice",
+      "name": "මන්චි නයිස් ",
+      "category": "biscuits",
+      "image": "https://i.ebayimg.com/images/g/NqgAAOSwH5tkvWpR/s-l1200.jpg",
+      "desc": "",
+      "price": 420,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_nice",
+      "name": "මන්චි නයිස් ",
+      "category": "biscuits",
+      "image": "https://i.ebayimg.com/images/g/NqgAAOSwH5tkvWpR/s-l1200.jpg",
+      "desc": "",
+      "price": 220,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_tifin",
+      "name": "මන්චි ටිෆින්",
+      "category": "biscuits",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/114851--01--1627371008.jpeg",
+      "desc": "",
+      "price": 230,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_tifin",
+      "name": "ටිෆින්",
+      "category": "biscuits",
+      "image": "data:image/jpeg;base64,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",
+      "desc": "",
+      "price": 230,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_choclate_biscuit",
+      "name": "මන්චි චොකලට් බිස්කට්",
+      "category": "biscuits",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/114797--01--1623926470.jpeg",
+      "desc": "",
+      "price": 130,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_choclate_biscuit",
+      "name": "මන්චි චොකලට් බිස්කට්",
+      "category": "biscuits",
+      "image": "https://lakpura.com/cdn/shop/files/LS50001DAA-09-E.jpg?v=1704959901&width=1946",
+      "desc": "",
+      "price": 240,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_choclate_biscuit",
+      "name": "මන්චි චොකලට් බිස්කට්",
+      "category": "biscuits",
+      "image": "https://essstr.blob.core.windows.net/essimg/ItemAsset/Pic125102_20250301164303.jpg",
+      "desc": "",
+      "price": 410,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_milk_short_cake",
+      "name": "මන්චි කිරි ෂෝට් කේක්",
+      "category": "biscuits",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/114834--01--1623926505.jpeg",
+      "desc": "කිරි රසැති මෘදු බිස්කට්",
+      "price": 130,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_milk_short_cake",
+      "name": "මන්චි කිරි ෂෝට් කේක්",
+      "category": "biscuits",
+      "image": "https://www.wishque.com/data/images/products/7278/43624694_365072890702_0.91982400-1603770371.png",
+      "desc": "කිරි රසැති මෘදු බිස්කට්",
+      "price": 230,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_hawaiian",
+      "name": "මන්චි හවායන් කුකීස්",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_gBzYuunAHK-w8A7BtkLiz_da5X0YAUQ44Q&s",
+      "desc": "රසවත් හවායන් කුකීස්",
+      "price": 240,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_hawaiian",
+      "name": "මන්චි හවායන් කුකීස්",
+      "category": "biscuits",
+      "image": "https://static-01.daraz.lk/p/646ee50a720b40b24e14778928a27923.jpg",
+      "desc": "රසවත් හවායන් කුකීස්",
+      "price": 130,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_lemon",
+      "name": "මන්චි ලෙමන් පෆ්",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM4OAzmEvc9vT7ycptae_ZTZ6Ja2WUrD2BbQ&s",
+      "desc": "ලෙමන් රසින්",
+      "price": 130,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_lemon",
+      "name": "මන්චි චොක්ලට්  පෆ්",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO7Idvywxq_TN_l5qKNEokCwlYsK0eJuZvkA&s",
+      "desc": "චොක්ලට් රසින්",
+      "price": 130,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_lemon",
+      "name": "මන්චි ලෙමන් පෆ්",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThETCPQc_5AJw7r92asE_WNrtGOLN0s08LDg&s",
+      "desc": "ලෙමන් රසින්",
+      "price": 250,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_lemon",
+      "name": "මන්චි චොක්ලට්  පෆ්",
+      "category": "biscuits",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/114799--01--1623926472.jpeg",
+      "desc": "චොක්ලට්  රසින්",
+      "price": 250,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_cracker",
+      "name": "මන්චි ක්‍රීම් ක්‍රැකර්",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMOTdLpRe4BZ1ONC8ffto6BzbGnjbxdDenxA&s",
+      "desc": "සුපර් ක්‍රීම් ක්‍රැකර්",
+      "price": 90,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_cracker",
+      "name": "මන්චි ක්‍රීම් ක්‍රැකර්",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAlH9_VJXGQ8YNfrjjb1APwTjYqRwJuTFRzQ&s",
+      "desc": "සුපර් ක්‍රීම් ක්‍රැකර්",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_cracker",
+      "name": "මන්චි ක්‍රීම් ක්‍රැකර්",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS69aKiSSSrGApN5kgblABBfehwSI5RWqSwvQ&s",
+      "desc": "සුපර් ක්‍රීම් ක්‍රැකර්",
+      "price": 140,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_cracker",
+      "name": "මන්චි ක්‍රීම් ක්‍රැකර්",
+      "category": "biscuits",
+      "image": "https://www.sunonline.lk/cdn/shop/products/CBL-SCC-190-01_1024x.jpg?v=1622887067",
+      "desc": "සුපර් ක්‍රීම් ක්‍රැකර්",
+      "price": 200,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_cracker",
+      "name": "මන්චි ක්‍රීම් ක්‍රැකර්",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCYz48ccRv_Rm2-55ZmVnjmO7LK74ov_BsEQ&s",
+      "desc": "සුපර් ක්‍රීම් ක්‍රැකර්",
+      "price": 230,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_cracker",
+      "name": "මන්චි ක්‍රීම් ක්‍රැකර්",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfKHOsIBqooKgBlRuSmuVuo0dmPKcLCkY2Dw&s",
+      "desc": "සුපර් ක්‍රීම් ක්‍රැකර්",
+      "price": 420,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_marie",
+      "name": "මන්චි ටිකිරි මාරි",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3P-LFgjFDL0JvKwAxipAy_htbZfGgiB1r4A&s",
+      "desc": "ළදරුවන්ට විශේෂිත මාරි",
+      "price": 90,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_marie",
+      "name": "මන්චි ටිකිරි මාරි",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHi4grp3xs1DzEg0btaZfVJaIHvkdp3JoIpA&s",
+      "desc": "ළදරුවන්ට විශේෂිත මාරි",
+      "price": 220,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_marie",
+      "name": "මන්චි ටිකිරි මාරි",
+      "category": "biscuits",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/114806--01--1623926478.jpeg",
+      "desc": "ළදරුවන්ට විශේෂිත මාරි",
+      "price": 300,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_ginger",
+      "name": "මන්චි ඉඟුරු බිස්කට්",
+      "category": "biscuits",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSICbZc9tUpsbVXfyS1Ev8rYKXwaBOlsPDF9w&s",
+      "desc": "උණුසුම් තේ එකට ",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_ginger",
+      "name": "මන්චි ඉඟුරු බිස්කට්",
+      "category": "biscuits",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2018/01/1-81.jpg",
+      "desc": "උණුසුම් තේ එකට ",
+      "price": 220,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee_ginger",
+      "name": "මන්චි ඉඟුරු බිස්කට්",
+      "category": "biscuits",
+      "image": "https://www.grocerylanka.com/cdn/shop/files/rn-image_picker_lib_temp_53e42eab-2711-4499-a23a-14d618cd43a8_1024x1024.png?v=1776193809",
+      "desc": "උණුසුම් තේ එකට ",
+      "price": 410,
+      "isWeighable": false
+    },
+    {
+      "id": "item_tiara_ahha",
+      "name": "ටියාරා Ah-Ha කේක්",
+      "category": "snacks",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VzuLwDhZBfue4oIAfMQjA4DwYXIXTXd5_A&s",
+      "desc": "ස්පොන්ජ් කේක්",
+      "price": 70,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ritzbury_bubbles",
+      "name": "රිට්ස්බරි බබල්ස්",
+      "category": "snacks",
+      "image": "https://ican-mall.oss-ap-southeast-1.aliyuncs.com/2025/02/5d1379864264432ab22c3e647b840a7a.webp",
+      "desc": "රසවත් චොකලට්",
+      "price": 400,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ritzbury_bubbles",
+      "name": "රිට්ස්බරි බබල්ස්",
+      "category": "snacks",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2024/06/1-53.jpg",
+      "desc": "රසවත් චොකලට්",
+      "price": 250,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ritzbury_bubbles",
+      "name": "රිට්ස්බරි බබල්ස්",
+      "category": "snacks",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2024/06/1-53.jpg",
+      "desc": "රසවත් චොකලට්",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_watawala_tea",
+      "name": "වටවල තේ කොළ (100g)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZmxNxjD1oQsio6okrulfuqM_DiJuKSgjEZw&s",
+      "desc": "පිරිසිදු ලාංකීය තේ කොළ",
+      "price": 295,
+      "isWeighable": false
+    },
+    {
+      "id": "item_watawala_tea",
+      "name": "වටවල තේ කොළ (50g)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSS5n5hm6d1LeDPVqGd_TRWc-6uURoQuAD4Q&s",
+      "desc": "පිරිසිදු ලාංකීය තේ කොළ",
+      "price": 150,
+      "isWeighable": false
+    },
+    {
+      "id": "item_viva_malt",
+      "name": "වීවා මෝල්ට්",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFpylUvuAC7ANuequIPGqrgqiAG6-q1AtOuQ&s",
+      "desc": "ශක්තිජනක පානය",
+      "price": 60,
+      "isWeighable": false
+    },
+     {
+      "id": "item_viva_malt",
+      "name": "වීවා මෝල්ට්",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTct1Kxy-mDDmBCm69lIYxCpm4WBNtaXXWB_w&s",
+      "desc": "ශක්තිජනක පානය",
+      "price": 580,
+      "isWeighable": false
+    },
+     {
+      "id": "item_viva_malt",
+      "name": "වීවා මෝල්ට්",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrX3-HsacKiOa_qUHoJY9jlaNh9-7QkubrFA&s",
+      "desc": "ශක්තිජනක පානය",
+      "price": 770,
+      "isWeighable": false
+    },
+  
+ 
+    {
+      "id": "item_panadol",
+      "name": "පැනඩෝල් (Panadol)",
+      "category": "ayurveda/medicine",
+      "image": "https://www.sunonline.lk/cdn/shop/products/GLX-PT-240-01_e013ae25-a8b6-46df-ad60-46b2d771bfa8_800x.jpg?v=1601359333",
+      "desc": "උණ සහ වේදනාව සඳහා ",
+      "price": 60,
+      "isWeighable": false
+    },
+    {
+      "id": "item_panadol",
+      "name": "පැනඩෝල් syrup",
+      "category": "ayurveda/medicine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJfLb8on2PaL6hf3swjncGowfiVm8IXu2BHQ&s",
+      "desc": "උණ සහ වේදනාව සඳහා ",
+      "price": 400,
+      "isWeighable": false
+    },
+    {
+      "id": "item_morison",
+      "name": "මොරිසන් ",
+      "category": "ayurveda/medicine",
+      "image": "https://www.morison.lk/wp-content/uploads/2021/10/gripemixture.jpg",
+      "desc": " ",
+      "price": 260,
+      "isWeighable": false
+    },
+    {
+      "id": "item_sunquick",
+      "name": "Sunquick (300ml) ",
+      "category": "essentials",
+      "image": "https://spar2u.lk/cdn/shop/files/3000013-1.jpg?v=1748382593",
+      "desc": " ",
+      "price": 660,
+      "isWeighable": false
+    },
+    {
+      "id": "item_jam",
+      "name": "Mixed fruit jam (150g) ",
+      "category": "essentials",
+      "image": "https://mdfood.lk/wp-content/uploads/2020/05/jam-mx-1.jpg",
+      "desc": " ",
+      "price": 260,
+      "isWeighable": false
+    },
+    {
+        "id": "item_marmite",
+      "name": "මාමයිට් (50g) ",
+      "category": "essentials",
+      "image": "https://static-01.daraz.lk/p/7fa6627515f49c812ee7989d167c3174.jpg",
+      "desc": " ",
+      "price": 395,
+      "isWeighable": false
+    },
+    {
+      "id": "item_tiara",
+      "name": "Tiara okay ",
+      "category": "snacks",
+      "image": "https://www.qbay.lk/cdn/shop/files/9.png?v=1730104511",
+      "desc": " ",
+      "price": 40,
+      "isWeighable": false
+    },
+    {
+      "id": "item_munchee",
+      "name": "Stix",
+      "category": "snacks",
+      "image": "https://www.qbay.lk/cdn/shop/files/68ee24b1c209c_download.jpg?v=1760437794&width=800",
+      "desc": " ",
+      "price": 40,
+      "isWeighable": false
+    },
+    {
+      "id": "item_rollo",
+      "name": "Rollo",
+      "category": "snacks",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/2023/09/4792192050012.jpg",
+      "desc": " ",
+      "price": 80,
+      "isWeighable": false
+    },
+    {
+      "id": "item_tiara",
+      "name": "Go chock",
+      "category": "snacks",
+      "image": "https://www.qbay.lk/cdn/shop/files/68ecc750e9c28_download.jpg?v=1760348271",
+      "desc": " ",
+      "price": 80,
+      "isWeighable": false
+    },
+    {
+      "id": "item_rizburry",
+      "name": "Rizburry fingers",
+      "category": "snacks",
+      "image": "https://static-01.daraz.lk/p/f3f40fb73b9c246a1cde86e5dfb1dfd3.jpg",
+      "desc": " ",
+      "price": 40,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pen",
+      "name": "Blue gel pen",
+      "category": "books",
+      "image": "https://static-01.daraz.lk/p/a5c598589f45023a5efc3f8d35832f8c.jpg",
+      "desc": " ",
+      "price": 50,
+      "isWeighable": false
+    },
+     {
+      "id": "item_pen",
+      "name": "Blue pen",
+      "category": "books",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQwXbWyToHkv-FP6ZJ3Xm61xUWUyrPL4f02g&s",
+      "desc": " ",
+      "price": 25,
+      "isWeighable": false
+    },
+     {
+      "id": "item_pen",
+      "name": "Black pen",
+      "category": "books",
+      "image": "https://www.atlas.lk/myshop/wp-content/uploads/2021/07/WF2032402.jpg",
+      "desc": " ",
+      "price": 25,
+      "isWeighable": false
+    },
+     {
+      "id": "item_pen",
+      "name": "Red pen",
+      "category": "books",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7ZIY5nxytxvs9bNe7cNMR4g6Fseq6Sx4qA&s",
+      "desc": " ",
+      "price": 25,
+      "isWeighable": false
+    },
+     {
+      "id": "item_pen",
+      "name": "Color pen set",
+      "category": "books",
+      "image": "https://voxel.lk/wp-content/uploads/2024/07/five-colours-p.jpg",
+      "desc": " ",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pencil",
+      "name": "Atlas pencil",
+      "category": "books",
+      "image": "https://lk-live-21.slatic.net/kf/S390a10989a1f446482793a8130149442i.jpg",
+      "desc": " ",
+      "price": 40,
+      "isWeighable": false
+    },
+    {
+      "id": "item_eraser",
+      "name": "Atlas Eraser",
+      "category": "books",
+      "image": "https://www.sunonline.lk/cdn/shop/files/126b85d1-a1a0-4740-a535-d8515e307603_300x300.jpg?v=1718083437",
+      "desc": " ",
+      "price": 20,
+      "isWeighable": false
+    },
+    {
+      "id": "item_whitex",
+      "name": "Atlas whitex",
+      "category": "books",
+      "image": "https://www.qbay.lk/cdn/shop/files/IMG-20250215_172853.jpg?v=1739621643&width=1946",
+      "desc": " ",
+      "price": 140,
+      "isWeighable": false
+    },
+    {
+      "id": "item_tooth_brush",
+      "name": "Signal tooth brush",
+      "category": "essentials",
+      "image": "https://static-01.daraz.lk/p/92bca92af502582a70c577b503c91232.png",
+      "desc": " ",
+      "price": 135,
+      "isWeighable": false
+    },
+    {
+      "id": "item_tooth_brush",
+      "name": "Signal tooth brush transparent",
+      "category": "essentials",
+      "image": "https://shionlankafoods.com/wp-content/uploads/2024/01/IMG_9604.jpeg",
+      "desc": " ",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_tooth_brush",
+      "name": "Denta brush",
+      "category": "essentials",
+      "image": "https://static-01.daraz.lk/p/782bc6f28f9822a0d8d73887eafb7bb5.jpg",
+      "desc": " ",
+      "price": 135,
+      "isWeighable": false
+    },
+    {
+      "id": "item_tooth_brush",
+      "name": "Denta kid brush",
+      "category": "essentials",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2018/01/4791010000284-1.jpg",
+      "desc": " ",
+      "price": 110,
+      "isWeighable": false
+    },
+    {
+      "id": "item_seasonin_cube",
+      "name": "Knorr seasonin cube",
+      "category": "essentials",
+      "image": "https://importfood.com/images/chicken-cube-knorr-open-large.jpg",
+      "desc": " ",
+      "price": 65,
+      "isWeighable": false
+    },
+    {
+      "id": "item_seasonin_cube",
+      "name": "Maggi chicken seasonin cube",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRznT6xjmQDs1Ppb8hI5WooYNiwpoKwXsH22g&s",
+      "desc": " ",
+      "price": 25,
+      "isWeighable": false
+    },
+    {
+      "id": "item_seasonin_cube",
+      "name": "Knorr උම්බලකඩ පවුඩර් මිශ්‍රණය ",
+      "category": "essentials",
+      "image": "https://static-01.daraz.lk/p/ec6c906689be90abd460fe2cda13c099.png",
+      "desc": " ",
+      "price": 65,
+      "isWeighable": false
+    },
+    {
+      "id": "item_seasonin_cube",
+      "name": "Maggi රස මුසු ",
+      "category": "essentials",
+      "image": "https://static-01.daraz.lk/p/1371b954bde65076fb0cac1935ad59c4.jpg",
+      "desc": " ",
+      "price": 30,
+      "isWeighable": false
+    },
+     {
+      "id": "item_samaposha",
+      "name": "සමපෝෂ (200g) ",
+      "category": "essentials",
+      "image": "https://i0.wp.com/ceylolion.com/wp-content/uploads/2025/04/samaposha.jpg?fit=500%2C500&ssl=1",
+      "desc": " ",
+      "price": 185,
+      "isWeighable": false
+    },
+    {
+      "id": "item_samaposha",
+      "name": "සමපෝෂ (500g) ",
+      "category": "essentials",
+      "image": "https://www.sunonline.lk/cdn/shop/files/CBL-SAMAPOSHA-200-01_800x.jpg?v=1752211140",
+      "desc": " ",
+      "price": 420,
+      "isWeighable": false
+    },
+    {
+      "id": "item_eno",
+      "name": "Eno",
+      "category": "ayurveda/medicine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hliXIpm7X83try0pdOMirZ7CDPN3KFiRYQ&s",
+      "desc": " ",
+      "price": 70,
+      "isWeighable": false
+    },
+   
+    {
+      "id": "item_vim_liquid",
+      "name": "විම් දියර Refill packet(Vim Liquid)",
+      "category": "cleaning",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2025/06/Gemini_Generated_Image_6sspl36sspl36ssp.png",
+      "desc": "දෙහි සුවඳින් පිඟන් සේදීම සඳහා",
+      "price": 150,
+      "isWeighable": false
+    },
+    {
+      "id": "item_harpic",
+      "name": "හාපික් (Harpic)(200ml)",
+      "category": "cleaning",
+      "image": "https://spar2u.lk/cdn/shop/files/3001633-01.jpg?v=1748382760",
+      "desc": "වැසිකිළි පිරිසිදුකාරක",
+      "price": 265,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ninja",
+      "name": "නින්ජා මදුරු කොයිල් ",
+      "category": "others",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/112364--01--1660053438.jpeg",
+      "desc": "",
+      "price": 190,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ninja",
+      "name": "Ninja strike (300ml)",
+      "category": "others",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112362--01--1670420096.jpeg",
+      "desc": "",
+      "price": 850,
+      "isWeighable": false
+    },
+    {
+      "id": "item_liter",
+      "name": "ලයිටර් ",
+      "category": "others",
+      "image": "https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.lankadeepa.lk/assets/uploads/image_c8d4d830e8.jpg",
+      "desc": "",
+      "price": 50,
+      "isWeighable": false
+    },
+     {
+      "id": "item_liter",
+      "name": "Bic ලයිටර් ",
+      "category": "others",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/401188--01--1687858932.jpeg",
+      "desc": "",
+      "price": 120,
+      "isWeighable": false
+    },
+     {
+      "id": "item_liter",
+      "name": "Bic ලයිටර් ",
+      "category": "others",
+      "image": "https://media.pickaroo.com/media/thumb/variant_photos/2021/4/14/4NvKBWWcsvFGTUZbn5Hdg4_watermark_400.jpg",
+      "desc": "",
+      "price": 180,
+      "isWeighable": false
+    },
+    {
+      "id": "item_card",
+      "name": "Card pack",
+      "category": "others",
+      "image": "https://img.drz.lazcdn.com/static/lk/p/a1dc63889b78fe9f1507f57bd2f20b0a.jpg_960x960q80.jpg_.webp",
+      "desc": "",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_nil",
+      "name": "නිල් දියර ",
+      "category": "others",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQWjfgMGRuvvVbCbVfRf0e0Mze6mz_tpDeQ&s",
+      "desc": "",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_umbalakada",
+      "name": "උම්බලකඩ බෝතල් ",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRMiWgl5TTmzwLajXAzIXn5Npp_qUHJL5HgA&s",
+      "desc": "",
+      "price": 200,
+      "isWeighable": false
+    },
+  
+    {
+      "id": "item_siddalepa",
+      "name": "සිද්දලේප (2.5g) ",
+      "category": "ayurveda/medicine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7TPnarb3CEDBgjzYNrnCs4sh-EUCbdt6OJg&s",
+      "desc": "",
+      "price": 60,
+      "isWeighable": false
+    },
+    {
+      "id": "item_siddalepa",
+      "name": "සිද්දලේප (10g)",
+      "category": "ayurveda/medicine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7TPnarb3CEDBgjzYNrnCs4sh-EUCbdt6OJg&s",
+      "desc": "",
+      "price": 200,
+      "isWeighable": false
+    },
+    {
+      "id": "item_siddalepa",
+      "name": "සිද්දලේප (15g) ",
+      "category": "ayurveda/medicine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7TPnarb3CEDBgjzYNrnCs4sh-EUCbdt6OJg&s",
+      "desc": "",
+      "price": 285,
+      "isWeighable": false
+    },
+    {
+      "id": "item_iodex",
+      "name": "Iodex balm (9g)",
+      "category": "ayurveda/medicine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaD4ltpKpo-nzz9leY42sIwyxo3uzrS1cD5A&s",
+      "desc": "",
+      "price": 190,
+      "isWeighable": false
+    },
+    {
+      "id": "item_samahan",
+      "name": "සමහන් ",
+      "category": "ayurveda/medicine",
+      "image": "https://ciaomalli.online/cdn/shop/files/11.jpg?v=1720971839&width=1214",
+      "desc": "",
+      "price": 60,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pastals",
+      "name": "Pentium pastals",
+      "category": "books",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ptPD-z0xdvebqGDliIad9Xy0VQpTq2-WiQ&s",
+      "desc": "small",
+      "price": 210,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pastals",
+      "name": "Pentium pastals",
+      "category": "books",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS93wmXCZ7HYDV0nFJQBn8gEiGg8HE3LXupdg&s",
+      "desc": "large",
+      "price": 375,
+      "isWeighable": false
+    },
+    {
+      "id": "item_sambrani",
+      "name": "සපුමල් සම්බ්‍රාණි ",
+      "category": "others",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeNfUK_x3QOerYNWqO1sQkfZMj2fNQvfzfWQ&s",
+      "desc": "",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_hair_color",
+      "name": "අබා hair color shampoo ",
+      "category": "beauti",
+      "image": "https://shopxonline.lk/cdn/shop/files/AbhaHerbalBlackHenna21G.webp?v=1739780596",
+      "desc": "",
+      "price": 260,
+      "isWeighable": false
+    },
+    {
+      "id": "item_hair_color",
+      "name": "අබා hair color powder",
+      "category": "beauti",
+      "image": "https://www.bamagate.com/cdn/shop/products/abha-herbal-black-henna-hair-color_a88ea7fb-a903-4e58-bd70-ae33d5562a3a.jpg?v=1674283050&width=300",
+      "desc": "",
+      "price": 230,
+      "isWeighable": false
+    },
+    {
+      "id": "item_laxapana_9w",
+      "name": "ලක්සපාන LED බල්බ (9W)",
+      "category": "hardware",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxRH_SggXzeVBThIMKcf3THhO2pBVIPX3Nw&s",
+      "desc": "බලශක්ති ඉතිරිකරන LED බල්බය",
+      "price": 740,
+      "isWeighable": false
+    },
+    {
+      "id": "item_laxapana_15.5w",
+      "name": "ලක්සපාන LED බල්බ (15.5W)",
+      "category": "hardware",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxRH_SggXzeVBThIMKcf3THhO2pBVIPX3Nw&s",
+      "desc": "බලශක්ති ඉතිරිකරන LED බල්බය",
+      "price": 990,
+      "isWeighable": false
+    },
+    {
+      "id": "item_bulb",
+      "name": "LED බල්බ (10W)",
+      "category": "hardware",
+      "image": "https://slon-cdn.zenegal.store/products/2703/800-kevilton-30w-b22-cool-day-light-led-bulb-16139821151359.jpg",
+      "desc": "බලශක්ති ඉතිරිකරන LED බල්බය",
+      "price": 160,
+      "isWeighable": false
+    },
+    {
+      "id": "item_battery",
+      "name": "Laxapana battery(remote)",
+      "category": "hardware",
+      "image": "https://asirihardware.lk/wp-content/uploads/2024/01/Untitled-design-1.png",
+      "desc": "බලශක්ති ඉතිරිකරන LED බල්බය",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_battery",
+      "name": "Laxapana battery (ඔරලෝසු)",
+      "category": "hardware",
+      "image": "https://asirihardware.lk/wp-content/uploads/2024/01/Untitled-design-1.png",
+      "desc": "බලශක්ති ඉතිරිකරන LED බල්බය",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_battery",
+      "name": "Eveready battery (ඔරලෝසු)",
+      "category": "hardware",
+      "image": "https://arnaizph.com/cdn/shop/files/sg-11134201-22110-e8w79wfm11jv8c.jpg?v=1718537629&width=1445",
+      "desc": "බලශක්ති ඉතිරිකරන LED බල්බය",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_kapuru",
+      "name": "කපුරු පෙති ",
+      "category": "others",
+      "image": "https://www.ceylonsupermart.com/cdn/shop/products/Cavadi-Refined-Camphor-105-Tablets-1-Camphor-Tablets-Ceylon-Supermart.jpg?v=1641248341",
+      "desc": "",
+      "price": 350,
+      "isWeighable": false
+    },
+    {
+      "id": "item_sunlght",
+      "name": "Sun shine",
+      "category": "cleaning",
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/6/317103238/SN/HF/RN/26750872/1648300884079-sku-0025-0.jpg",
+      "desc": "කහට පල්ලම් ඉවත් කරන කුඩු ",
+      "price": 350,
+      "isWeighable": false
+    },
+    {
+      "id": "item_sunlght",
+      "name": "Sunlight (1kg)",
+      "category": "cleaning",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvwKcO5VxX6SBLPPlRbglwAy6jK_Os4S6Eg&s",
+      "desc": "washing powder",
+      "price": 320,
+      "oldPrice": 330,
+      "isWeighable": false
+    },
+    {
+      "id": "item_sunlght",
+      "name": "Sunlight (500g)",
+      "category": "cleaning",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_-JKg-T6x47vczocIyHdLhDFNsjQUw5I4g&s",
+      "desc": "washing powder",
+      "price": 190,
+      "isWeighable": false
+    },
+    {
+      "id": "item_sunlght",
+      "name": "Sunlight (50g) ",
+      "category": "cleaning",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2022/11/sunlight-three-pcs.jpg",
+      "desc": "washing powder",
+      "price": 25,
+      "isWeighable": false
+    },
+    {
+      "id": "item_surfexl",
+      "name": "Surf excel (30g)",
+      "category": "cleaning",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHifyLt_DqgC3_v8-cIxcDCE4iRkwo-TtnPw&s",
+      "desc": "washing powder",
+      "price": 30,
+      "isWeighable": false
+    },
+    {
+      "id": "item_sunny",
+      "name": "Sunny (500g)",
+      "category": "cleaning",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPOGqaKmMfeHZV6q5QLUUsPQ8R7irUh57lHQ&s",
+      "desc": "washing powder",
+      "price": 180,
+      "isWeighable": false
+    },
+    {
+      "id": "item_rin",
+      "name": "Rin (1kg)",
+      "category": "cleaning",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112902--01--1697601616.jpeg",
+      "desc": "washing powder",
+      "price": 320,
+      "isWeighable": false
+    },
+    {
+      "id": "item_rin",
+      "name": "Rin (500g) ",
+      "category": "cleaning",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112901--01--1697601615.jpeg",
+      "desc": "washing powder",
+      "price": 190,
+      "isWeighable": false
+    },
+     {
+      "id": "item_rin",
+      "name": "Rin (500g) ",
+      "category": "cleaning",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112901--01--1697601615.jpeg",
+      "desc": "washing powder",
+      "price": 190,
+      "isWeighable": false
+    },
+     {
+      "id": "item_rin",
+      "name": "Rin (500g) ",
+      "category": "cleaning",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112901--01--1697601615.jpeg",
+      "desc": "washing powder",
+      "price": 190,
+      "isWeighable": false
+    },
+     {
+      "id": "item_rin",
+      "name": "Rin (50g) ",
+      "category": "cleaning",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112901--01--1697601615.jpeg",
+      "desc": "washing powder",
+      "price": 20,
+      "isWeighable": false
+    },
+     {
+      "id": "item_comfort",
+      "name": "Comfort (54ml)",
+      "category": "cleaning",
+      "image": "https://img.clevup.in/285171/SKU-1518_0-1761884632113.png?width=600&format=webp",
+      "desc": "washing liquid",
+      "price": 190,
+      "isWeighable": false
+    },
+     {
+      "id": "item_comfort",
+      "name": "Comfort rose (90ml)",
+      "category": "cleaning",
+      "image": "https://i.ebayimg.com/images/g/I1YAAOSwpkhjZPRI/s-l400.jpg",
+      "desc": "washing liquid",
+      "price": 150,
+      "isWeighable": false
+    },
+     {
+      "id": "item_comfort",
+      "name": "Comfort blue (90ml)",
+      "category": "cleaning",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/8901030879319.webp",
+      "desc": "washing liquid",
+      "price": 150,
+      "isWeighable": false
+    },
+     {
+      "id": "item_comfort",
+      "name": "Comfort rose (210ml)",
+      "category": "cleaning",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp-ljnqOwH_ZxHdEh34MXkcQJeqaPiUBB7NQ&s",
+      "desc": "washing liquid",
+      "price": 300,
+      "isWeighable": false
+    },
+    {
+      "id": "item_comfort",
+      "name": "Comfort blue (210ml)",
+      "category": "cleaning",
+      "image": "https://ik.imagekit.io/wgucm6iv5/production/product_images/cbf2-c5f4-43cb.jpg",
+      "desc": "washing liquid",
+      "price": 300,
+      "isWeighable": false
+    },
+    {
+      "id": "item_laxapana_12w",
+      "name": "ලක්සපාන LED බල්බ (12W)",
+      "category": "hardware",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxRH_SggXzeVBThIMKcf3THhO2pBVIPX3Nw&s",
+      "desc": "බලශක්ති ඉතිරිකරන LED බල්බය",
+      "price": 890,
+      "oldPrice": 900,
+      "isWeighable": false
+    },
+    {
+      "id": "item_wiring tape",
+      "name": "Wiring tape",
+      "category": "hardware",
+      "image": "https://img.drz.lazcdn.com/static/lk/p/01b18321bf19d75b6c9225da285a0f4a.jpg_720x720q80.jpg",
+      "desc": "",
+      "price": 150,
+      "oldPrice": 160,
+      "isWeighable": false
+    },
+    {
+      "id": "item_wiring tape",
+      "name": "Wiring tape Kalani",
+      "category": "hardware",
+      "image": "https://shop.hexanode.lk/wp-content/uploads/2025/01/3000395.jpg",
+      "desc": "",
+      "price": 180,
+      
+      "isWeighable": false
+    },
+    {
+      "id": "item_soya",
+      "name": "ලක්මී දඩයම් බට්ටා ",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMn5IDgjdWtZ8v9Y1wwHh1Jf_1joYaocVnmw&s",
+      "desc": "",
+      "price": 140,
+      "oldPrice": 150,
+      "isWeighable": false
+    },
+    {
+      "id": "item_soya",
+      "name": "ලක්මී ගම්කුක් බට්ටා ",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRed2WWO-Ga3qN3xr3eA319XN2fb2Ys86dVSA&s",
+      "desc": "",
+      "price": 130,
+      "oldPrice": 140,
+      "isWeighable": false
+    },
+    {
+      "id": "item_soya",
+      "name": "ලක්මී කලපු ඉස්සෝ",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1HvdQ3nmDnRzXkRkhnZx2MNAY_RPLnup8MA&s",
+      "desc": "",
+      "price": 165,
+      "oldPrice": 180,
+      "isWeighable": false
+    },
+    {
+      "id": "item_soya",
+      "name": "රයිගම් සොයා ",
+      "category": "essentials",
+      "image": "https://onlinekade.lk/wp-content/uploads/2023/09/4792149018027.jpg",
+      "desc": "",
+      "price": 60,
+      "oldPrice": 80,
+      "isWeighable": false
+    },
+    {
+      "id": "item_soya",
+      "name": "රයිගම් සොයා ",
+      "category": "essentials",
+      "image": "https://onlinekade.lk/wp-content/uploads/2023/09/4792149018027.jpg",
+      "desc": "",
+      "price": 50,
+      "oldPrice": 60,
+      "isWeighable": false
+    },
+    {
+      "id": "item_soya",
+      "name": "Soya packet",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZg94iRMHFjuwYvczMzzld1WfU-DfUzCvqw&s",
+      "desc": "",
+      "price": 60,
+      "oldPrice": 70,
+      "isWeighable": false
+    },
+    {
+      "id": "item_soya",
+      "name": "Soya packet",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZg94iRMHFjuwYvczMzzld1WfU-DfUzCvqw&s",
+      "desc": "",
+      "price": 45,
+      "isWeighable": false
+    },
+    {
+      "id": "item_elephant_house",
+      "name": "Coca cola (1.5L)",
+      "category": "frozen",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7M2npe8zTmJMo8T6RaCfvnpMmjFubrhNGHg&s",
+      "desc": "",
+      "price": 420,
+      "isWeighable": false
+    },
+    {
+      "id": "item_elephant_house",
+      "name": "Coca cola (400ml)",
+      "category": "frozen",
+      "image": "https://d2t8nl1y0ie1km.cloudfront.net/images/65fa93b5115075f231ec4d1e_Coca-Cola-Drink-400ml_1.webp",
+      "desc": "",
+      "price": 200,
+      "isWeighable": false
+    },
+    {
+      "id": "item_elephant_house",
+      "name": "Sprite (400ml)",
+      "category": "frozen",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp6PJBC4gnnujrGLf1sBHjKHipbHz6fcoOCw&s",
+      "desc": "",
+      "price": 200,
+      "isWeighable": false
+    },
+    {
+      "id": "item_elephant_house",
+      "name": "Necto (250ml)",
+      "category": "frozen",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYJ2cr-Hc4oh9dGsrPE-s-Uo5eTq056XwoPQ&s",
+      "desc": "",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_elephant_house",
+      "name": "Orange crush (250ml)",
+      "category": "frozen",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhR1BbPYlPOsYfsN2KiioZJnTSBUr01CSUtg&s",
+      "desc": "",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_elephant_house",
+      "name": "Cream soda (250ml)",
+      "category": "frozen",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/2024/08/4791066003680.jpg",
+      "desc": "",
+      "price": 120,
+      "isWeighable": false
+    },
+    {
+      "id": "item_biscuit",
+      "name": "Munchee savory nuts",
+      "category": "snacks",
+      "image": "https://i.ebayimg.com/images/g/bhMAAOSwAV5jNc9u/s-l1200.jpg",
+      "desc": "",
+      "price": 50,
+      "isWeighable": false
+    },
+    {
+      "id": "item_biscuit",
+      "name": "Munchee chillito",
+      "category": "snacks",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/Munchee-Chilito-30G.webp",
+      "desc": "",
+      "price": 50,
+      "isWeighable": false
+    },
+    {
+      "id": "item_biscuit",
+      "name": "Munchee kome masala",
+      "category": "snacks",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/Munchee-Kome-Bites-Sweet-Masala-Flvr-15G.webp",
+      "desc": "",
+      "price": 50,
+      "isWeighable": false
+    },
+    {
+      "id": "item_rizburry",
+      "name": "Rizburry cashew",
+      "category": "snacks",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7hOcqyDwWBBWiMU9anIsmjvgyOdDq_umsA&s",
+      "desc": "",
+      "price": 340,
+      "isWeighable": false
+    },
+     {
+      "id": "item_rizburry",
+      "name": "Rizburry uno (yellow)",
+      "category": "snacks",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2024/09/s-l1200-600x600.jpg",
+      "desc": "",
+      "price": 20,
+      "isWeighable": false
+    },
+     {
+      "id": "item_rizburry",
+      "name": "Rizburry uno (white)",
+      "category": "snacks",
+      "image": "https://globalfoodcity.com/wp-content/uploads/2025/05/Gemini_Generated_Image_u6y3zqu6y3zqu6y3.png",
+      "desc": "",
+      "price": 20,
+      "isWeighable": false
+    },
+     {
+      "id": "item_fems",
+      "name": "Fems",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz78v1yFmmPcgbLhpa3v08earo_lVwV8N_3g&s",
+      "desc": "",
+      "price": 270,
+      "isWeighable": false
+    },
+    {
+      "id": "item_fems",
+      "name": "ඇය ",
+      "category": "beauti",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTublUGcX0C-s6j6BW6m_W7RqX3HzK4nK8zKA&s",
+      "desc": "",
+      "price": 150,
+      "isWeighable": false
+    },
+    {
+      "id": "item_hitline_chalk",
+      "name": "Hitline chalk",
+      "category": "others",
+      "image": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/112434--01--1630600307.jpeg",
+      "desc": "කුබීන් සදහා ",
+      "price": 160,
+      "isWeighable": false
+    },
+    {
+      "id": "item_one_time_cup",
+      "name": "Hitline chalk",
+      "category": "others",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1VdJwSHs8Q3_RyW-WEIxczajykStXia-uGA&s",
+      "desc": " ",
+      "price": 10,
+      "isWeighable": false
+    },
+    {
+      "id": "item_selo_tape",
+      "name": "Cello tape",
+      "category": "others",
+      "image": "https://static-01.daraz.lk/p/77f9ff20e75b4cb9e9442134dc6c9b9b.jpg",
+      "desc": " ",
+      "price": 130,
+      "isWeighable": false
+    },
+    {
+      "id": "item_idal",
+      "name": "ඉදල් ",
+      "category": "others",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMpGGM0O62NmiSV65M_Wez2o9jIjOScgrvw&s",
+      "desc": " ",
+      "price": 320,
+      "isWeighable": false
+    },
+    {
+      "id": "item_plastic_kosu",
+      "name": "ප්ලාස්ටික් කොසු ",
+      "category": "others",
+      "image": "https://www.vinivida.lk/wp-content/uploads/2024/01/plastic-broom.jpg",
+      "desc": " ",
+      "price": 360,
+      "isWeighable": false
+    },
+    {
+      "id": "item_Scissors",
+      "name": "කතුර",
+      "category": "others",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsGs75Sh28pbBMx6srobEX_fDakHl00YcNBw&s",
+      "desc": " ",
+      "price": 130,
+      "isWeighable": false
+    },
+     {
+      "id": "item_bic",
+      "name": "Bic තනි තල රේසර් ",
+      "category": "others",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyEwlBsZe7FKh0em7835wTRs9RAJ1iPrcO6Q&s",
+      "desc": " ",
+      "price": 120,
+      "isWeighable": false
+    },
+     {
+      "id": "item_bic",
+      "name": "Bic තල දෙකේ රේසර් ",
+      "category": "others",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzU9e9jyHyMGUXPE9YHCAuRWK4dIGKLveptw&s",
+      "desc": " ",
+      "price": 150,
+      "isWeighable": false
+    },
+     {
+      "id": "item_bic",
+      "name": "Bic තල තුනේ රේසර් ",
+      "category": "others",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/2021/10/3086126691565-1.jpg",
+      "desc": " ",
+      "price": 190,
+      "isWeighable": false
+    },
+     {
+      "id": "item_hair_clip",
+      "name": "කොණ්ඩ කටු card ",
+      "category": "others",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoA-_guXBkTbScmlx97LEfzaV5vXtcmAxAUw&s",
+      "desc": " ",
+      "price": 20,
+      "isWeighable": false
+    },
+     {
+      "id": "item_pin",
+      "name": "හැට්ට කටු කැරලි ",
+      "category": "others",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIyyPjW3aIb5SEpq4P9BFcdqnFiCWQaUacfQ&s",
+      "desc": " ",
+      "price": 30,
+      "isWeighable": false
+    },
+     {
+      "id": "item_matchbox_bundle",
+      "name": "ගිනිපෙට්ටි bundle ",
+      "category": "others",
+      "image": "https://www.sunonline.lk/cdn/shop/products/download_f9938c9e-5075-4cbb-ba50-9a777fe7bb47_800x.jpg?v=1652865901",
+      "desc": " ",
+      "price": 220,
+      "oldPrice": 240,
+      "isWeighable": false
+    },
+    {
+      "id": "item_is",
+      "name": "ඊස් ",
+      "category": "essentials",
+      "image": "https://www.bakersauthority.com/cdn/shop/products/milk-powder-2048_42ea0fda-a243-43ca-8e0a-ac639069ee77.jpg?v=1659082685",
+      "desc": " ",
+      "price": 2200,
+      "oldPrice": 2400,
+      "isWeighable": true
+    },
+    {
+      "id": "item_coconat_oil",
+      "name": "පොල් තෙල් බෝතල් (750ml)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7Kh1GCAE18b_NIEWONRxpH5E8-Z48-M3pw&s",
+      "desc": " ",
+      "price": 570,
+      "oldPrice": 600,
+      "isWeighable": false
+    },
+    {
+      "id": "item_coconat_oil",
+      "name": "පොල් තෙල් (375ml)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7Kh1GCAE18b_NIEWONRxpH5E8-Z48-M3pw&s",
+      "desc": " ",
+      "price": 285,
+      "oldPrice": 300,
+      "isWeighable": false
+    },
+    {
+      "id": "item_coconat_oil",
+      "name": "පොල් තෙල් (175ml) ",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7Kh1GCAE18b_NIEWONRxpH5E8-Z48-M3pw&s",
+      "desc": " ",
+      "price": 150,
+      
+      "isWeighable": false
+    },
+    {
+      "id": "item_suwada_paha",
+      "name": "සුවද පහ ",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRWH6jnwHnis8i7-Zes6MN6NjHQkOuF4JkqA&s",
+      "desc": " ",
+      "price": 40,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ayurweda",
+      "name": "පස්පංගුව (40g)",
+      "category": "ayurveda/medicine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8AH4u01m7ZtOm8qkhaA6vFRq6Yhou9mkliw&s",
+      "desc": " ",
+      "price": 85,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ayurweda",
+      "name": "පස්පංගුව කුඩු (10g)",
+      "category": "ayurveda/medicine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNaTNjACbIZ8_2NHCcwQvNiX21Db-z6CAqQ&s",
+      "desc": " ",
+      "price": 60,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ayurweda",
+      "name": "අසමෝදගම් ",
+      "category": "ayurveda/medicine",
+      "image": "https://i0.wp.com/ceylolion.com/wp-content/uploads/2025/04/gripe-water.jpg?fit=500%2C500&ssl=1",
+      "desc": " ",
+      "price": 170,
+      "isWeighable": false
+    },
+    {
+      "id": "item_ayurweda",
+      "name": "පරාක්‍රම ",
+      "category": "ayurveda/medicine",
+      "image": "https://www.qbay.lk/cdn/shop/files/Parakrama-Balm_-_2.5g.jpg?v=1762237112&width=180",
+      "desc": " ",
+      "price": 50,
+      "isWeighable": false
+    },
+    {
+      "id": "item_umbalakada_sambal",
+      "name": "උම්බලකඩ සම්බල් ",
+      "category": "snacks",
+      "image": "https://www.sunonline.lk/cdn/shop/files/FE-MFS-10-1_800x.jpg?v=1721040934",
+      "desc": " ",
+      "price": 50,
+      "isWeighable": false
+    },
+    {
+      "id": "item_umbalakada_sambal",
+      "name": "උම්බලකඩ සම්බල් ",
+      "category": "snacks",
+      "image": "https://www.sunonline.lk/cdn/shop/files/FE-MFS-10-1_800x.jpg?v=1721040934",
+      "desc": " ",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_pebbles",
+      "name": "Pebbles ",
+      "category": "snacks",
+      "image": "https://ranwage.lk/wp-content/uploads/2025/01/s-l1200-5-300x300.jpg",
+      "desc": " ",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_popit",
+      "name": "Popit",
+      "category": "snacks",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/4792192553001.webp",
+      "desc": " ",
+      "price": 20,
+      "isWeighable": false
+    },
+    {
+      "id": "item_cofee",
+      "name": "රයිගම් කෝපි (20g)",
+      "category": "essentials",
+      "image": "https://i.ebayimg.com/images/g/ElcAAOSw5JphMSTg/s-l1200.jpg",
+      "desc": " ",
+      "price": 50,
+      "isWeighable": false
+    },
+    {
+      "id": "item_cofee",
+      "name": "රයිගම් කෝපි (100g)",
+      "category": "essentials",
+      "image": "https://chakra2go.com/wp-content/uploads/2021/03/Raigam-Coffee-100g.jpg",
+      "desc": " ",
+      "price": 390,
+      "isWeighable": false
+    },
+    {
+      "id": "item_cofee",
+      "name": "කෝපි (20g)",
+      "category": "essentials",
+      "image": "https://i0.wp.com/onlinekade.lk/wp-content/uploads/Raigam-Coffee-Day-Special-Original-50G.webp",
+      "desc": " ",
+      "price": 70,
+      "isWeighable": false
+    },
+    {
+      "id": "item_curry_powder",
+      "name": "ෆ්රීලන් තුන පහ (50g)",
+      "category": "essentials",
+      "image": "https://www.freelansrilanka.com/wp-content/uploads/2022/07/Roasteds-Curry-Powder.png",
+      "desc": " ",
+      "price": 110,
+      "isWeighable": false
+    },
+    {
+      "id": "item_tomato_sause",
+      "name": "තක්කාලි සෝස් ",
+      "category": "essentials",
+      "image": "https://saucepantry.com/cdn/shop/files/pizzafy-sauce-522095.png?v=1745440038",
+      "desc": " ",
+      "price": 20,
+      "isWeighable": false
+    },
+     {
+      "id": "item_peper_powder",
+      "name": "ගම්මිරිස් කුඩු (20g)",
+      "category": "essentials",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUyfbAe7dFm7ccqRobBKTKbm2uTnVyzj9SVA&s",
+      "desc": " ",
+      "price": 90,
+      "isWeighable": false
+    },
+    {
+      "id": "item_lemon_soap",
+      "name": "Lemon soap",
+      "category": "cleaning",
+      "image": "https://clenol.lk/wp-content/uploads/2024/05/16.png",
+      "desc": " ",
+      "price": 70,
+      "oldPrice": 85,
+      "isWeighable": false
+    },
+    {
+      "id": "item_lunch_box",
+      "name": "Lunch box",
+      "category": "books",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY7OmaejAiksnMX7V-NOyQ8AfDTG1Q3t8r1w&s",
+      "desc": " ",
+      "price": 270,
+      "isWeighable": false
+    },
+    {
+      "id": "item_bakery",
+      "name": "Cream bun",
+      "category": "bakery",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrgNCm-vty8TddJJX6Vhr6R2ZfOmcMlTnWyA&s",
+      "desc": "Nandana bakery",
+      "price": 60,
+      "isWeighable": false
+    },
+    {
+      "id": "item_bakery",
+      "name": "Milk bun",
+      "category": "bakery",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMFofoBi3iGPMx3s-3ep-P4kmqSGlvEpF0pg&s",
+      "desc": "Nandana bakery ",
+      "price": 100,
+      "isWeighable": false
+    },
+    {
+      "id": "item_bakery",
+      "name": "Tea bun",
+      "category": "bakery",
+      "image": "https://www.theflavorbender.com/wp-content/uploads/2014/10/DSC05392.jpg",
+      "desc": "Nandana bakery ",
+      "price": 85,
+      "isWeighable": false
+    },
+     {
+      "id": "item_bakery",
+      "name": "Choclate bun",
+      "category": "bakery",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTes8mRMc2wNmnJGN5Tim_T4KbmZy8GdRoJWw&s",
+      "desc": "Nandana bakery ",
+      "price": 80,
+      "isWeighable": false
+    },
+    {
+      "id": "item_bakery",
+      "name": "Budjet pack",
+      "category": "bakery",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBxR1bRlCR-740YhpNFH4V2mYDyKo85vnFtw&s",
+      "desc": "5 in 1 cream bun Pack/Nandana bakery",
+      "price": 190,
+      "isWeighable": false
+    },
+    {
+      "id": "item_bakery",
+      "name": "ඥානකතා බිස්කට් ",
+      "category": "bakery",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi-jSs_9BHiKRt9qXr2vg1mKVAMfdUxZ1bRg&s",
+      "desc": "Nandana bakery",
+      "price": 160,
+      "isWeighable": false
+    },
+    {
+      "id": "item_bakery",
+      "name": "ඥානකතා බිස්කට් ",
+      "category": "bakery",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi-jSs_9BHiKRt9qXr2vg1mKVAMfdUxZ1bRg&s",
+      "desc": "Nandana bakery",
+      "price": 270,
+      "isWeighable": false
+    },
+     {
+      "id": "item_bakery",
+      "name": "විස්කිර්ඤා බිස්කට් ",
+      "category": "bakery",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1N-bqSMgHWf_ZQXD2IxrwuQv4HhDI8oqtrQ&s",
+      "desc": "Nandana bakery",
+      "price": 110,
+      "isWeighable": false
+    },
+     {
+      "id": "item_bakery",
+      "name": "විස්කිර්ඤා බිස්කට් ",
+      "category": "bakery",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1N-bqSMgHWf_ZQXD2IxrwuQv4HhDI8oqtrQ&s",
+      "desc": "Nandana bakery",
+      "price": 210,
+      "isWeighable": false
+    },
+    {
+      "id": "item_bakery",
+      "name": "රෝස් බිස්කට් ",
+      "category": "bakery",
+      "image": "data:image/jpeg;base64,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",
+      "desc": "Nandana bakery",
+      "price": 120,
+      "isWeighable": false
+    },
+
+
+
+
+
+
+    {
+      "id": "item_bulb",
+      "name": " LED බල්බ (20W)",
+      "category": "hardware",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdMXhpTZ4810HMVMFFas-H5k7FXQxOl2cs-A&s",
+      "desc": "බලශක්ති ඉතිරිකරන LED බල්බය",
+      "price": 220,
+      "oldPrice": 250,
       "isWeighable": false
     }
   ]
 }
+  
+
