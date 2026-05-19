@@ -237,6 +237,7 @@ document.addEventListener('click', function(e) {
 });
 
 /*=============== WHATSAPP CHECKOUT & FIREBASE UPDATE ===============*/
+/*=============== WHATSAPP CHECKOUT & FIREBASE UPDATE ===============*/
 document.getElementById('whatsapp-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     const name = document.getElementById('cust-name').value;
@@ -261,6 +262,9 @@ document.getElementById('whatsapp-form').addEventListener('submit', async functi
     
     let savedAmountForOrder = totalOriginal - totalPaid;
     message += `\n💰 *මුළු මුදල:* රු. ${totalPaid.toFixed(2)}\n`;
+    
+    // --- අලුතින් එකතු කළ ස්තුති කිරීම සහ ලින්ක් එක ---
+    message += `\n🙏 අපත් සමග ගනුදෙනු කළ ඔබට ස්තුතියි!\n🌐 නැවතත් පැමිණෙන්න: https://chamindastores.netlify.app/\n`;
     
     if(loggedInUser) {
         const newTotalPaid = (loggedInUser.totalPaid || 0) + totalPaid;
