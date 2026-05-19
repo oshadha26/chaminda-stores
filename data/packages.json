@@ -2,29 +2,48 @@
   "packages": [
     {
       "id": "pkg_family",
-      "name": "පවුලේ අත්‍යවශ්‍ය පැකේජය",
+      "name": "පවුලේ අත්‍යවශ්‍ය පැකේජය 1",
       "discount": "15% OFF",
       "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=400&auto=format&fit=crop",
-      "items": [
-        "සීනි 2kg",
-        "පරිප්පු 1kg",
-        "සහල් 5kg"
-      ],
-      "price": 2150,
+      "items": ["දුබුරු සීනි 2kg", "පරිප්පු 2kg", "පොල්තෙල් බෝතල් 2ක් "],
+      "price": 2100,
       "oldPrice": 2450
     },
     {
+      "id": "pkg_family",
+      "name": "පවුලේ අත්‍යවශ්‍ය පැකේජය 2",
+      "discount": "15% OFF",
+      "image": "https://img-cdn.misfitsmarket.com/melodious-taiyaki-9pkr2z/aOZkY55xUNkB1vhz_Assortment_Pile_Mobile-1-.jpg",
+      "items": ["දුබුරු සීනි 2kg", "පරිප්පු 2kg", "පොල්තෙල් බෝතල් 2ක්","ළුණු 1kg","අල 1kg" ],
+      "price": 2400,
+      "oldPrice": 2600
+    },
+    {
       "id": "pkg_tea",
-      "name": "තේ පැන් විරාම පැකේජය",
+      "name": "තේ පැන් විරාම පැකේජය ",
       "discount": "10% OFF",
-      "image": "https://dragonflytea.com/cdn/shop/articles/cookiesV2_1200x1200_cffcc789-8062-4ad8-ba03-29629c963a72.jpg?v=1644833046",
-      "items": [
-        "තේ කොළ 250g",
-        "සීනි 1kg",
-        "බිස්කට් 2"
-      ],
-      "price": 720,
-      "oldPrice": 800
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkMvK1U8oHphuWmxxonhEPYOlDLxGWDu3ow&s",
+      "items": ["තේ කොළ 100g", "සීනි 1kg", "චොක්ලට් ලොකු බිස්කට් "],
+      "price": 800,
+      "oldPrice": 830
+    },
+    {
+      "id": "pkg_soap",
+      "name": "සබන් පැකේජය 1",
+      "discount": "10% OFF",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSu0erkerIVM1VomQml1tl3rx8tAP5jXItQ&s",
+      "items": ["pears කැට 5", "ලයිෆ්බෝයි කැට 4", "සන්ලයිට් කැට 4","ලයිෆ්බෝයි ෂැම්පු egg protein (175ml)"],
+      "price": 1790,
+      "oldPrice": 1900
+    },
+    {
+      "id": "pkg_soap",
+      "name": "සබන් පැකේජය 2",
+      "discount": "10% OFF",
+      "image": "https://i.ytimg.com/vi/RhjneCo8nD8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCIVIHmjnRGqUbopSSR9u-3lb8PNA",
+      "items": ["pears කැට 5", "ලයිෆ්බෝයි කැට 4", "සන්ලයිට් කැට 4"],
+      "price": 1300,
+      "oldPrice": 1400
     }
   ]
 }
